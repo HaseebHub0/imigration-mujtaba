@@ -139,8 +139,8 @@ export default function HomePage() {
             <div className="text-2xl font-bold text-foreground">ICCRC</div>
             <div className="text-xl font-bold text-foreground">★ RCIC</div>
             <div className="text-xl font-bold text-foreground border-2 border-foreground px-3 py-1">CAPIC</div>
-            <div className="text-lg text-foreground">CANADIAN ASSOCIATION OF PROFESSIONAL IMMIGRATION CONSULTANTS</div>
-            <div className="text-sm text-foreground">Immigration Insights YouTube Channel</div>
+           
+          
           </div>
         </div>
       </section>
