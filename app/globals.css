@@ -7,38 +7,45 @@
   /* Updated color scheme to match user requirements */
   --background: oklch(1 0 0); /* White background */
   --background-alt: #f5f2ec; /* Warm off-white for alternating sections */
-  --foreground: #17203d; /* Dark blue text color */
+  --foreground: #00537b; /* Dark blue text color - updated */
   --card: oklch(1 0 0); /* White cards */
-  --card-foreground: #17203d;
+  --card-foreground: #00537b;
   --popover: oklch(1 0 0);
-  --popover-foreground: #17203d;
-  --primary: #2e8f7c; /* Teal primary color for buttons and cards */
+  --popover-foreground: #00537b;
+  --primary: #f5a101; /* Orange primary color for buttons and cards - updated */
   --primary-foreground: oklch(1 0 0);
-  --secondary: #17203d; /* Dark blue secondary */
+  --secondary: #00537b; /* Dark blue secondary - updated */
   --secondary-foreground: oklch(1 0 0);
   --muted: #f5f2ec;
-  --muted-foreground: #17203d;
-  --accent: #2e8f7c; /* Teal accent */
+  --muted-foreground: #00537b;
+  --accent: #f5a101; /* Orange accent - updated */
   --accent-foreground: oklch(1 0 0);
   --destructive: oklch(0.55 0.2 25);
   --destructive-foreground: oklch(1 0 0);
   --border: oklch(0.9 0 0);
   --input: oklch(1 0 0);
-  --ring: #2e8f7c;
-  --chart-1: #2e8f7c;
-  --chart-2: #17203d;
+  --ring: #f5a101; /* Updated to orange */
+  --chart-1: #f5a101; /* Updated to orange */
+  --chart-2: #00537b; /* Updated to dark blue */
   --chart-3: #f5f2ec;
   --chart-4: oklch(0.55 0.2 25);
   --chart-5: oklch(0.45 0 0);
   --radius: 0.5rem;
   --sidebar: oklch(0.98 0 0);
-  --sidebar-foreground: #17203d;
-  --sidebar-primary: #2e8f7c;
+  --sidebar-foreground: #00537b;
+  --sidebar-primary: #f5a101; /* Updated to orange */
   --sidebar-primary-foreground: oklch(1 0 0);
-  --sidebar-accent: #17203d;
+  --sidebar-accent: #00537b; /* Updated to dark blue */
   --sidebar-accent-foreground: oklch(1 0 0);
   --sidebar-border: oklch(0.9 0 0);
-  --sidebar-ring: #2e8f7c;
+  --sidebar-ring: #f5a101; /* Updated to orange */
+  
+  /* Font variables for the new font stack */
+  --font-helvetica: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --font-garamond: var(--font-garamond), "EB Garamond", serif;
+  --font-times: "Times New Roman", Times, serif;
+  --font-calibri: Calibri, "Segoe UI", sans-serif;
+  --font-verdana: Verdana, Geneva, sans-serif;
 }
 
 .dark {
@@ -48,37 +55,37 @@
   --card-foreground: oklch(0.95 0 0);
   --popover: oklch(0.1 0 0);
   --popover-foreground: oklch(0.95 0 0);
-  --primary: #2e8f7c;
+  --primary: #f5a101; /* Updated to orange */
   --primary-foreground: oklch(0.1 0 0);
-  --secondary: oklch(0.4 0.15 140);
+  --secondary: #00537b; /* Updated to dark blue */
   --secondary-foreground: oklch(0.95 0 0);
   --muted: oklch(0.2 0 0);
   --muted-foreground: oklch(0.6 0 0);
-  --accent: #2e8f7c;
+  --accent: #f5a101; /* Updated to orange */
   --accent-foreground: oklch(0.1 0 0);
   --destructive: oklch(0.5 0.2 25);
   --destructive-foreground: oklch(0.95 0 0);
   --border: oklch(0.2 0 0);
   --input: oklch(0.15 0 0);
-  --ring: #2e8f7c;
-  --chart-1: #2e8f7c;
-  --chart-2: oklch(0.4 0.15 140);
+  --ring: #f5a101; /* Updated to orange */
+  --chart-1: #f5a101; /* Updated to orange */
+  --chart-2: #00537b; /* Updated to dark blue */
   --chart-3: oklch(0.7 0.1 85);
   --chart-4: oklch(0.5 0.2 25);
   --chart-5: oklch(0.6 0 0);
   --sidebar: oklch(0.1 0 0);
   --sidebar-foreground: oklch(0.95 0 0);
-  --sidebar-primary: #2e8f7c;
+  --sidebar-primary: #f5a101; /* Updated to orange */
   --sidebar-primary-foreground: oklch(0.1 0 0);
-  --sidebar-accent: oklch(0.4 0.15 140);
+  --sidebar-accent: #00537b; /* Updated to dark blue */
   --sidebar-accent-foreground: oklch(0.95 0 0);
   --sidebar-border: oklch(0.2 0 0);
-  --sidebar-ring: #2e8f7c;
+  --sidebar-ring: #f5a101; /* Updated to orange */
 }
 
 @theme inline {
-  --font-sans: var(--font-open-sans);
-  --font-serif: var(--font-open-sans);
+  --font-sans: var(--font-helvetica);
+  --font-serif: var(--font-garamond);
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-card: var(--card);
@@ -123,42 +130,80 @@
   }
   body {
     @apply bg-background text-foreground;
+    font-family: var(--font-helvetica), "Helvetica Neue", Helvetica, Arial, sans-serif;
+  }
+  
+  /* Font family utilities */
+  .font-helvetica {
+    font-family: var(--font-helvetica);
+  }
+  
+  .font-garamond {
+    font-family: var(--font-garamond);
+  }
+  
+  .font-times {
+    font-family: var(--font-times);
+  }
+  
+  .font-calibri {
+    font-family: var(--font-calibri);
+  }
+  
+  .font-verdana {
+    font-family: var(--font-verdana);
+  }
+  
+  /* Default font for headings */
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-garamond);
+  }
+  
+  /* Default font for body text */
+  p, span, div, li {
+    font-family: var(--font-helvetica);
   }
 }
 
 /* Updated glassmorphism utilities for new color scheme */
 @layer utilities {
   .glass {
-    background: rgba(46, 143, 124, 0.1);
+    background: rgba(245, 161, 1, 0.1); /* Updated to orange */
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
-    border: 1px solid rgba(46, 143, 124, 0.2);
+    border: 1px solid rgba(245, 161, 1, 0.2); /* Updated to orange */
   }
 
   .glass-card {
     background: rgba(255, 255, 255, 0.8);
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
-    border: 1px solid rgba(46, 143, 124, 0.1);
-    box-shadow: 0 8px 32px rgba(46, 143, 124, 0.1);
+    border: 1px solid rgba(245, 161, 1, 0.1); /* Updated to orange */
+    box-shadow: 0 8px 32px rgba(245, 161, 1, 0.1); /* Updated to orange */
   }
 
   .glass-nav {
     background: rgba(255, 255, 255, 0.95);
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
-    border-bottom: 1px solid rgba(46, 143, 124, 0.1);
+    border-bottom: 1px solid rgba(245, 161, 1, 0.1); /* Updated to orange */
   }
 
   .glass-button {
-    background: rgba(46, 143, 124, 0.1);
+    background: rgba(245, 161, 1, 0.1); /* Updated to orange */
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
-    border: 1px solid rgba(46, 143, 124, 0.3);
+    border: 1px solid rgba(245, 161, 1, 0.3); /* Updated to orange */
   }
 
   .bg-alt {
     background-color: #f5f2ec;
+  }
+  
+  /* Kerdo rounded button style */
+  .kerdo-rounded {
+    border-radius: 20px !important;
+    border-radius: 1.25rem !important;
   }
 }
 
@@ -179,9 +224,9 @@
   height: 60px;
   padding: 0;
   background-color: white;
-  border: 1px solid rgba(46, 143, 124, 0.2);
+  border: 1px solid rgba(245, 161, 1, 0.2);
   border-radius: 0.75rem;
-  box-shadow: 0 8px 32px rgba(46, 143, 124, 0.15);
+  box-shadow: 0 8px 32px rgba(245, 161, 1, 0.15);
   position: relative;
   overflow: hidden;
   will-change: height;
@@ -215,7 +260,7 @@
 }
 
 .hamburger-menu:hover {
-  background-color: rgba(46, 143, 124, 0.1);
+  background-color: rgba(245, 161, 1, 0.1);
 }
 
 .hamburger-menu:hover .hamburger-line {
@@ -225,7 +270,7 @@
 .hamburger-line {
   width: 30px;
   height: 2px;
-  background-color: #2e8f7c;
+  background-color: #f5a101;
   transition: transform 0.25s ease, opacity 0.2s ease, margin 0.3s ease;
   transform-origin: 50% 50%;
 }
@@ -252,7 +297,7 @@
 }
 
 .card-nav-cta-button {
-  background: linear-gradient(135deg, #2e8f7c 0%, #1f6b5e 100%);
+  background: linear-gradient(135deg, #f5a101 0%, #e09401 100%);
   color: white;
   border: none;
   border-radius: calc(0.75rem - 0.35rem);
@@ -261,13 +306,13 @@
   font-weight: 600;
   cursor: pointer;
   transition: all 0.3s ease;
-  box-shadow: 0 4px 15px rgba(46, 143, 124, 0.3);
+  box-shadow: 0 4px 15px rgba(245, 161, 1, 0.3);
 }
 
 .card-nav-cta-button:hover {
-  background: linear-gradient(135deg, #1f6b5e 0%, #2e8f7c 100%);
+  background: linear-gradient(135deg, #e09401 0%, #f5a101 100%);
   transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(46, 143, 124, 0.4);
+  box-shadow: 0 6px 20px rgba(245, 161, 1, 0.4);
 }
 
 .card-nav-content {
@@ -293,7 +338,7 @@
 
 .nav-card {
   height: auto;
-  min-height: 160px;
+  min-height: 240px;
   border-radius: calc(0.75rem - 0.2rem);
   position: relative;
   display: flex;
@@ -461,7 +506,7 @@
   }
   
   .nav-card {
-    min-height: 140px;
+    min-height: 260px;
     padding: 18px;
   }
   
@@ -477,7 +522,7 @@
   }
   
   .nav-card {
-    min-height: 170px;
+    min-height: 200px;
     padding: 22px;
   }
 }

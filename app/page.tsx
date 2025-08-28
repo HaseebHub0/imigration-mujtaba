@@ -25,7 +25,7 @@ export default function HomePage() {
             {/* Left side - Content */}
             <div className="space-y-8">
               <h1 className="text-5xl lg:text-6xl font-bold text-white leading-tight">
-                Expert Immigration Guidance with <span className="italic text-amber-300">Transparent Assessment</span>
+                Expert Immigration Guidance with <span className="italic text-[#f5a101]">Transparent Assessment</span>
               </h1>
               <p className="text-xl text-slate-200 leading-relaxed">
                 Free 30-minute consultations - only for cases we can win. Mujtaba Sarwar, RCIC License #R712505
@@ -194,7 +194,7 @@ export default function HomePage() {
       </section>
 
       {/* Bottom CTA Section */}
-      <section className="py-20 bg-gradient-to-r from-red-600 to-orange-600">
+      <section className="py-20 bg-gradient-to-r from-[#f5a101] to-[#e09401]">
         <div className="container mx-auto px-4">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-6">
@@ -269,7 +269,7 @@ export default function HomePage() {
                   <MapPin className="h-4 w-4" />
                   <span>Mississauga, Ontario, Canada</span>
                 </div>
-                <div className="flex items-center space-x-2 text-sm text-slate-300">
+                <div className="flex items-center space-x-2 text-lg text-slate-300">
                   <Phone className="h-4 w-4" />
                   <span>514-506-0671</span>
                 </div>

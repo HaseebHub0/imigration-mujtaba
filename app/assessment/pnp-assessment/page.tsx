@@ -8,7 +8,8 @@ import { Label } from "@/components/ui/label"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
 import { Checkbox } from "@/components/ui/checkbox"
 import { Badge } from "@/components/ui/badge"
-import { FileCheck, MapPin, CheckCircle } from "lucide-react"
+import { Textarea } from "@/components/ui/textarea"
+import { FileCheck, MapPin, CheckCircle, Send } from "lucide-react"
 
 export default function PNPAssessmentPage() {
   const [formData, setFormData] = useState({
@@ -48,7 +49,7 @@ export default function PNPAssessmentPage() {
   ]
 
   const assessPNP = () => {
-    const eligiblePrograms = []
+    const eligiblePrograms: { province: string; code: string; programs: string[]; score: number; likelihood: string }[] = []
 
     // Simple assessment logic (in real implementation, this would be much more complex)
     provinces.forEach((province) => {
@@ -101,7 +102,7 @@ export default function PNPAssessmentPage() {
     <div className="min-h-screen bg-white">
       {/* Hero Section */}
       <section className="relative bg-cover bg-center bg-no-repeat py-20" style={{ backgroundImage: 'url("https://images.unsplash.com/photo-1560472354-b33ff0c44a43?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2026&q=80")' }}>
-        <div className="absolute inset-0 bg-[#17203d]/80"></div>
+        <div className="absolute inset-0 bg-[#00537b]/80"></div>
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl font-bold mb-6 text-white">PNP Assessment Tool</h1>
@@ -120,7 +121,7 @@ export default function PNPAssessmentPage() {
               <div>
                 <Card className="mb-8">
                   <CardHeader>
-                    <CardTitle className="text-xl text-[#17203d]">Personal Information</CardTitle>
+                    <CardTitle className="text-xl text-[#00537b]">Personal Information</CardTitle>
                   </CardHeader>
                   <CardContent className="space-y-4">
                     <div>
@@ -200,7 +201,7 @@ export default function PNPAssessmentPage() {
               <div>
                 <Card className="mb-8">
                   <CardHeader>
-                    <CardTitle className="text-xl text-[#17203d]">Provincial Connections</CardTitle>
+                    <CardTitle className="text-xl text-[#00537b]">Provincial Connections</CardTitle>
                   </CardHeader>
                   <CardContent className="space-y-4">
                     <div>
@@ -261,7 +262,7 @@ export default function PNPAssessmentPage() {
 
                 <Button
                   onClick={assessPNP}
-                  className="w-full bg-[#2e8f7c] hover:bg-[#2e8f7c]/90 text-white text-lg py-6"
+                  className="w-full bg-[#f5a101] hover:bg-[#f5a101]/90 text-white text-lg py-6"
                 >
                   Assess PNP Eligibility
                 </Button>
@@ -270,7 +271,7 @@ export default function PNPAssessmentPage() {
 
             {showResults && (
               <div className="mt-12">
-                <h2 className="text-3xl font-bold text-[#17203d] mb-8 text-center">
+                <h2 className="text-3xl font-bold text-[#00537b] mb-8 text-center">
                   Your PNP Assessment Results
                 </h2>
 
@@ -280,8 +281,8 @@ export default function PNPAssessmentPage() {
                       <Card key={index} className="hover:bg-[#f5f2ec] transition-colors duration-300">
                         <CardHeader>
                           <div className="flex items-center gap-2 mb-2">
-                            <MapPin className="w-5 h-5 text-[#2e8f7c]" />
-                            <CardTitle className="text-lg text-[#17203d]">{result.province}</CardTitle>
+                            <MapPin className="w-5 h-5 text-[#f5a101]" />
+                            <CardTitle className="text-lg text-[#00537b]">{result.province}</CardTitle>
                           </div>
                           <Badge
                             variant="outline"
@@ -304,7 +305,7 @@ export default function PNPAssessmentPage() {
                               </div>
                             ))}
                           </div>
-                          <Button size="sm" className="w-full bg-[#2e8f7c] hover:bg-[#2e8f7c]/90 text-white">
+                          <Button size="sm" className="w-full bg-[#f5a101] hover:bg-[#f5a101]/90 text-white">
                             Learn More
                           </Button>
                         </CardContent>
@@ -317,7 +318,7 @@ export default function PNPAssessmentPage() {
                       <div className="text-gray-600 mb-4">
                         Based on your current profile, you may not qualify for PNP programs at this time.
                       </div>
-                      <Button className="bg-[#2e8f7c] hover:bg-[#2e8f7c]/90 text-white">
+                      <Button className="bg-[#f5a101] hover:bg-[#f5a101]/90 text-white">
                         Book Consultation for Guidance
                       </Button>
                     </CardContent>
@@ -325,22 +326,78 @@ export default function PNPAssessmentPage() {
                 )}
 
                 <div className="mt-8 text-center">
-                  <Card className="bg-[#f5f2ec] border-[#2e8f7c]">
+                  <Card className="bg-[#f5f2ec] border-[#f5a101]">
                     <CardContent className="p-6">
-                      <CheckCircle className="w-12 h-12 text-[#2e8f7c] mx-auto mb-4" />
-                      <h3 className="text-xl font-semibold text-[#17203d] mb-2">
+                      <CheckCircle className="w-12 h-12 text-[#f5a101] mx-auto mb-4" />
+                      <h3 className="text-xl font-semibold text-[#00537b] mb-2">
                         Ready for the Next Step?
                       </h3>
                       <p className="text-gray-700 mb-4">
                         Book a free consultation to discuss your PNP options and create a personalized immigration
                         strategy
                       </p>
-                      <Button className="bg-[#2e8f7c] hover:bg-[#2e8f7c]/90 text-white">Book Free Consultation</Button>
+                      <Button className="bg-[#f5a101] hover:bg-[#f5a101]/90 text-white">Book Free Consultation</Button>
                     </CardContent>
                   </Card>
                 </div>
               </div>
             )}
+          </div>
+        </div>
+      </section>
+
+      {/* Contact Form Section */}
+      <section className="py-16 bg-[#f5f2ec]">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl font-bold text-[#00537b] mb-4">Need Help with Your PNP Assessment?</h2>
+              <p className="text-gray-700 max-w-2xl mx-auto">
+                Have questions about your results or need help understanding PNP programs? Send us a message and we'll get back to you.
+              </p>
+            </div>
+            
+            <Card className="max-w-2xl mx-auto">
+              <CardContent className="p-8">
+                <form className="space-y-6">
+                  <div className="grid md:grid-cols-2 gap-4">
+                    <div>
+                      <Label htmlFor="firstName">First Name *</Label>
+                      <Input id="firstName" placeholder="Enter your first name" required />
+                    </div>
+                    <div>
+                      <Label htmlFor="lastName">Last Name *</Label>
+                      <Input id="lastName" placeholder="Enter your last name" required />
+                    </div>
+                  </div>
+                  
+                  <div>
+                    <Label htmlFor="email">Email Address *</Label>
+                    <Input id="email" type="email" placeholder="Enter your email address" required />
+                  </div>
+                  
+                  <div>
+                    <Label htmlFor="phone">Phone Number</Label>
+                    <Input id="phone" type="tel" placeholder="Enter your phone number" />
+                  </div>
+                  
+                  <div>
+                    <Label htmlFor="question">Your Question *</Label>
+                    <Textarea 
+                      id="question" 
+                      placeholder="Tell us about your PNP assessment results or any questions you have..." 
+                      rows={4}
+                      required 
+                    />
+                  </div>
+                  
+                  <Button type="submit" className="w-full bg-[#f5a101] hover:bg-[#f5a101]/90 text-white">
+                    <Send className="w-4 h-4 mr-2" />
+                    Send Question
+                  </Button>
+                </form>
+              </CardContent>
+            </Card>
           </div>
         </div>
       </section>

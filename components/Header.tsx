@@ -7,7 +7,7 @@ const Header: React.FC = () => {
   const navigationItems = [
     {
       label: "Home",
-      bgColor: "#2e8f7c",
+      bgColor: "#f5a101",
       textColor: "#ffffff",
       links: [
         { label: "Main Page", ariaLabel: "Go to Home Page", href: "/" },
@@ -17,7 +17,7 @@ const Header: React.FC = () => {
     },
     {
       label: "About",
-      bgColor: "#17203d",
+      bgColor: "#00537b",
       textColor: "#ffffff",
       links: [
         { label: "Company Profile", ariaLabel: "About Company", href: "/about" },
@@ -27,7 +27,7 @@ const Header: React.FC = () => {
     },
     {
       label: "Services", 
-      bgColor: "#2e8f7c",
+      bgColor: "#f5a101",
       textColor: "#ffffff",
       links: [
         { label: "Permanent Residency", ariaLabel: "Permanent Residency Services", href: "/services/permanent-residency" },
@@ -37,7 +37,7 @@ const Header: React.FC = () => {
     },
     {
       label: "Assessment",
-      bgColor: "#17203d",
+      bgColor: "#00537b",
       textColor: "#ffffff",
       links: [
         { label: "CRS Calculator", ariaLabel: "CRS Score Calculator", href: "/assessment/crs-calculator" },
@@ -47,7 +47,7 @@ const Header: React.FC = () => {
     },
     {
       label: "Resources",
-      bgColor: "#2e8f7c",
+      bgColor: "#f5a101",
       textColor: "#ffffff",
       links: [
         { label: "Immigration Blog", ariaLabel: "Immigration Blog", href: "/blog" },
@@ -57,7 +57,7 @@ const Header: React.FC = () => {
     },
     {
       label: "Booking",
-      bgColor: "#17203d",
+      bgColor: "#00537b",
       textColor: "#ffffff",
       links: [
         { label: "Free Consultation", ariaLabel: "Book Free Consultation", href: "/booking/free-consultation" },
@@ -67,7 +67,7 @@ const Header: React.FC = () => {
     },
     {
       label: "Contact",
-      bgColor: "#2e8f7c",
+      bgColor: "#f5a101",
       textColor: "#ffffff",
       links: [
         { label: "Phone: 514-506-0671", ariaLabel: "Call us", href: "tel:514-506-0671" },
@@ -83,8 +83,8 @@ const Header: React.FC = () => {
       logoAlt="Mujtaba Sarwar Immigration Consulting"
       items={navigationItems}
       baseColor="#ffffff"
-      menuColor="#2e8f7c"
-      buttonBgColor="#2e8f7c"
+      menuColor="#f5a101"
+      buttonBgColor="#f5a101"
       buttonTextColor="#ffffff"
       ease="power3.out"
     />

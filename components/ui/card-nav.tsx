@@ -48,37 +48,34 @@ const CardNav: React.FC<CardNavProps> = ({
 
   const calculateHeight = () => {
     const navEl = navRef.current;
-    if (!navEl) return 260;
+    if (!navEl) return 300;
 
-    const isMobile = window.matchMedia("(max-width: 768px)").matches;
-    if (isMobile) {
-      const contentEl = navEl.querySelector(".card-nav-content") as HTMLElement;
-      if (contentEl) {
-        const wasVisible = contentEl.style.visibility;
-        const wasPointerEvents = contentEl.style.pointerEvents;
-        const wasPosition = contentEl.style.position;
-        const wasHeight = contentEl.style.height;
+    const contentEl = navEl.querySelector(".card-nav-content") as HTMLElement;
+    if (contentEl) {
+      const wasVisible = contentEl.style.visibility;
+      const wasPointerEvents = contentEl.style.pointerEvents;
+      const wasPosition = contentEl.style.position;
+      const wasHeight = contentEl.style.height;
 
-        contentEl.style.visibility = "visible";
-        contentEl.style.pointerEvents = "auto";
-        contentEl.style.position = "static";
-        contentEl.style.height = "auto";
+      contentEl.style.visibility = "visible";
+      contentEl.style.pointerEvents = "auto";
+      contentEl.style.position = "static";
+      contentEl.style.height = "auto";
 
-        contentEl.offsetHeight;
+      contentEl.offsetHeight;
 
-        const topBar = 60;
-        const padding = 16;
-        const contentHeight = contentEl.scrollHeight;
+      const topBar = 60;
+      const padding = 16;
+      const contentHeight = contentEl.scrollHeight;
 
-        contentEl.style.visibility = wasVisible;
-        contentEl.style.pointerEvents = wasPointerEvents;
-        contentEl.style.position = wasPosition;
-        contentEl.style.height = wasHeight;
+      contentEl.style.visibility = wasVisible;
+      contentEl.style.pointerEvents = wasPointerEvents;
+      contentEl.style.position = wasPosition;
+      contentEl.style.height = wasHeight;
 
-        return topBar + contentHeight + padding;
-      }
+      return topBar + contentHeight + padding;
     }
-    return 260;
+    return 400;
   };
 
   const createTimeline = () => {

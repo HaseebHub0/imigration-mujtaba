@@ -1,6 +1,6 @@
 import type React from "react"
 import type { Metadata } from "next"
-import { Open_Sans } from "next/font/google"
+import { Open_Sans, EB_Garamond } from "next/font/google"
 import Header from "@/components/Header"
 import "./globals.css"
 
@@ -9,6 +9,13 @@ const openSans = Open_Sans({
   weight: ["300", "400", "500", "600", "700", "800"],
   display: "swap",
   variable: "--font-open-sans",
+})
+
+const garamond = EB_Garamond({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+  display: "swap",
+  variable: "--font-garamond",
 })
 
 export const metadata: Metadata = {
@@ -24,7 +31,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`font-sans ${openSans.variable}`}>
+      <body className={`font-sans ${openSans.variable} ${garamond.variable}`}>
         <Header />
         {children}
       </body>
