@@ -1,5 +1,6 @@
 @import "tailwindcss";
 @import "tw-animate-css";
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap');
 
 @custom-variant dark (&:is(.dark *));
 
@@ -569,6 +570,26 @@
 #next-slide:hover {
   background-color: rgba(255, 255, 255, 0.3);
   transform: scale(1.05);
+}
+
+/* EB Garamond Font Classes */
+.font-eb-garamond {
+  font-family: 'EB Garamond', serif;
+}
+
+/* Hero Heading Styles */
+.hero-title-line-1 {
+  font-family: 'EB Garamond', serif;
+  font-weight: 700;
+  color: #ffffff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.hero-title-line-2 {
+  font-family: 'EB Garamond', serif;
+  font-weight: 600;
+  color: #ffffff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 /* Glassmorphism Card Animations */

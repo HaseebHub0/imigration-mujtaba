@@ -318,7 +318,7 @@ export default function HomePage() {
 
                   {/* Dynamic Main Heading */}
                   <div className="text-center mb-8">
-                    <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight">
+                    <h1 className="text-4xl sm:text-5xl lg:text-6xl leading-tight">
                       <span className="block hero-title-line-1 mb-2">
                         Expert Immigration
                       </span>
