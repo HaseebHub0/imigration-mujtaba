@@ -190,7 +190,7 @@ export default function HomePage() {
             {/* Image 1 - Professional Office */}
             <div className="absolute inset-0 w-full h-full carousel-slide active">
               <img
-                src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=1600&h=900&fit=crop&crop=center&q=80"
+                src="/images/hero/1.png"
                 alt="Professional Immigration Consulting Office"
                 className="w-full h-full object-cover"
                 loading="eager"
@@ -200,7 +200,7 @@ export default function HomePage() {
             {/* Image 2 - Modern Business District */}
             <div className="absolute inset-0 w-full h-full carousel-slide">
               <img
-                src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1600&h=900&fit=crop&crop=center&q=80"
+                src="/images/hero/2.png"
                 alt="Modern Business District"
                 className="w-full h-full object-cover"
                 loading="lazy"
@@ -210,7 +210,7 @@ export default function HomePage() {
             {/* Image 3 - Professional Meeting */}
             <div className="absolute inset-0 w-full h-full carousel-slide">
               <img
-                src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=1600&h=900&fit=crop&crop=center&q=80"
+                src="/images/hero/3.png"
                 alt="Professional Immigration Consultation"
                 className="w-full h-full object-cover"
                 loading="lazy"
@@ -220,7 +220,7 @@ export default function HomePage() {
             {/* Image 4 - Canadian Landscape */}
             <div className="absolute inset-0 w-full h-full carousel-slide">
               <img
-                src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1600&h=900&fit=crop&crop=center&q=80"
+                src="/images/hero/4.png"
                 alt="Canadian Immigration Dreams"
                 className="w-full h-full object-cover"
                 loading="lazy"
@@ -230,8 +230,18 @@ export default function HomePage() {
             {/* Image 5 - Success Celebration */}
             <div className="absolute inset-0 w-full h-full carousel-slide">
               <img
-                src="https://images.unsplash.com/photo-1521791136064-7986c2920216?w=1600&h=900&fit=crop&crop=center&q=80"
+                src="/images/hero/5.png"
                 alt="Immigration Success Stories"
+                className="w-full h-full object-cover"
+                loading="lazy"
+              />
+            </div>
+
+            {/* Image 6 - Immigration Consultation */}
+            <div className="absolute inset-0 w-full h-full carousel-slide">
+              <img
+                src="/images/hero/6.png"
+                alt="Immigration Consultation"
                 className="w-full h-full object-cover"
                 loading="lazy"
               />
