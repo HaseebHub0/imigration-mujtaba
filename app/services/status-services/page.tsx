@@ -84,7 +84,7 @@ export default function StatusServicesPage() {
     <div className="min-h-screen">
       {/* Hero Section */}
       <section className="relative bg-cover bg-center bg-no-repeat py-20" style={{ backgroundImage: 'url("https://images.unsplash.com/photo-1556761175-5973dc0f32e7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80")' }}>
-        <div className="absolute inset-0 bg-[#00537b]/80"></div>
+        <div className="absolute inset-0 bg-[#0f172b]/80"></div>
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl font-bold mb-6 text-white">Status Services</h1>
@@ -100,7 +100,7 @@ export default function StatusServicesPage() {
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-12">
-              <h2 className="text-3xl font-bold text-[#00537b] mb-4">Our Status Services</h2>
+              <h2 className="text-3xl font-bold text-[#0f172b] mb-4">Our Status Services</h2>
               <p className="text-gray-700 max-w-2xl mx-auto">
                 Comprehensive support for temporary status applications in Canada
               </p>
@@ -115,7 +115,7 @@ export default function StatusServicesPage() {
                         <div className="flex items-center gap-4 mb-4">
                           <service.icon className="w-12 h-12 text-[#f5a101]" />
                           <div>
-                            <h3 className="text-2xl font-bold text-[#00537b]">{service.title}</h3>
+                            <h3 className="text-2xl font-bold text-[#0f172b]">{service.title}</h3>
                             <p className="text-gray-600">{service.description}</p>
                           </div>
                         </div>
@@ -125,7 +125,7 @@ export default function StatusServicesPage() {
                             <div className="text-sm text-gray-600">Starting Price</div>
                           </div>
                           <div className="text-center">
-                            <div className="text-lg font-semibold text-[#00537b]">{service.processingTime}</div>
+                            <div className="text-lg font-semibold text-[#0f172b]">{service.processingTime}</div>
                             <div className="text-sm text-gray-600">Processing Time</div>
                           </div>
                         </div>
@@ -133,7 +133,7 @@ export default function StatusServicesPage() {
                       </div>
 
                       <div className="lg:col-span-1">
-                        <h4 className="font-semibold text-[#00537b] mb-3">What's Included:</h4>
+                        <h4 className="font-semibold text-[#0f172b] mb-3">What's Included:</h4>
                         <ul className="space-y-2">
                           {service.features.map((feature, idx) => (
                             <li key={idx} className="flex items-start gap-2">
@@ -145,7 +145,7 @@ export default function StatusServicesPage() {
                       </div>
 
                       <div className="lg:col-span-1">
-                        <h4 className="font-semibold text-[#00537b] mb-3">Service Types:</h4>
+                        <h4 className="font-semibold text-[#0f172b] mb-3">Service Types:</h4>
                         <div className="space-y-2">
                           {service.types.map((type, idx) => (
                             <Badge
@@ -172,7 +172,7 @@ export default function StatusServicesPage() {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-12">
-              <h2 className="text-3xl font-bold text-[#00537b] mb-4">Our Service Process</h2>
+              <h2 className="text-3xl font-bold text-[#0f172b] mb-4">Our Service Process</h2>
               <p className="text-gray-700">Simple, transparent process for all status applications</p>
             </div>
 
@@ -181,28 +181,28 @@ export default function StatusServicesPage() {
                 <div className="w-16 h-16 bg-[#f5a101] text-white rounded-full flex items-center justify-center mx-auto mb-4 text-xl font-bold">
                   1
                 </div>
-                <h3 className="text-lg font-semibold text-[#00537b] mb-2">Consultation</h3>
+                <h3 className="text-lg font-semibold text-[#0f172b] mb-2">Consultation</h3>
                 <p className="text-gray-700 text-sm">Free initial consultation to assess your needs</p>
               </div>
               <div className="text-center">
                 <div className="w-16 h-16 bg-[#f5a101] text-white rounded-full flex items-center justify-center mx-auto mb-4 text-xl font-bold">
                   2
                 </div>
-                <h3 className="text-lg font-semibold text-[#00537b] mb-2">Documentation</h3>
+                <h3 className="text-lg font-semibold text-[#0f172b] mb-2">Documentation</h3>
                 <p className="text-gray-700 text-sm">Gather and prepare all required documents</p>
               </div>
               <div className="text-center">
                 <div className="w-16 h-16 bg-[#f5a101] text-white rounded-full flex items-center justify-center mx-auto mb-4 text-xl font-bold">
                   3
                 </div>
-                <h3 className="text-lg font-semibold text-[#00537b] mb-2">Application</h3>
+                <h3 className="text-lg font-semibold text-[#0f172b] mb-2">Application</h3>
                 <p className="text-gray-700 text-sm">Complete and submit your application</p>
               </div>
               <div className="text-center">
                 <div className="w-16 h-16 bg-[#f5a101] text-white rounded-full flex items-center justify-center mx-auto mb-4 text-xl font-bold">
                   4
                 </div>
-                <h3 className="text-lg font-semibold text-[#00537b] mb-2">Support</h3>
+                <h3 className="text-lg font-semibold text-[#0f172b] mb-2">Support</h3>
                 <p className="text-gray-700 text-sm">Ongoing support until approval</p>
               </div>
             </div>
@@ -215,7 +215,7 @@ export default function StatusServicesPage() {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-12">
-              <h2 className="text-3xl font-bold text-[#00537b] mb-4">Get Started with Status Services</h2>
+              <h2 className="text-3xl font-bold text-[#0f172b] mb-4">Get Started with Status Services</h2>
               <p className="text-gray-700 max-w-2xl mx-auto">
                 Ready to apply for a work permit, study permit, or other status? Send us a message and we'll help you get started.
               </p>
@@ -272,7 +272,7 @@ export default function StatusServicesPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="bg-[#00537b] text-white py-16">
+      <section className="bg-[#0f172b] text-white py-16">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold mb-4">Need Help with Your Status Application?</h2>
           <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
@@ -285,7 +285,7 @@ export default function StatusServicesPage() {
             <Button
               size="lg"
               variant="outline"
-              className="border-white text-white hover:bg-white hover:text-[#00537b] bg-transparent"
+                              className="border-white text-white hover:bg-white hover:text-[#0f172b] bg-transparent"
             >
               Get Quote
             </Button>

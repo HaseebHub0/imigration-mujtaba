@@ -122,7 +122,7 @@ export default function ResourcesPage() {
     <div className="min-h-screen">
       {/* Hero Section */}
       <section className="relative bg-cover bg-center bg-no-repeat py-20" style={{ backgroundImage: 'url("https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2071&q=80")' }}>
-        <div className="absolute inset-0 bg-[#00537b]/80"></div>
+        <div className="absolute inset-0 bg-[#0f172b]/80"></div>
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl font-bold mb-6 text-white">Immigration Resources</h1>
@@ -138,7 +138,7 @@ export default function ResourcesPage() {
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-12">
-              <h2 className="text-3xl font-bold text-[#00537b] mb-4">Interactive Tools</h2>
+              <h2 className="text-3xl font-bold text-[#0f172b] mb-4">Interactive Tools</h2>
               <p className="text-gray-700 max-w-2xl mx-auto">
                 Use our free assessment tools to evaluate your immigration options
               </p>
@@ -149,7 +149,7 @@ export default function ResourcesPage() {
                 <Card key={index} className="hover:bg-[#f5f2ec] transition-colors duration-300 text-center">
                   <CardHeader>
                     <tool.icon className="w-12 h-12 text-[#f5a101] mx-auto mb-4" />
-                    <CardTitle className="text-xl text-[#00537b]">{tool.title}</CardTitle>
+                    <CardTitle className="text-xl text-[#0f172b]">{tool.title}</CardTitle>
                     <Badge variant="outline" className="border-[#f5a101] text-[#f5a101] w-fit mx-auto">
                       {tool.type}
                     </Badge>
@@ -172,7 +172,7 @@ export default function ResourcesPage() {
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-12">
-              <h2 className="text-3xl font-bold text-[#00537b] mb-4">Free Downloads</h2>
+              <h2 className="text-3xl font-bold text-[#0f172b] mb-4">Free Downloads</h2>
               <p className="text-gray-700 max-w-2xl mx-auto">
                 Download our comprehensive guides and checklists to help with your immigration planning
               </p>
@@ -187,7 +187,7 @@ export default function ResourcesPage() {
                         <resource.icon className="w-6 h-6" />
                       </div>
                       <div className="flex-1">
-                        <h3 className="text-lg font-semibold text-[#00537b] mb-2">{resource.title}</h3>
+                        <h3 className="text-lg font-semibold text-[#0f172b] mb-2">{resource.title}</h3>
                         <p className="text-gray-700 text-sm mb-3">{resource.description}</p>
                         <div className="flex items-center gap-4 text-xs text-gray-600 mb-4">
                           <span>{resource.type}</span>
@@ -213,7 +213,7 @@ export default function ResourcesPage() {
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-12">
-              <h2 className="text-3xl font-bold text-[#00537b] mb-4">Educational Videos</h2>
+              <h2 className="text-3xl font-bold text-[#0f172b] mb-4">Educational Videos</h2>
               <p className="text-gray-700 max-w-2xl mx-auto">
                 Watch our expert videos for in-depth immigration guidance and insights
               </p>
@@ -236,7 +236,7 @@ export default function ResourcesPage() {
                     </div>
                   </div>
                   <CardContent className="p-4">
-                    <h3 className="text-lg font-semibold text-[#00537b] mb-2 line-clamp-2">
+                    <h3 className="text-lg font-semibold text-[#0f172b] mb-2 line-clamp-2">
                       {video.title}
                     </h3>
                     <p className="text-gray-700 text-sm mb-3 line-clamp-2">{video.description}</p>
@@ -266,7 +266,7 @@ export default function ResourcesPage() {
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-12">
-              <h2 className="text-3xl font-bold text-[#00537b] mb-4">Official Resources</h2>
+              <h2 className="text-3xl font-bold text-[#0f172b] mb-4">Official Resources</h2>
               <p className="text-gray-700 max-w-2xl mx-auto">
                 Important government and official resources for your immigration journey
               </p>
@@ -278,7 +278,7 @@ export default function ResourcesPage() {
                   <CardContent className="p-6">
                     <div className="flex items-start justify-between gap-4">
                       <div className="flex-1">
-                        <h3 className="text-lg font-semibold text-[#00537b] mb-2">{resource.title}</h3>
+                        <h3 className="text-lg font-semibold text-[#0f172b] mb-2">{resource.title}</h3>
                         <p className="text-gray-700 text-sm mb-3">{resource.description}</p>
                         <Badge variant="outline" className="border-[#f5a101] text-[#f5a101] text-xs">
                           {resource.type}
@@ -301,7 +301,7 @@ export default function ResourcesPage() {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-12">
-              <h2 className="text-3xl font-bold text-[#00537b] mb-4">Need Help with Our Resources?</h2>
+              <h2 className="text-3xl font-bold text-[#0f172b] mb-4">Need Help with Our Resources?</h2>
               <p className="text-gray-700 max-w-2xl mx-auto">
                 Have questions about our tools, guides, or resources? Send us a message and we'll help you get the most out of them.
               </p>
@@ -358,7 +358,7 @@ export default function ResourcesPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="bg-[#00537b] text-white py-16">
+      <section className="bg-[#0f172b] text-white py-16">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold mb-4">Need More Personalized Help?</h2>
           <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
@@ -372,7 +372,7 @@ export default function ResourcesPage() {
             <Button
               size="lg"
               variant="outline"
-              className="border-white text-white hover:bg-white hover:text-[#00537b] bg-transparent"
+                              className="border-white text-white hover:bg-white hover:text-[#0f172b] bg-transparent"
             >
               Take Assessment Quiz
             </Button>

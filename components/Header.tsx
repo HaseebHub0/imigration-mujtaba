@@ -17,7 +17,7 @@ const Header: React.FC = () => {
     },
     {
       label: "About",
-      bgColor: "#00537b",
+      bgColor: "#0f172b",
       textColor: "#ffffff",
       links: [
         { label: "Company Profile", ariaLabel: "About Company", href: "/about" },
@@ -37,7 +37,7 @@ const Header: React.FC = () => {
     },
     {
       label: "Assessment",
-      bgColor: "#00537b",
+      bgColor: "#0f172b",
       textColor: "#ffffff",
       links: [
         { label: "CRS Calculator", ariaLabel: "CRS Score Calculator", href: "/assessment/crs-calculator" },
@@ -57,7 +57,7 @@ const Header: React.FC = () => {
     },
     {
       label: "Booking",
-      bgColor: "#00537b",
+      bgColor: "#0f172b",
       textColor: "#ffffff",
       links: [
         { label: "Free Consultation", ariaLabel: "Book Free Consultation", href: "/booking/free-consultation" },

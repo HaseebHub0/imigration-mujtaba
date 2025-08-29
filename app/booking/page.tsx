@@ -12,7 +12,7 @@ export default function BookingPage() {
     <div className="min-h-screen">
       {/* Hero Section */}
       <section className="relative bg-cover bg-center bg-no-repeat py-20" style={{ backgroundImage: 'url("https://images.unsplash.com/photo-1556761175-b413da4baf72?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2074&q=80")' }}>
-        <div className="absolute inset-0 bg-[#00537b]/80"></div>
+        <div className="absolute inset-0 bg-[#0f172b]/80"></div>
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl font-bold mb-6 text-white">Book Your Consultation</h1>
@@ -28,7 +28,7 @@ export default function BookingPage() {
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-12">
-              <h2 className="text-3xl font-bold text-[#00537b] mb-4">Choose Your Consultation Type</h2>
+              <h2 className="text-3xl font-bold text-[#0f172b] mb-4">Choose Your Consultation Type</h2>
               <p className="text-gray-700 max-w-2xl mx-auto">
                 Select the consultation that best fits your immigration needs and timeline
               </p>
@@ -43,7 +43,7 @@ export default function BookingPage() {
                   <div className="w-16 h-16 bg-[#f5a101] text-white rounded-full flex items-center justify-center mx-auto mb-4">
                     <DollarSign className="w-8 h-8" />
                   </div>
-                  <CardTitle className="text-2xl text-[#00537b]">Free Consultation</CardTitle>
+                  <CardTitle className="text-2xl text-[#0f172b]">Free Consultation</CardTitle>
                   <div className="text-3xl font-bold text-[#f5a101]">$0 CAD</div>
                   <p className="text-gray-600">30-minute assessment call</p>
                 </CardHeader>
@@ -84,10 +84,10 @@ export default function BookingPage() {
 
               <Card className="hover:bg-[#f5f2ec] transition-colors duration-300 border-2 border-gray-200">
                 <CardHeader className="text-center pb-4">
-                  <div className="w-16 h-16 bg-[#00537b] text-white rounded-full flex items-center justify-center mx-auto mb-4">
+                  <div className="w-16 h-16 bg-[#0f172b] text-white rounded-full flex items-center justify-center mx-auto mb-4">
                     <Clock className="w-8 h-8" />
                   </div>
-                  <CardTitle className="text-2xl text-[#00537b]">Paid Consultation</CardTitle>
+                  <CardTitle className="text-2xl text-[#0f172b]">Paid Consultation</CardTitle>
                   <div className="text-3xl font-bold text-[#f5a101]">$50 CAD</div>
                   <p className="text-gray-600">60-minute detailed consultation</p>
                 </CardHeader>
@@ -122,7 +122,7 @@ export default function BookingPage() {
                   </div>
 
                   <Link href="/booking/paid-consultation">
-                    <Button className="w-full bg-[#00537b] hover:bg-[#00537b]/90 text-white">
+                    <Button className="w-full bg-[#0f172b] hover:bg-[#0f172b]/90 text-white">
                       Book Paid Consultation <ArrowRight className="w-4 h-4 ml-2" />
                     </Button>
                   </Link>
@@ -138,7 +138,7 @@ export default function BookingPage() {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-12">
-              <h2 className="text-3xl font-bold text-[#00537b] mb-4">How It Works</h2>
+              <h2 className="text-3xl font-bold text-[#0f172b] mb-4">How It Works</h2>
               <p className="text-gray-700">Simple steps to get the immigration guidance you need</p>
             </div>
 
@@ -147,28 +147,28 @@ export default function BookingPage() {
                 <div className="w-16 h-16 bg-[#f5a101] text-white rounded-full flex items-center justify-center mx-auto mb-4 text-xl font-bold">
                   1
                 </div>
-                <h3 className="text-lg font-semibold text-[#00537b] mb-2">Choose Consultation</h3>
+                <h3 className="text-lg font-semibold text-[#0f172b] mb-2">Choose Consultation</h3>
                 <p className="text-gray-700 text-sm">Select free or paid consultation based on your needs</p>
               </div>
               <div className="text-center">
                 <div className="w-16 h-16 bg-[#f5a101] text-white rounded-full flex items-center justify-center mx-auto mb-4 text-xl font-bold">
                   2
                 </div>
-                <h3 className="text-lg font-semibold text-[#00537b] mb-2">Book Time Slot</h3>
+                <h3 className="text-lg font-semibold text-[#0f172b] mb-2">Book Time Slot</h3>
                 <p className="text-gray-700 text-sm">Pick a convenient time from our available calendar</p>
               </div>
               <div className="text-center">
                 <div className="w-16 h-16 bg-[#f5a101] text-white rounded-full flex items-center justify-center mx-auto mb-4 text-xl font-bold">
                   3
                 </div>
-                <h3 className="text-lg font-semibold text-[#00537b] mb-2">Prepare Documents</h3>
+                <h3 className="text-lg font-semibold text-[#0f172b] mb-2">Prepare Documents</h3>
                 <p className="text-gray-700 text-sm">Gather relevant documents as outlined in confirmation email</p>
               </div>
               <div className="text-center">
                 <div className="w-16 h-16 bg-[#f5a101] text-white rounded-full flex items-center justify-center mx-auto mb-4 text-xl font-bold">
                   4
                 </div>
-                <h3 className="text-lg font-semibold text-[#00537b] mb-2">Get Expert Advice</h3>
+                <h3 className="text-lg font-semibold text-[#0f172b] mb-2">Get Expert Advice</h3>
                 <p className="text-gray-700 text-sm">Receive personalized immigration guidance and next steps</p>
               </div>
             </div>
@@ -181,13 +181,13 @@ export default function BookingPage() {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-12">
-              <h2 className="text-3xl font-bold text-[#00537b] mb-4">Frequently Asked Questions</h2>
+              <h2 className="text-3xl font-bold text-[#0f172b] mb-4">Frequently Asked Questions</h2>
             </div>
 
             <div className="grid md:grid-cols-2 gap-8">
               <div className="space-y-6">
                 <div>
-                  <h3 className="text-lg font-semibold text-[#00537b] mb-2">
+                  <h3 className="text-lg font-semibold text-[#0f172b] mb-2">
                     What's the difference between free and paid consultations?
                   </h3>
                   <p className="text-gray-700 text-sm">
@@ -197,7 +197,7 @@ export default function BookingPage() {
                 </div>
 
                 <div>
-                  <h3 className="text-lg font-semibold text-[#00537b] mb-2">
+                  <h3 className="text-lg font-semibold text-[#0f172b] mb-2">
                     How do I know if I qualify for a free consultation?
                   </h3>
                   <p className="text-gray-700 text-sm">
@@ -207,7 +207,7 @@ export default function BookingPage() {
                 </div>
 
                 <div>
-                  <h3 className="text-lg font-semibold text-[#00537b] mb-2">
+                  <h3 className="text-lg font-semibold text-[#0f172b] mb-2">
                     Can consultations be conducted online?
                   </h3>
                   <p className="text-gray-700 text-sm">
@@ -219,7 +219,7 @@ export default function BookingPage() {
 
               <div className="space-y-6">
                 <div>
-                  <h3 className="text-lg font-semibold text-[#00537b] mb-2">
+                  <h3 className="text-lg font-semibold text-[#0f172b] mb-2">
                     What should I prepare for the consultation?
                   </h3>
                   <p className="text-gray-700 text-sm">
@@ -229,7 +229,7 @@ export default function BookingPage() {
                 </div>
 
                 <div>
-                  <h3 className="text-lg font-semibold text-[#00537b] mb-2">
+                  <h3 className="text-lg font-semibold text-[#0f172b] mb-2">
                     How quickly can I get an appointment?
                   </h3>
                   <p className="text-gray-700 text-sm">
@@ -239,7 +239,7 @@ export default function BookingPage() {
                 </div>
 
                 <div>
-                  <h3 className="text-lg font-semibold text-[#00537b] mb-2">
+                  <h3 className="text-lg font-semibold text-[#0f172b] mb-2">
                     What happens after the consultation?
                   </h3>
                   <p className="text-gray-700 text-sm">
@@ -258,7 +258,7 @@ export default function BookingPage() {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-12">
-              <h2 className="text-3xl font-bold text-[#00537b] mb-4">Have Questions About Booking?</h2>
+              <h2 className="text-3xl font-bold text-[#0f172b] mb-4">Have Questions About Booking?</h2>
               <p className="text-gray-700 max-w-2xl mx-auto">
                 Not sure which consultation type is right for you? Send us a message and we'll help you choose the best option.
               </p>
@@ -315,7 +315,7 @@ export default function BookingPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="bg-[#00537b] text-white py-16">
+      <section className="bg-[#0f172b] text-white py-16">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold mb-4">Ready to Take the Next Step?</h2>
           <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
@@ -331,7 +331,7 @@ export default function BookingPage() {
               <Button
                 size="lg"
                 variant="outline"
-                className="border-white text-white hover:bg-white hover:text-[#00537b] bg-transparent"
+                className="border-white text-white hover:bg-white hover:text-[#0f172b] bg-transparent"
               >
                 Book Paid Consultation
               </Button>

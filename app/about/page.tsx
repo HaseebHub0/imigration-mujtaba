@@ -12,7 +12,7 @@ export default function AboutPage() {
     <div className="min-h-screen">
       {/* Hero Section */}
       <section className="relative bg-cover bg-center bg-no-repeat py-20" style={{ backgroundImage: 'url("https://images.unsplash.com/photo-1554224155-6726b3ff858f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2071&q=80")' }}>
-        <div className="absolute inset-0 bg-[#00537b]/80"></div>
+        <div className="absolute inset-0 bg-[#0f172b]/80"></div>
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl font-bold mb-6 text-white">Meet Mujtaba Sarwar</h1>
@@ -42,7 +42,7 @@ export default function AboutPage() {
                 />
               </div>
               <div>
-                <h2 className="text-3xl font-bold text-[#00537b] mb-6">Your Trusted Immigration Partner</h2>
+                <h2 className="text-3xl font-bold text-[#0f172b] mb-6">Your Trusted Immigration Partner</h2>
                 <p className="text-gray-700 mb-6 leading-relaxed">
                   With years of experience in Canadian immigration law and a deep understanding of the challenges faced
                   by newcomers, I provide personalized guidance to help you navigate the complex immigration process
@@ -65,7 +65,7 @@ export default function AboutPage() {
               <Card className="hover:bg-[#f5f2ec] transition-colors duration-300">
                 <CardContent className="p-6 text-center">
                   <Award className="w-12 h-12 text-[#f5a101] mx-auto mb-4" />
-                  <h3 className="text-xl font-semibold text-[#00537b] mb-3">Professional Credentials</h3>
+                  <h3 className="text-xl font-semibold text-[#0f172b] mb-3">Professional Credentials</h3>
                   <ul className="text-gray-700 space-y-2">
                     <li>RCIC License #R712505</li>
                     <li>ICCRC Member in Good Standing</li>
@@ -77,7 +77,7 @@ export default function AboutPage() {
               <Card className="hover:bg-[#f5f2ec] transition-colors duration-300">
                 <CardContent className="p-6 text-center">
                   <Users className="w-12 h-12 text-[#f5a101] mx-auto mb-4" />
-                  <h3 className="text-xl font-semibold text-[#00537b] mb-3">Community Involvement</h3>
+                  <h3 className="text-xl font-semibold text-[#0f172b] mb-3">Community Involvement</h3>
                   <ul className="text-gray-700 space-y-2">
                     <li>RCIC Mentoring Program</li>
                     <li>Professional Speaking</li>
@@ -89,7 +89,7 @@ export default function AboutPage() {
               <Card className="hover:bg-[#f5f2ec] transition-colors duration-300">
                 <CardContent className="p-6 text-center">
                   <BookOpen className="w-12 h-12 text-[#f5a101] mx-auto mb-4" />
-                  <h3 className="text-xl font-semibold text-[#00537b] mb-3">Educational Content</h3>
+                  <h3 className="text-xl font-semibold text-[#0f172b] mb-3">Educational Content</h3>
                   <ul className="text-gray-700 space-y-2">
                     <li>Immigration Blog Author</li>
                     <li>Policy Analysis</li>
@@ -103,7 +103,7 @@ export default function AboutPage() {
             <div className="bg-[#f5f2ec] rounded-lg p-8 mb-16">
               <div className="text-center">
                 <Youtube className="w-16 h-16 text-[#f5a101] mx-auto mb-4" />
-                <h3 className="text-2xl font-bold text-[#00537b] mb-4">
+                <h3 className="text-2xl font-bold text-[#0f172b] mb-4">
                   Immigration Insights with Mujtaba
                 </h3>
                 <p className="text-gray-700 mb-6 max-w-2xl mx-auto">
@@ -138,7 +138,7 @@ export default function AboutPage() {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-12">
-              <h2 className="text-3xl font-bold text-[#00537b] mb-4">Get in Touch</h2>
+              <h2 className="text-3xl font-bold text-[#0f172b] mb-4">Get in Touch</h2>
               <p className="text-gray-700 max-w-2xl mx-auto">
                 Have questions about your immigration case? Send me a message and I'll get back to you within 24 hours.
               </p>
@@ -195,7 +195,7 @@ export default function AboutPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="bg-[#00537b] text-white py-16">
+      <section className="bg-[#0f172b] text-white py-16">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold mb-4">Ready to Start Your Immigration Journey?</h2>
           <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
