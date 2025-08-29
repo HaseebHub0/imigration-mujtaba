@@ -12,8 +12,39 @@ import { MapPin, Phone, Mail, Award, TrendingUp, Heart } from "lucide-react"
 export default function HomePage() {
   return (
     <div className="min-h-screen bg-background">
+      {/* Mobile Contact Bar - Below Header */}
+      <div className="md:hidden bg-[#0f172b] text-white py-4">
+        <div className="container mx-auto px-4">
+          <div className="flex justify-between items-center">
+            {/* Call Us */}
+            <div className="flex items-center gap-2">
+              <Phone className="w-5 h-5" />
+              <span className="text-sm font-medium">Call Us</span>
+            </div>
+            
+            {/* Separator */}
+            <div className="w-px h-6 bg-white/30"></div>
+            
+            {/* Email */}
+            <div className="flex items-center gap-2">
+              <Mail className="w-5 h-5" />
+              <span className="text-sm font-medium">Email</span>
+            </div>
+            
+            {/* Separator */}
+            <div className="w-px h-6 bg-white/30"></div>
+            
+            {/* Offices */}
+            <div className="flex items-center gap-2">
+              <MapPin className="w-5 h-5" />
+              <span className="text-sm font-medium">Offices</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
              {/* Hero Section - Video Background */}
-       <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+        <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
          {/* Video Background */}
          <div className="absolute inset-0 z-0 overflow-hidden">
            <video
@@ -286,31 +317,291 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Bottom CTA Section */}
-      <section className="py-20 bg-gradient-to-r from-[#f5a101] to-[#e09401]">
-        <div className="container mx-auto px-4">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div className="space-y-6">
-              <h2 className="text-4xl lg:text-5xl font-bold text-white leading-tight">
-                Dedicated to advocating for immigrant communities and individuals since 2016.
-              </h2>
+                    {/* Bottom CTA Section */}
+        <section className="py-20 bg-gradient-to-r from-[#0f172b] to-[#f5a101]">
+         <div className="container mx-auto px-4">
+           <div className="grid lg:grid-cols-2 gap-12 items-center">
+             <div className="space-y-6">
+               <h2 className="text-4xl lg:text-5xl font-bold text-white leading-tight">
+                 Dedicated to advocating for immigrant communities and individuals since 2016.
+               </h2>
+             </div>
+             <div className="space-y-6 text-white">
+               <p className="text-lg leading-relaxed">
+                 Our team has years of experience working with people from around the world to ensure that they can
+                 build new lives in Canada. With our understanding of the procedures followed when applying
+                 for permanent residency, work permits, and study permits, we can ensure that applications are prepared correctly, and we can also help
+                 gather and submit all required supporting documentation.
+               </p>
+               <p className="leading-relaxed">
+                 We can also help determine the best options for resolving issues that may affect a person's immigration
+                 status, including options for relief through humanitarian and compassionate grounds, or{" "}
+                 <strong>extreme hardship</strong> applications.
+               </p>
+             </div>
+           </div>
+         </div>
+       </section>
+
+               {/* Our Reviews Section */}
+        <section className="py-20 bg-gradient-to-br from-slate-50 to-slate-100 relative overflow-hidden">
+          {/* Glassy overlay effect */}
+          <div className="absolute inset-0 bg-white/30 backdrop-blur-sm"></div>
+          
+          <div className="container mx-auto px-4 relative z-10">
+            <div className="grid lg:grid-cols-2 gap-12 items-start max-w-6xl mx-auto">
+              {/* Left Side - Testimonial */}
+              <div className="relative">
+                {/* Large Quote Icon */}
+                <div className="text-6xl md:text-8xl text-[#0f172b] font-serif mb-6">"</div>
+                
+                {/* Testimonial Quote */}
+                <blockquote className="text-2xl md:text-3xl font-serif text-[#0f172b] leading-relaxed mb-8 italic">
+                  I could tell she genuinely cared for our family. I highly recommend her to anyone who needs an immigration consultant!
+                </blockquote>
+                
+                {/* Reviews Button */}
+                <div className="text-center">
+                  <Button 
+                    size="lg" 
+                    className="bg-[#0f172b] hover:bg-[#0f172b]/90 text-white px-8 py-4 text-lg font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
+                  >
+                    OUR REVIEWS
+                  </Button>
+                </div>
+              </div>
+
+              {/* Right Side - Service Description */}
+              <div className="space-y-6">
+                <p className="text-lg text-gray-700 leading-relaxed">
+                  We are dedicated to protecting our clients' rights and interests, helping immigrants live in Canada,
+                  pursue employment, build successful lives, and obtain <strong>Canadian permanent residency</strong>.
+                  Our commitment extends to ensuring every family has the opportunity to achieve their Canadian dreams.
+                </p>
+                
+                <p className="text-lg text-gray-700 leading-relaxed">
+                  We provide comprehensive immigration services for English as a second language speakers, explaining
+                  legal options and immigration laws in clear terms. We offer services in English and can work with
+                  translators for clients who speak Hindi, Punjabi, Urdu, Spanish, and many other languages to ensure
+                  effective communication and understanding.
+                </p>
+              </div>
             </div>
-            <div className="space-y-6 text-white">
-              <p className="text-lg leading-relaxed">
-                Our team has years of experience working with people from around the world to ensure that they can
-                build new lives in Canada. With our understanding of the procedures followed when applying
-                for permanent residency, work permits, and study permits, we can ensure that applications are prepared correctly, and we can also help
-                gather and submit all required supporting documentation.
-              </p>
-              <p className="leading-relaxed">
-                We can also help determine the best options for resolving issues that may affect a person's immigration
-                status, including options for relief through humanitarian and compassionate grounds, or{" "}
-                <strong>extreme hardship</strong> applications.
-              </p>
+
+            {/* Cityscape Line Art */}
+            <div className="mt-16 text-center">
+              <svg width="400" height="60" viewBox="0 0 400 60" className="mx-auto">
+                <path 
+                  d="M0 50 L20 40 L40 45 L60 35 L80 40 L100 30 L120 35 L140 25 L160 30 L180 20 L200 25 L220 15 L240 20 L260 10 L280 15 L300 5 L320 10 L340 0 L360 5 L380 0 L400 5 L400 60 L0 60 Z" 
+                  fill="none" 
+                  stroke="#0f172b" 
+                  strokeWidth="2"
+                  className="opacity-30"
+                />
+              </svg>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
+
+        {/* Get in Touch with Our Team Section */}
+        <section className="py-20 bg-gradient-to-br from-slate-50 to-slate-100 relative overflow-hidden">
+          {/* Glassy overlay effect */}
+          <div className="absolute inset-0 bg-white/30 backdrop-blur-sm"></div>
+          
+          <div className="container mx-auto px-4 relative z-10">
+            <div className="text-center mb-16">
+              <h2 className="text-4xl lg:text-5xl font-bold text-[#0f172b] mb-6">
+                Get in Touch with Our Team
+              </h2>
+              <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+                Ready to start your Canadian immigration journey? Contact our expert team for a free consultation.
+              </p>
+            </div>
+
+           <div className="grid lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
+             {/* Contact Information */}
+             <div className="space-y-8">
+               <div className="bg-white/80 backdrop-blur-sm border border-white/50 rounded-2xl p-8 shadow-lg">
+                 <h3 className="text-2xl font-bold text-[#0f172b] mb-6">
+                   Contact Information
+                 </h3>
+                 
+                 <div className="space-y-6">
+                   <div className="flex items-start gap-4">
+                     <div className="w-12 h-12 bg-[#0f172b] text-white rounded-xl flex items-center justify-center flex-shrink-0">
+                       <MapPin className="w-6 h-6" />
+                     </div>
+                     <div>
+                       <h4 className="font-semibold text-[#0f172b] mb-1">Office Locations</h4>
+                       <p className="text-gray-600">Mississauga, Ontario, Canada</p>
+                       <p className="text-gray-600">Toronto, Ontario, Canada</p>
+                       <p className="text-gray-600">Virtual Consultations Worldwide</p>
+                     </div>
+                   </div>
+
+                   <div className="flex items-start gap-4">
+                     <div className="w-12 h-12 bg-[#0f172b] text-white rounded-xl flex items-center justify-center flex-shrink-0">
+                       <Phone className="w-6 h-6" />
+                     </div>
+                     <div>
+                       <h4 className="font-semibold text-[#0f172b] mb-1">Phone</h4>
+                       <p className="text-gray-600">514-506-0671</p>
+                       <p className="text-sm text-gray-500">Available Monday-Friday, 9 AM - 6 PM EST</p>
+                     </div>
+                   </div>
+
+                   <div className="flex items-start gap-4">
+                     <div className="w-12 h-12 bg-[#0f172b] text-white rounded-xl flex items-center justify-center flex-shrink-0">
+                       <Mail className="w-6 h-6" />
+                     </div>
+                     <div>
+                       <h4 className="font-semibold text-[#0f172b] mb-1">Email</h4>
+                       <p className="text-gray-600">info@example.com</p>
+                       <p className="text-sm text-gray-500">We respond within 24 hours</p>
+                     </div>
+                   </div>
+                 </div>
+               </div>
+
+               <div className="bg-white/80 backdrop-blur-sm border border-white/50 rounded-2xl p-8 shadow-lg">
+                 <h3 className="text-2xl font-bold text-[#0f172b] mb-4">
+                   Why Choose Us?
+                 </h3>
+                 <ul className="space-y-3 text-gray-600">
+                   <li className="flex items-center gap-2">
+                     <div className="w-2 h-2 bg-[#f5a101] rounded-full"></div>
+                     Licensed RCIC Consultant
+                   </li>
+                   <li className="flex items-center gap-2">
+                     <div className="w-2 h-2 bg-[#f5a101] rounded-full"></div>
+                     Free 30-minute consultations
+                   </li>
+                   <li className="flex items-center gap-2">
+                     <div className="w-2 h-2 bg-[#f5a101] rounded-full"></div>
+                     80% success rate
+                   </li>
+                   <li className="flex items-center gap-2">
+                     <div className="w-2 h-2 bg-[#f5a101] rounded-full"></div>
+                     Transparent assessment process
+                   </li>
+                   <li className="flex items-center gap-2">
+                     <div className="w-2 h-2 bg-[#f5a101] rounded-full"></div>
+                     Multilingual support available
+                   </li>
+                 </ul>
+               </div>
+             </div>
+
+             {/* Contact Form */}
+             <div className="bg-white/80 backdrop-blur-sm border border-white/50 rounded-2xl p-8 shadow-lg">
+               <h3 className="text-2xl font-bold text-[#0f172b] mb-6">
+                   Send us a Message
+                 </h3>
+               
+               <form className="space-y-6">
+                 <div className="grid md:grid-cols-2 gap-4">
+                   <div>
+                     <label htmlFor="firstName" className="block text-sm font-medium text-[#0f172b] mb-2">
+                       First Name *
+                     </label>
+                     <input
+                       type="text"
+                       id="firstName"
+                       name="firstName"
+                       required
+                       className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#0f172b] focus:border-transparent transition-all duration-300"
+                       placeholder="Enter your first name"
+                     />
+                   </div>
+                   <div>
+                     <label htmlFor="lastName" className="block text-sm font-medium text-[#0f172b] mb-2">
+                       Last Name *
+                     </label>
+                     <input
+                       type="text"
+                       id="lastName"
+                       name="lastName"
+                       required
+                       className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#0f172b] focus:border-transparent transition-all duration-300"
+                       placeholder="Enter your last name"
+                     />
+                   </div>
+                 </div>
+
+                 <div>
+                   <label htmlFor="email" className="block text-sm font-medium text-[#0f172b] mb-2">
+                     Email Address *
+                   </label>
+                   <input
+                     type="email"
+                     id="email"
+                     name="email"
+                     required
+                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#0f172b] focus:border-transparent transition-all duration-300"
+                     placeholder="Enter your email address"
+                   />
+                 </div>
+
+                 <div>
+                   <label htmlFor="phone" className="block text-sm font-medium text-[#0f172b] mb-2">
+                     Phone Number
+                   </label>
+                   <input
+                     type="tel"
+                     id="phone"
+                     name="phone"
+                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#0f172b] focus:border-transparent transition-all duration-300"
+                     placeholder="Enter your phone number"
+                   />
+                 </div>
+
+                 <div>
+                   <label htmlFor="service" className="block text-sm font-medium text-[#0f172b] mb-2">
+                     Service of Interest *
+                   </label>
+                   <select
+                     id="service"
+                     name="service"
+                     required
+                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#0f172b] focus:border-transparent transition-all duration-300"
+                   >
+                     <option value="">Select a service</option>
+                     <option value="express-entry">Express Entry</option>
+                     <option value="provincial-nominee">Provincial Nominee Program</option>
+                     <option value="work-permit">Work Permit</option>
+                     <option value="study-permit">Study Permit</option>
+                     <option value="family-sponsorship">Family Sponsorship</option>
+                     <option value="permanent-residency">Permanent Residency</option>
+                     <option value="other">Other</option>
+                   </select>
+                 </div>
+
+                 <div>
+                   <label htmlFor="message" className="block text-sm font-medium text-[#0f172b] mb-2">
+                     Message *
+                   </label>
+                   <textarea
+                     id="message"
+                     name="message"
+                     rows={4}
+                     required
+                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#0f172b] focus:border-transparent transition-all duration-300 resize-none"
+                     placeholder="Tell us about your immigration goals and any specific questions you have..."
+                   ></textarea>
+                 </div>
+
+                 <Button 
+                   type="submit" 
+                   size="lg" 
+                   className="w-full bg-[#0f172b] hover:bg-[#0f172b]/90 text-white py-4 text-lg font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
+                 >
+                   Send Message
+                 </Button>
+               </form>
+             </div>
+           </div>
+         </div>
+       </section>
 
       {/* Footer */}
       <footer className="bg-slate-900 py-16">
