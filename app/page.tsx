@@ -54,15 +54,6 @@ export default function HomePage() {
         trust1: "Family Unity",
         trust2: "Sponsorship",
         trust3: "Reunification"
-      },
-      {
-        badge: "Success Stories",
-        titleLine1: "Your Canadian Dream",
-        titleLine2: "Starts with Expert Guidance",
-        description: "Join hundreds of successful immigrants who achieved their Canadian dreams with our expert guidance.",
-        trust1: "Success Stories",
-        trust2: "Proven Results",
-        trust3: "Dreams Realized"
       }
     ];
 
@@ -190,7 +181,7 @@ export default function HomePage() {
             {/* Image 1 - Professional Office */}
             <div className="absolute inset-0 w-full h-full carousel-slide active">
               <img
-                src="/images/hero/1.png"
+                src="/images/hero/window.jpg"
                 alt="Professional Immigration Consulting Office"
                 className="w-full h-full object-cover"
                 loading="eager"
@@ -200,7 +191,7 @@ export default function HomePage() {
             {/* Image 2 - Modern Business District */}
             <div className="absolute inset-0 w-full h-full carousel-slide">
               <img
-                src="/images/hero/2.png"
+                src="/images/hero/treeshill.jpg"
                 alt="Modern Business District"
                 className="w-full h-full object-cover"
                 loading="lazy"
@@ -210,7 +201,7 @@ export default function HomePage() {
             {/* Image 3 - Professional Meeting */}
             <div className="absolute inset-0 w-full h-full carousel-slide">
               <img
-                src="/images/hero/3.png"
+                src="/images/hero/canadatower.jpg"
                 alt="Professional Immigration Consultation"
                 className="w-full h-full object-cover"
                 loading="lazy"
@@ -220,32 +211,14 @@ export default function HomePage() {
             {/* Image 4 - Canadian Landscape */}
             <div className="absolute inset-0 w-full h-full carousel-slide">
               <img
-                src="/images/hero/4.png"
+                src="/images/hero/canadian.jpg"
                 alt="Canadian Immigration Dreams"
                 className="w-full h-full object-cover"
                 loading="lazy"
               />
             </div>
 
-            {/* Image 5 - Success Celebration */}
-            <div className="absolute inset-0 w-full h-full carousel-slide">
-              <img
-                src="/images/hero/5.png"
-                alt="Immigration Success Stories"
-                className="w-full h-full object-cover"
-                loading="lazy"
-              />
-            </div>
 
-            {/* Image 6 - Immigration Consultation */}
-            <div className="absolute inset-0 w-full h-full carousel-slide">
-              <img
-                src="/images/hero/6.png"
-                alt="Immigration Consultation"
-                className="w-full h-full object-cover"
-                loading="lazy"
-              />
-            </div>
           </div>
 
           {/* Enhanced overlay with gradient */}
@@ -273,11 +246,7 @@ export default function HomePage() {
               data-slide="3"
               aria-label="Go to slide 4"
             ></button>
-            <button
-              className="carousel-dot w-3 h-3 rounded-full bg-white/40 hover:bg-white transition-all duration-300"
-              data-slide="4"
-              aria-label="Go to slide 5"
-            ></button>
+
           </div>
 
           {/* Carousel Navigation Arrows */}
