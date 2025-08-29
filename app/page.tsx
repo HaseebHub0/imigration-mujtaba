@@ -6,270 +6,30 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Separator } from "@/components/ui/separator"
 import { MapPin, Phone, Mail, Award, TrendingUp, Heart } from "lucide-react"
-import { gsap } from "gsap"
+
 // import { motion } from "framer-motion"
 
 export default function HomePage() {
-  // Carousel functionality with GSAP animations and dynamic text
-  React.useEffect(() => {
-    let currentSlide = 0;
-    const slides = document.querySelectorAll('.carousel-slide');
-    const dots = document.querySelectorAll('.carousel-dot');
-    const totalSlides = slides.length;
-
-    // Dynamic content for each slide
-    const slideContent = [
-      {
-        badge: "RCIC License #R712505",
-        titleLine1: "Expert Immigration",
-        titleLine2: "Guidance with Transparent Assessment",
-        description: "Free 30-minute consultations - only for cases we can win. Get expert guidance from a licensed immigration consultant.",
-        trust1: "Licensed RCIC",
-        trust2: "Free Assessment",
-        trust3: "80% Success Rate"
-      },
-      {
-        badge: "Express Entry Specialist",
-        titleLine1: "Express Entry",
-        titleLine2: "CRS Score Optimization & PNP",
-        description: "Maximize your CRS score and explore Provincial Nominee Programs for faster Canadian immigration.",
-        trust1: "CRS Optimization",
-        trust2: "PNP Programs",
-        trust3: "Fast Track"
-      },
-      {
-        badge: "Work Permit Expert",
-        titleLine1: "Work Permits",
-        titleLine2: "LMIA & LMIA-Exempt Solutions",
-        description: "Navigate work permit applications with expert guidance on LMIA requirements and exemptions.",
-        trust1: "LMIA Expertise",
-        trust2: "Work Permits",
-        trust3: "Job Market Access"
-      },
-      {
-        badge: "Family Sponsorship",
-        titleLine1: "Family Reunification",
-        titleLine2: "Bring Your Loved Ones to Canada",
-        description: "Reunite with family members through sponsorship programs and family class immigration.",
-        trust1: "Family Unity",
-        trust2: "Sponsorship",
-        trust3: "Reunification"
-      }
-    ];
-
-    // GSAP animation for text changes
-    const animateTextChange = (newContent: any) => {
-      const tl = gsap.timeline();
-
-      // Fade out current text
-      tl.to('.hero-badge, .hero-title-line-1, .hero-title-line-2, .hero-description, .hero-trust', {
-        opacity: 0,
-        y: -20,
-        duration: 0.5,
-        stagger: 0.1,
-        ease: "power2.out"
-      });
-
-      // Update text content
-      tl.call(() => {
-        const badge = document.querySelector('.hero-badge');
-        const titleLine1 = document.querySelector('.hero-title-line-1');
-        const titleLine2 = document.querySelector('.hero-title-line-2');
-        const description = document.querySelector('.hero-description');
-        const trustElements = document.querySelectorAll('.hero-trust span');
-
-        if (badge) badge.textContent = newContent.badge;
-        if (titleLine1) titleLine1.textContent = newContent.titleLine1;
-        if (titleLine2) titleLine2.innerHTML = newContent.titleLine2;
-        if (description) description.textContent = newContent.description;
-        if (trustElements[0]) trustElements[0].textContent = newContent.trust1;
-        if (trustElements[1]) trustElements[1].textContent = newContent.trust2;
-        if (trustElements[2]) trustElements[2].textContent = newContent.trust3;
-      });
-
-      // Fade in new text with stagger
-      tl.to('.hero-badge, .hero-title-line-1, .hero-title-line-2, .hero-description, .hero-trust', {
-        opacity: 1,
-        y: 0,
-        duration: 0.6,
-        stagger: 0.1,
-        ease: "power2.out"
-      });
-    };
-
-    // Update carousel display with animations
-    const updateCarousel = () => {
-      // Update slides
-      slides.forEach((slide, index) => {
-        slide.classList.remove('active', 'fade-in', 'fade-out');
-        if (index === currentSlide) {
-          slide.classList.add('active', 'fade-in');
-        }
-      });
-
-      // Update dots
-      dots.forEach((dot, index) => {
-        dot.classList.remove('active');
-        if (index === currentSlide) {
-          dot.classList.add('active');
-        }
-      });
-
-      // Animate text change
-      animateTextChange(slideContent[currentSlide]);
-    };
-
-    // Auto-advance carousel
-    const autoAdvance = () => {
-      currentSlide = (currentSlide + 1) % totalSlides;
-      updateCarousel();
-    };
-
-    // Navigation functions
-    const goToSlide = (slideIndex: number) => {
-      currentSlide = slideIndex;
-      updateCarousel();
-    };
-
-    const nextSlide = () => {
-      currentSlide = (currentSlide + 1) % totalSlides;
-      updateCarousel();
-    };
-
-    const prevSlide = () => {
-      currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
-      updateCarousel();
-    };
-
-    // Event listeners
-    const prevButton = document.getElementById('prev-slide');
-    const nextButton = document.getElementById('next-slide');
-
-    if (prevButton) prevButton.addEventListener('click', prevSlide);
-    if (nextButton) nextButton.addEventListener('click', nextSlide);
-
-    // Dot navigation
-    dots.forEach((dot, index) => {
-      dot.addEventListener('click', () => goToSlide(index));
-    });
-
-    // Initialize first slide content
-    updateCarousel();
-
-    // Auto-advance every 6 seconds (longer for text reading)
-    const interval = setInterval(autoAdvance, 6000);
-
-    // Cleanup
-    return () => {
-      clearInterval(interval);
-      if (prevButton) prevButton.removeEventListener('click', prevSlide);
-      if (nextButton) nextButton.removeEventListener('click', nextSlide);
-      dots.forEach((dot, index) => {
-        dot.removeEventListener('click', () => goToSlide(index));
-      });
-    };
-  }, []);
-
   return (
     <div className="min-h-screen bg-background">
-      {/* Hero Section - Enhanced with Animations */}
-      <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-        {/* Hero Image Carousel */}
-        <div className="absolute inset-0 z-0 overflow-hidden">
-          {/* Carousel Container */}
-          <div className="relative w-full h-full">
-            {/* Image 1 - Professional Office */}
-            <div className="absolute inset-0 w-full h-full carousel-slide active">
-              <img
-                src="/images/hero/window.jpg"
-                alt="Professional Immigration Consulting Office"
-                className="w-full h-full object-cover"
-                loading="eager"
-              />
-            </div>
-
-            {/* Image 2 - Modern Business District */}
-            <div className="absolute inset-0 w-full h-full carousel-slide">
-              <img
-                src="/images/hero/treeshill.jpg"
-                alt="Modern Business District"
-                className="w-full h-full object-cover"
-                loading="lazy"
-              />
-            </div>
-
-            {/* Image 3 - Professional Meeting */}
-            <div className="absolute inset-0 w-full h-full carousel-slide">
-              <img
-                src="/images/hero/canadatower.jpg"
-                alt="Professional Immigration Consultation"
-                className="w-full h-full object-cover"
-                loading="lazy"
-              />
-            </div>
-
-            {/* Image 4 - Canadian Landscape */}
-            <div className="absolute inset-0 w-full h-full carousel-slide">
-              <img
-                src="/images/hero/canadian.jpg"
-                alt="Canadian Immigration Dreams"
-                className="w-full h-full object-cover"
-                loading="lazy"
-              />
-            </div>
-
-
-          </div>
-
-          {/* Enhanced overlay with gradient */}
-          <div className="absolute inset-0 bg-gradient-to-br from-black/50 via-black/30 to-black/60"></div>
-
-          {/* Carousel Navigation Dots */}
-          <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-20 flex space-x-3">
-            <button
-              className="carousel-dot active w-3 h-3 rounded-full bg-white/60 hover:bg-white transition-all duration-300"
-              data-slide="0"
-              aria-label="Go to slide 1"
-            ></button>
-            <button
-              className="carousel-dot w-3 h-3 rounded-full bg-white/40 hover:bg-white transition-all duration-300"
-              data-slide="1"
-              aria-label="Go to slide 2"
-            ></button>
-            <button
-              className="carousel-dot w-3 h-3 rounded-full bg-white/40 hover:bg-white transition-all duration-300"
-              data-slide="2"
-              aria-label="Go to slide 3"
-            ></button>
-            <button
-              className="carousel-dot w-3 h-3 rounded-full bg-white/40 hover:bg-white transition-all duration-300"
-              data-slide="3"
-              aria-label="Go to slide 4"
-            ></button>
-
-          </div>
-
-          {/* Carousel Navigation Arrows */}
-          <button
-            className="absolute left-4 top-1/2 transform -translate-y-1/2 z-20 w-12 h-12 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center text-white hover:bg-white/30 transition-all duration-300 group"
-            id="prev-slide"
-            aria-label="Previous slide"
-          >
-            <svg className="w-6 h-6 transform group-hover:scale-110 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
-            </svg>
-          </button>
-
-          <button
-            className="absolute right-4 top-1/2 transform -translate-y-1/2 z-20 w-12 h-12 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center text-white hover:bg-white/30 transition-all duration-300 group"
-            id="next-slide"
-            aria-label="Next slide"
-          >
-            <svg className="w-6 h-6 transform group-hover:scale-110 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-            </svg>
-          </button>
-        </div>
+             {/* Hero Section - Video Background */}
+       <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+         {/* Video Background */}
+         <div className="absolute inset-0 z-0 overflow-hidden">
+           <video
+             autoPlay
+             loop
+             muted
+             playsInline
+             className="w-full h-full object-cover"
+           >
+             <source src="/videos/Hero.mp4" type="video/mp4" />
+             Your browser does not support the video tag.
+           </video>
+           
+           {/* Enhanced overlay with gradient */}
+           <div className="absolute inset-0 bg-gradient-to-br from-black/50 via-black/30 to-black/60"></div>
+         </div>
 
         {/* Centered Glassmorphism Card */}
         <div className="relative z-10 container mx-auto px-4 py-20">
