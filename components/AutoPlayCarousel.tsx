@@ -1,6 +1,6 @@
 "use client"
 
-import React, { useState, useEffect } from "react"
+import React, { useState, useEffect, useCallback } from "react"
 import {
   Carousel,
   CarouselContent,
@@ -24,7 +24,11 @@ export function AutoPlayCarousel({
 }: AutoPlayCarouselProps) {
   const [api, setApi] = useState<CarouselApi>()
   const [current, setCurrent] = useState(0)
-  const [isTransitioning, setIsTransitioning] = useState(false)
+
+  const handleSelect = useCallback(() => {
+    if (!api) return
+    setCurrent(api.selectedScrollSnap())
+  }, [api])
 
   useEffect(() => {
     if (!api) {
@@ -32,29 +36,22 @@ export function AutoPlayCarousel({
     }
 
     setCurrent(api.selectedScrollSnap())
+    api.on("select", handleSelect)
 
-    api.on("select", () => {
-      setIsTransitioning(true)
-      setCurrent(api.selectedScrollSnap())
-      
-      // Reset transition state after animation completes
-      setTimeout(() => {
-        setIsTransitioning(false)
-      }, 1000)
-    })
-  }, [api])
+    return () => {
+      api.off("select", handleSelect)
+    }
+  }, [api, handleSelect])
 
   useEffect(() => {
     if (!api) return
 
     const timer = setInterval(() => {
-      if (!isTransitioning) {
-        api.scrollNext()
-      }
+      api.scrollNext()
     }, interval)
 
     return () => clearInterval(timer)
-  }, [api, interval, isTransitioning])
+  }, [api, interval])
 
   return (
     <Carousel
@@ -62,9 +59,8 @@ export function AutoPlayCarousel({
       opts={{
         align: "start",
         loop: true,
-        duration: 50, // Increased for smoother transitions
+        duration: 20, // Reduced for better performance
         skipSnaps: false,
-        inViewThreshold: 0.7,
       }}
       className={`${className} hero-carousel`}
     >
@@ -72,21 +68,17 @@ export function AutoPlayCarousel({
         {images.map((image, index) => (
           <CarouselItem 
             key={index} 
-            className={`pl-0 transition-all duration-1000 ease-out ${
-              current === index ? 'is-selected' : ''
-            }`}
+            className="pl-0"
           >
             <div className="relative w-full h-screen overflow-hidden">
               <img
                 src={image.src}
                 alt={image.alt}
-                className="w-full h-full object-cover transition-all duration-1000 ease-out transform scale-100"
+                className="w-full h-full object-cover"
                 loading="eager"
-                style={{
-                  animation: current === index ? 'fadeInScale 1s ease-out forwards' : 'none'
-                }}
+                decoding="async"
               />
-              <div className="absolute inset-0 bg-gradient-to-br from-black/50 via-black/30 to-black/60 transition-opacity duration-1000 ease-out"></div>
+              <div className="absolute inset-0 bg-gradient-to-br from-black/50 via-black/30 to-black/60"></div>
             </div>
           </CarouselItem>
         ))}
