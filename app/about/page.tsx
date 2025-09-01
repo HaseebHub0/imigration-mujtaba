@@ -34,7 +34,7 @@ export default function AboutPage() {
             <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
               <div>
                 <Image
-                  src="/professional-headshot.png"
+                  src="/images/about/mujtaba.jpg"
                   alt="Mujtaba Sarwar, RCIC"
                   width={500}
                   height={600}
