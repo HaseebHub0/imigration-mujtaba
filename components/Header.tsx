@@ -1,3 +1,4 @@
+
 "use client"
 
 import React from 'react'
@@ -11,8 +12,7 @@ const Header: React.FC = () => {
       textColor: "#ffffff",
       links: [
         { label: "Main Page", ariaLabel: "Go to Home Page", href: "/" },
-        { label: "Hero Section", ariaLabel: "View Hero Section", href: "/" },
-        { label: "Immigration Services", ariaLabel: "View Services Overview", href: "/" }
+     
       ]
     },
     {
