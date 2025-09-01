@@ -6,111 +6,133 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Separator } from "@/components/ui/separator"
 import { MapPin, Phone, Mail, Award, TrendingUp, Heart } from "lucide-react"
+import { AutoPlayCarousel } from "@/components/AutoPlayCarousel"
 
 // import { motion } from "framer-motion"
 
 export default function HomePage() {
   return (
     <div className="min-h-screen bg-background">
-             {/* Hero Section - Video Background */}
-       <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-         {/* Video Background */}
-         <div className="absolute inset-0 z-0 overflow-hidden">
-           <video
-             autoPlay
-             loop
-             muted
-             playsInline
-             className="w-full h-full object-cover"
-           >
-             <source src="/videos/Hero.mp4" type="video/mp4" />
-             Your browser does not support the video tag.
-           </video>
-           
-           {/* Enhanced overlay with gradient */}
-           <div className="absolute inset-0 bg-gradient-to-br from-black/50 via-black/30 to-black/60"></div>
-         </div>
+                                       {/* Hero Section - Image Carousel Background */}
+         <section className="relative h-screen flex items-center justify-center overflow-hidden hero-section">
+                     {/* Image Carousel Background */}
+           <div className="absolute inset-0 z-0 overflow-hidden h-full">
+             <AutoPlayCarousel
+               images={[
+                 {
+                   src: "/images/hero/canadatower.jpg",
+                   alt: "Canadian immigration consulting"
+                 },
+                 {
+                   src: "/images/hero/canadian.jpg",
+                   alt: "Express Entry immigration services"
+                 },
+                 {
+                   src: "/images/hero/treeshill.jpg",
+                   alt: "Provincial Nominee Program guidance"
+                 },
+                 {
+                   src: "/images/hero/window.jpg",
+                   alt: "Work permit immigration services"
+                 }
+               ]}
+               interval={3000} // 3 seconds
+               className="w-full h-screen"
+             />
+          </div>
 
-        {/* Centered Glassmorphism Card */}
-        <div className="relative z-10 container mx-auto px-4 py-20">
-          <div className="flex justify-center items-center min-h-[60vh]">
-            {/* Glassmorphism Card */}
-            <div className="relative w-full max-w-4xl mx-auto">
-              {/* Main Glassmorphism Container */}
-              <div className="relative bg-white/10 backdrop-blur-xl rounded-3xl border border-white/20 shadow-2xl overflow-hidden glassmorphism-card">
-                {/* Animated Border Glow */}
-                <div className="absolute inset-0 rounded-3xl bg-gradient-to-r from-primary/20 via-transparent to-primary/20 opacity-0 animate-pulse"></div>
+                 {/* Centered Glassmorphism Card */}
+         <div className="relative z-10 container mx-auto px-2 sm:px-4 md:px-6 lg:px-8 py-8 sm:py-12 md:py-16 lg:py-20">
+           <div className="flex justify-center items-center min-h-[50vh] sm:min-h-[55vh] md:min-h-[60vh] lg:min-h-[65vh]">
+             {/* Glassmorphism Card */}
+             <div className="relative w-full max-w-2xl lg:max-w-3xl xl:max-w-4xl mx-auto">
+               {/* Main Glassmorphism Container */}
+               <div className="relative bg-white/10 backdrop-blur-xl rounded-2xl sm:rounded-3xl border border-white/20 shadow-2xl overflow-hidden glassmorphism-card">
+                 {/* Animated Border Glow */}
+                 <div className="absolute inset-0 rounded-2xl sm:rounded-3xl bg-gradient-to-r from-primary/20 via-transparent to-primary/20 opacity-0 animate-pulse"></div>
 
-                {/* Card Content */}
-                <div className="relative p-8 sm:p-12 lg:p-16">
+                 {/* Card Content */}
+                 <div className="relative p-4 sm:p-6 md:p-8 lg:p-10 xl:p-12">
 
 
-                  {/* Dynamic Main Heading */}
-                  <div className="text-center mb-8">
-                    <h1 className="text-4xl sm:text-5xl lg:text-6xl leading-tight">
-                      <span className="block hero-title-line-1 mb-2">
-                        Expert Immigration
-                      </span>
-                      <span className="block hero-title-line-2">
-                        Guidance with{" "}
-                        <span className="italic text-[#f5a101] bg-gradient-to-r from-[#f5a101] to-[#e09401] bg-clip-text text-transparent drop-shadow-lg">
-                          Transparent Assessment
-                        </span>
-                      </span>
-                    </h1>
-                  </div>
+                                     {/* Dynamic Main Heading */}
+                   <div className="text-center mb-4 sm:mb-6 md:mb-8 lg:mb-8">
+                     <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-4xl xl:text-5xl leading-tight">
+                       <span className="block hero-title-line-1 mb-1 sm:mb-2 md:mb-3">
+                         Expert Immigration <br className="hidden sm:block" /> Guidance with <br className="sm:hidden" /> Transparent Assessment
+                       </span>
+                     </h1>
+                   </div>
 
-                  {/* Dynamic Description */}
-                  <div className="text-center mb-10">
-                    <p className="text-lg sm:text-xl text-slate-200 leading-relaxed max-w-2xl mx-auto hero-description">
-                      Free 30-minute consultations - only for cases we can win. Get expert guidance from a licensed immigration consultant.
-                    </p>
-                  </div>
+                   {/* Dynamic Description */}
+                   <div className="text-center mb-4 sm:mb-6 md:mb-8 lg:mb-8">
+                     <p className="text-sm sm:text-base md:text-lg lg:text-lg xl:text-xl text-slate-200 leading-relaxed max-w-xs sm:max-w-sm md:max-w-lg lg:max-w-xl xl:max-w-2xl mx-auto hero-description px-2 sm:px-4">
+                       Free 30-minute consultations - only for cases we can win. Get expert guidance from a licensed immigration consultant.
+                     </p>
+                   </div>
 
-                  {/* Buttons */}
-                  <div className="flex flex-col sm:flex-row gap-6 justify-center mb-10 hero-buttons">
-                    <div className="group">
-                      <Button size="lg" className="bg-primary hover:bg-primary/90 text-white px-8 py-6 text-lg w-full sm:w-auto h-16 sm:h-20 shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-105">
-                        <a href="/services/permanent-residency" className="flex items-center justify-center">
-                          <span>Permanent Residency</span>
-                          <div className="ml-3 transform group-hover:translate-x-1 transition-transform duration-300">
-                            →
-                          </div>
-                        </a>
-                      </Button>
-                    </div>
+                                     {/* Buttons */}
+                   <div className="flex flex-col gap-2 sm:gap-3 md:gap-4 lg:gap-4 justify-center mb-4 sm:mb-6 md:mb-8 lg:mb-8 hero-buttons">
+                                           <div className="group">
+                        <Button
+                          size="lg"
+                          className="bg-gradient-to-r from-[#f5a101] to-[#e09401] hover:from-[#e09401] hover:to-[#f5a101] text-white border-none px-3 sm:px-6 md:px-8 lg:px-8 py-3 sm:py-4 md:py-5 lg:py-5 text-xs sm:text-sm md:text-base lg:text-base xl:text-lg h-10 sm:h-12 md:h-14 lg:h-14 xl:h-16 font-semibold transition-all duration-300 shadow-[0_4px_15px_rgba(245,161,1,0.3)] hover:shadow-[0_6px_20px_rgba(245,161,1,0.4)] hover:-translate-y-0.5 transform hover:scale-105"
+                        >
+                          <a href="/services/permanent-residency" className="flex items-center justify-center">
+                            <span>Permanent Residency</span>
+                            <div className="ml-1 sm:ml-2 md:ml-3 transform group-hover:translate-x-1 transition-transform duration-300">
+                              →
+                            </div>
+                          </a>
+                        </Button>
+                      </div>
 
-                    <div className="group">
-                      <Button
-                        size="lg"
-                        variant="outline"
-                        className="border-white/50 text-white hover:bg-white/20 hover:border-white px-8 py-6 text-lg h-16 sm:h-20 bg-white/10 backdrop-blur-sm hover:backdrop-blur-md transition-all duration-300 shadow-xl hover:shadow-2xl transform hover:scale-105"
-                      >
-                        <a href="/services/status-services" className="flex items-center justify-center">
-                          <span>Status Services</span>
-                          <div className="ml-3 transform group-hover:translate-x-1 transition-transform duration-300">
-                            →
-                          </div>
-                        </a>
-                      </Button>
-                    </div>
-                  </div>
+                                           <div className="group">
+                        <Button
+                          size="lg"
+                          variant="outline"
+                          className="border-white/50 text-white hover:bg-white/20 hover:border-white px-3 sm:px-6 md:px-8 lg:px-8 py-3 sm:py-4 md:py-5 lg:py-5 text-xs sm:text-sm md:text-base lg:text-base xl:text-lg h-10 sm:h-12 md:h-14 lg:h-14 xl:h-16 bg-white/10 backdrop-blur-sm hover:backdrop-blur-md transition-all duration-300 shadow-xl hover:shadow-2xl transform hover:scale-105"
+                        >
+                          <a href="/services/status-services" className="flex items-center justify-center">
+                            <span>Status Services</span>
+                            <div className="ml-1 sm:ml-2 md:ml-3 transform group-hover:translate-x-1 transition-transform duration-300">
+                              →
+                            </div>
+                          </a>
+                        </Button>
+                      </div>
 
-                  {/* Dynamic Trust Indicators */}
-                  <div className="hidden md:flex flex-wrap justify-center items-center gap-6 text-sm text-slate-200 hero-trust">
-                    <div className="flex items-center gap-3 group">
-                      <div className="w-3 h-3 bg-green-400 rounded-full animate-pulse group-hover:scale-125 transition-transform duration-300"></div>
-                      <span className="group-hover:text-white transition-colors duration-300">Licensed RCIC</span>
-                    </div>
-                    <div className="flex items-center gap-3 group">
-                      <div className="w-3 h-3 bg-green-400 rounded-full animate-pulse group-hover:scale-125 transition-transform duration-300"></div>
-                      <span className="group-hover:text-white transition-colors duration-300">Free Assessment</span>
-                    </div>
-                    <div className="flex items-center gap-3 group">
-                      <div className="w-3 h-3 bg-green-400 rounded-full animate-pulse group-hover:scale-125 transition-transform duration-300"></div>
-                      <span className="group-hover:text-white transition-colors duration-300">80% Success Rate</span>
-                    </div>
-                  </div>
+                                           <div className="group">
+                        <Button
+                          size="lg"
+                          variant="outline"
+                          className="border-white/50 text-white hover:bg-white/20 hover:border-white px-3 sm:px-6 md:px-8 lg:px-8 py-3 sm:py-4 md:py-5 lg:py-5 text-xs sm:text-sm md:text-base lg:text-base xl:text-lg h-10 sm:h-12 md:h-14 lg:h-14 xl:h-16 bg-white/10 backdrop-blur-sm hover:backdrop-blur-md transition-all duration-300 shadow-xl hover:shadow-2xl transform hover:scale-105"
+                        >
+                          <a href="/training" className="flex items-center justify-center">
+                            <span>RCIC Consultant Training</span>
+                            <div className="ml-1 sm:ml-2 md:ml-3 transform group-hover:translate-x-1 transition-transform duration-300">
+                              →
+                            </div>
+                          </a>
+                        </Button>
+                      </div>
+                   </div>
+
+                                     {/* Dynamic Trust Indicators */}
+                   <div className="hidden lg:flex flex-wrap justify-center items-center gap-4 xl:gap-6 text-xs xl:text-sm text-slate-200 hero-trust">
+                     <div className="flex items-center gap-2 xl:gap-3 group">
+                       <div className="w-2 h-2 xl:w-3 xl:h-3 bg-green-400 rounded-full animate-pulse group-hover:scale-125 transition-transform duration-300"></div>
+                       <span className="group-hover:text-white transition-colors duration-300">Licensed RCIC</span>
+                     </div>
+                     <div className="flex items-center gap-2 xl:gap-3 group">
+                       <div className="w-2 h-2 xl:w-3 xl:h-3 bg-green-400 rounded-full animate-pulse group-hover:scale-125 transition-transform duration-300"></div>
+                       <span className="group-hover:text-white transition-colors duration-300">Free Assessment</span>
+                     </div>
+                     <div className="flex items-center gap-2 xl:gap-3 group">
+                       <div className="w-2 h-2 xl:w-3 xl:h-3 bg-green-400 rounded-full animate-pulse group-hover:scale-125 transition-transform duration-300"></div>
+                       <span className="group-hover:text-white transition-colors duration-300">80% Success Rate</span>
+                     </div>
+                   </div>
                 </div>
 
 
