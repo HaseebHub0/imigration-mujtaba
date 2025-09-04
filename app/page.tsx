@@ -13,129 +13,218 @@ import { AutoPlayCarousel } from "@/components/AutoPlayCarousel"
 export default function HomePage() {
   return (
     <div className="min-h-screen bg-background">
-                                       {/* Hero Section - Image Carousel Background */}
-         <section className="relative h-screen flex items-center justify-center overflow-hidden hero-section">
-                     {/* Image Carousel Background */}
-           <div className="absolute inset-0 z-0 overflow-hidden h-full">
-             <AutoPlayCarousel
-               images={[
-                 {
-                   src: "/images/hero/canadatower.jpg",
-                   alt: "Canadian immigration consulting"
-                 },
-                 {
-                   src: "/images/hero/canadian.jpg",
-                   alt: "Express Entry immigration services"
-                 },
-                 {
-                   src: "/images/hero/treeshill.jpg",
-                   alt: "Provincial Nominee Program guidance"
-                 },
-                 {
-                   src: "/images/hero/window.jpg",
-                   alt: "Work permit immigration services"
-                 }
-               ]}
-               interval={3000} // 3 seconds
-               className="w-full h-screen"
-             />
-          </div>
+                                       {/* Hero Section - Enhanced Desktop Layout */}
+      <section className="relative min-h-screen flex items-center overflow-hidden hero-section">
+        {/* Image Carousel Background */}
+        <div className="absolute inset-0 z-0 overflow-hidden h-full">
+          <AutoPlayCarousel
+            images={[
+              {
+                src: "/images/hero/canadatower.jpg",
+                alt: "Canadian immigration consulting"
+              },
+              {
+                src: "/images/hero/canadian.jpg",
+                alt: "Express Entry immigration services"
+              },
+              {
+                src: "/images/hero/treeshill.jpg",
+                alt: "Provincial Nominee Program guidance"
+              },
+              {
+                src: "/images/hero/window.jpg",
+                alt: "Work permit immigration services"
+              }
+            ]}
+            interval={3000} // 3 seconds
+            className="w-full h-full"
+          />
+        </div>
 
-                 {/* Centered Glassmorphism Card */}
-         <div className="relative z-10 container mx-auto px-2 sm:px-4 md:px-6 lg:px-8 py-8 sm:py-12 md:py-16 lg:py-20">
-           <div className="flex justify-center items-center min-h-[50vh] sm:min-h-[55vh] md:min-h-[60vh] lg:min-h-[65vh]">
-             {/* Glassmorphism Card */}
-             <div className="relative w-full max-w-2xl lg:max-w-3xl xl:max-w-4xl mx-auto">
-               {/* Main Glassmorphism Container */}
-               <div className="relative bg-white/10 backdrop-blur-xl rounded-2xl sm:rounded-3xl border border-white/20 shadow-2xl overflow-hidden glassmorphism-card">
-                 {/* Animated Border Glow */}
-                 <div className="absolute inset-0 rounded-2xl sm:rounded-3xl bg-gradient-to-r from-primary/20 via-transparent to-primary/20 opacity-0 animate-pulse"></div>
-
-                 {/* Card Content */}
-                 <div className="relative p-4 sm:p-6 md:p-8 lg:p-10 xl:p-12">
-
-
-                                     {/* Dynamic Main Heading */}
-                   <div className="text-center mb-4 sm:mb-6 md:mb-8 lg:mb-8">
-                     <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-4xl xl:text-5xl leading-tight">
-                       <span className="block hero-title-line-1 mb-1 sm:mb-2 md:mb-3">
-                         Expert Immigration <br className="hidden sm:block" /> Guidance with <br className="sm:hidden" /> Transparent Assessment
-                       </span>
-                     </h1>
-                   </div>
-
-                   {/* Dynamic Description */}
-                   <div className="text-center mb-4 sm:mb-6 md:mb-8 lg:mb-8">
-                     <p className="text-sm sm:text-base md:text-lg lg:text-lg xl:text-xl text-slate-200 leading-relaxed max-w-xs sm:max-w-sm md:max-w-lg lg:max-w-xl xl:max-w-2xl mx-auto hero-description px-2 sm:px-4">
-                       Free 30-minute consultations - only for cases we can win. Get expert guidance from a licensed immigration consultant.
-                     </p>
-                   </div>
-
-                                     {/* Buttons */}
-                   <div className="flex flex-col gap-2 sm:gap-3 md:gap-4 lg:gap-4 justify-center mb-4 sm:mb-6 md:mb-8 lg:mb-8 hero-buttons">
-                                           <div className="group">
-                        <Button
-                          size="lg"
-                          className="bg-gradient-to-r from-[#f5a101] to-[#e09401] hover:from-[#e09401] hover:to-[#f5a101] text-white border-none px-3 sm:px-6 md:px-8 lg:px-8 py-3 sm:py-4 md:py-5 lg:py-5 text-xs sm:text-sm md:text-base lg:text-base xl:text-lg h-10 sm:h-12 md:h-14 lg:h-14 xl:h-16 font-semibold transition-all duration-300 shadow-[0_4px_15px_rgba(245,161,1,0.3)] hover:shadow-[0_6px_20px_rgba(245,161,1,0.4)] hover:-translate-y-0.5 transform hover:scale-105"
-                        >
-                          <a href="/services/permanent-residency" className="flex items-center justify-center">
-                            <span>Permanent Residency</span>
-                            <div className="ml-1 sm:ml-2 md:ml-3 transform group-hover:translate-x-1 transition-transform duration-300">
-                              →
-                            </div>
-                          </a>
-                        </Button>
+        {/* Content Overlay */}
+        <div className="relative z-10 w-full">
+          <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="min-h-screen flex items-center py-12 sm:py-16 lg:py-20">
+              {/* Mobile Layout - Centered Card */}
+              <div className="w-full lg:hidden">
+                <div className="flex justify-center">
+                  <div className="w-full max-w-2xl">
+                    <div className="relative bg-white/10 backdrop-blur-xl rounded-2xl sm:rounded-3xl border border-white/20 shadow-2xl overflow-hidden">
+                      <div className="absolute inset-0 rounded-2xl sm:rounded-3xl bg-gradient-to-r from-primary/20 via-transparent to-primary/20 opacity-0 animate-pulse"></div>
+                      <div className="relative p-6 sm:p-8">
+                        <div className="text-center mb-6 sm:mb-8">
+                          <h1 className="text-2xl sm:text-3xl md:text-4xl leading-tight font-bold text-white">
+                            Expert Immigration Guidance with Transparent Assessment
+                          </h1>
+                        </div>
+                        <div className="text-center mb-6 sm:mb-8">
+                          <p className="text-sm sm:text-base md:text-lg text-slate-200 leading-relaxed max-w-lg mx-auto px-2">
+                            Free 30-minute consultations - only for cases we can win. Get expert guidance from a licensed immigration consultant.
+                          </p>
+                        </div>
+                        <div className="flex flex-col gap-3 sm:gap-4 justify-center mb-6 sm:mb-8">
+                          <Button
+                            size="lg"
+                            className="bg-gradient-to-r from-[#f5a101] to-[#e09401] hover:from-[#e09401] hover:to-[#f5a101] text-white border-none px-6 py-4 text-sm sm:text-base h-12 sm:h-14 font-semibold transition-all duration-300 shadow-[0_4px_15px_rgba(245,161,1,0.3)] hover:shadow-[0_6px_20px_rgba(245,161,1,0.4)] hover:-translate-y-0.5 transform hover:scale-105"
+                          >
+                            <a href="/services/permanent-residency" className="flex items-center justify-center">
+                              <span>Permanent Residency</span>
+                              <div className="ml-2 transform group-hover:translate-x-1 transition-transform duration-300">
+                                →
+                              </div>
+                            </a>
+                          </Button>
+                          <Button
+                            size="lg"
+                            variant="outline"
+                            className="border-white/50 text-white hover:bg-white/20 hover:border-white px-6 py-4 text-sm sm:text-base h-12 sm:h-14 bg-white/10 backdrop-blur-sm hover:backdrop-blur-md transition-all duration-300 shadow-xl hover:shadow-2xl transform hover:scale-105"
+                          >
+                            <a href="/services/status-services" className="flex items-center justify-center">
+                              <span>Status Services</span>
+                              <div className="ml-2 transform group-hover:translate-x-1 transition-transform duration-300">
+                                →
+                              </div>
+                            </a>
+                          </Button>
+                          <Button
+                            size="lg"
+                            variant="outline"
+                            className="border-white/50 text-white hover:bg-white/20 hover:border-white px-6 py-4 text-sm sm:text-base h-12 sm:h-14 bg-white/10 backdrop-blur-sm hover:backdrop-blur-md transition-all duration-300 shadow-xl hover:shadow-2xl transform hover:scale-105"
+                          >
+                            <a href="/training" className="flex items-center justify-center">
+                              <span>RCIC Consultant Training</span>
+                              <div className="ml-2 transform group-hover:translate-x-1 transition-transform duration-300">
+                                →
+                              </div>
+                            </a>
+                          </Button>
+                        </div>
+                        <div className="flex flex-wrap justify-center items-center gap-4 text-xs text-slate-200">
+                          <div className="flex items-center gap-2 group">
+                            <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse group-hover:scale-125 transition-transform duration-300"></div>
+                            <span className="group-hover:text-white transition-colors duration-300">Licensed RCIC</span>
+                          </div>
+                          <div className="flex items-center gap-2 group">
+                            <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse group-hover:scale-125 transition-transform duration-300"></div>
+                            <span className="group-hover:text-white transition-colors duration-300">Free Assessment</span>
+                          </div>
+                          <div className="flex items-center gap-2 group">
+                            <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse group-hover:scale-125 transition-transform duration-300"></div>
+                            <span className="group-hover:text-white transition-colors duration-300">80% Success Rate</span>
+                          </div>
+                        </div>
                       </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
 
-                                           <div className="group">
-                        <Button
-                          size="lg"
-                          variant="outline"
-                          className="border-white/50 text-white hover:bg-white/20 hover:border-white px-3 sm:px-6 md:px-8 lg:px-8 py-3 sm:py-4 md:py-5 lg:py-5 text-xs sm:text-sm md:text-base lg:text-base xl:text-lg h-10 sm:h-12 md:h-14 lg:h-14 xl:h-16 bg-white/10 backdrop-blur-sm hover:backdrop-blur-md transition-all duration-300 shadow-xl hover:shadow-2xl transform hover:scale-105"
-                        >
-                          <a href="/services/status-services" className="flex items-center justify-center">
-                            <span>Status Services</span>
-                            <div className="ml-1 sm:ml-2 md:ml-3 transform group-hover:translate-x-1 transition-transform duration-300">
-                              →
-                            </div>
-                          </a>
-                        </Button>
-                      </div>
+              {/* Desktop Layout - Side by Side */}
+              <div className="hidden lg:grid lg:grid-cols-12 lg:gap-8 xl:gap-12 w-full max-w-7xl mx-auto">
+                {/* Left Side - Content */}
+                <div className="lg:col-span-7 xl:col-span-6 flex flex-col justify-center space-y-8">
+                  <div className="space-y-6">
+                    <h1 className="text-5xl xl:text-6xl 2xl:text-7xl font-bold text-white leading-tight">
+                      Expert Immigration Guidance with{" "}
+                      <span className="text-[#f5a101]">Transparent Assessment</span>
+                    </h1>
+                    <p className="text-xl xl:text-2xl text-slate-200 leading-relaxed max-w-2xl">
+                      Free 30-minute consultations - only for cases we can win. Get expert guidance from a licensed immigration consultant.
+                    </p>
+                  </div>
 
-                                           <div className="group">
-                        <Button
-                          size="lg"
-                          variant="outline"
-                          className="border-white/50 text-white hover:bg-white/20 hover:border-white px-3 sm:px-6 md:px-8 lg:px-8 py-3 sm:py-4 md:py-5 lg:py-5 text-xs sm:text-sm md:text-base lg:text-base xl:text-lg h-10 sm:h-12 md:h-14 lg:h-14 xl:h-16 bg-white/10 backdrop-blur-sm hover:backdrop-blur-md transition-all duration-300 shadow-xl hover:shadow-2xl transform hover:scale-105"
-                        >
-                          <a href="/training" className="flex items-center justify-center">
-                            <span>RCIC Consultant Training</span>
-                            <div className="ml-1 sm:ml-2 md:ml-3 transform group-hover:translate-x-1 transition-transform duration-300">
-                              →
-                            </div>
-                          </a>
-                        </Button>
-                      </div>
-                   </div>
+                  <div className="space-y-4">
+                    <Button
+                      size="lg"
+                      className="bg-gradient-to-r from-[#f5a101] to-[#e09401] hover:from-[#e09401] hover:to-[#f5a101] text-white border-none px-8 py-6 text-lg xl:text-xl h-16 xl:h-18 font-semibold transition-all duration-300 shadow-[0_4px_15px_rgba(245,161,1,0.3)] hover:shadow-[0_6px_20px_rgba(245,161,1,0.4)] hover:-translate-y-0.5 transform hover:scale-105 group"
+                    >
+                      <a href="/services/permanent-residency" className="flex items-center justify-center">
+                        <span>Permanent Residency</span>
+                        <div className="ml-3 transform group-hover:translate-x-1 transition-transform duration-300">
+                          →
+                        </div>
+                      </a>
+                    </Button>
 
-                                     {/* Dynamic Trust Indicators */}
-                   <div className="hidden lg:flex flex-wrap justify-center items-center gap-4 xl:gap-6 text-xs xl:text-sm text-slate-200 hero-trust">
-                     <div className="flex items-center gap-2 xl:gap-3 group">
-                       <div className="w-2 h-2 xl:w-3 xl:h-3 bg-green-400 rounded-full animate-pulse group-hover:scale-125 transition-transform duration-300"></div>
-                       <span className="group-hover:text-white transition-colors duration-300">Licensed RCIC</span>
-                     </div>
-                     <div className="flex items-center gap-2 xl:gap-3 group">
-                       <div className="w-2 h-2 xl:w-3 xl:h-3 bg-green-400 rounded-full animate-pulse group-hover:scale-125 transition-transform duration-300"></div>
-                       <span className="group-hover:text-white transition-colors duration-300">Free Assessment</span>
-                     </div>
-                     <div className="flex items-center gap-2 xl:gap-3 group">
-                       <div className="w-2 h-2 xl:w-3 xl:h-3 bg-green-400 rounded-full animate-pulse group-hover:scale-125 transition-transform duration-300"></div>
-                       <span className="group-hover:text-white transition-colors duration-300">80% Success Rate</span>
-                     </div>
-                   </div>
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                      <Button
+                        size="lg"
+                        variant="outline"
+                        className="border-white/50 text-white hover:bg-white/20 hover:border-white px-6 py-4 text-base xl:text-lg h-14 xl:h-16 bg-white/10 backdrop-blur-sm hover:backdrop-blur-md transition-all duration-300 shadow-xl hover:shadow-2xl transform hover:scale-105 group"
+                      >
+                        <a href="/services/status-services" className="flex items-center justify-center">
+                          <span>Status Services</span>
+                          <div className="ml-2 transform group-hover:translate-x-1 transition-transform duration-300">
+                            →
+                          </div>
+                        </a>
+                      </Button>
+                      <Button
+                        size="lg"
+                        variant="outline"
+                        className="border-white/50 text-white hover:bg-white/20 hover:border-white px-6 py-4 text-base xl:text-lg h-14 xl:h-16 bg-white/10 backdrop-blur-sm hover:backdrop-blur-md transition-all duration-300 shadow-xl hover:shadow-2xl transform hover:scale-105 group"
+                      >
+                        <a href="/training" className="flex items-center justify-center">
+                          <span>RCIC Training</span>
+                          <div className="ml-2 transform group-hover:translate-x-1 transition-transform duration-300">
+                            →
+                          </div>
+                        </a>
+                      </Button>
+                    </div>
+                  </div>
+
+                  <div className="flex flex-wrap items-center gap-6 text-sm xl:text-base text-slate-200">
+                    <div className="flex items-center gap-3 group">
+                      <div className="w-3 h-3 bg-green-400 rounded-full animate-pulse group-hover:scale-125 transition-transform duration-300"></div>
+                      <span className="group-hover:text-white transition-colors duration-300 font-medium">Licensed RCIC</span>
+                    </div>
+                    <div className="flex items-center gap-3 group">
+                      <div className="w-3 h-3 bg-green-400 rounded-full animate-pulse group-hover:scale-125 transition-transform duration-300"></div>
+                      <span className="group-hover:text-white transition-colors duration-300 font-medium">Free Assessment</span>
+                    </div>
+                    <div className="flex items-center gap-3 group">
+                      <div className="w-3 h-3 bg-green-400 rounded-full animate-pulse group-hover:scale-125 transition-transform duration-300"></div>
+                      <span className="group-hover:text-white transition-colors duration-300 font-medium">80% Success Rate</span>
+                    </div>
+                  </div>
                 </div>
 
+                {/* Right Side - Visual Element */}
+                <div className="lg:col-span-5 xl:col-span-6 flex items-center justify-center">
+                  <div className="relative w-full max-w-lg">
+                    {/* Floating Cards */}
+                    <div className="relative">
+                      {/* Main Card */}
+                      <div className="bg-white/10 backdrop-blur-xl rounded-2xl border border-white/20 shadow-2xl p-8 transform rotate-3 hover:rotate-0 transition-transform duration-500">
+                        <div className="text-center space-y-4">
+                          <div className="w-16 h-16 bg-[#f5a101] rounded-full flex items-center justify-center mx-auto">
+                            <Award className="w-8 h-8 text-white" />
+                          </div>
+                          <h3 className="text-xl font-bold text-white">RCIC Licensed</h3>
+                          <p className="text-slate-200 text-sm">Regulated Canadian Immigration Consultant</p>
+                          <Badge className="bg-[#f5a101] text-white">License #R712505</Badge>
+                        </div>
+                      </div>
 
+                      {/* Floating Stats Card */}
+                      <div className="absolute -top-4 -right-4 bg-white/15 backdrop-blur-xl rounded-xl border border-white/30 shadow-xl p-4 transform -rotate-6 hover:rotate-0 transition-transform duration-500">
+                        <div className="text-center">
+                          <div className="text-2xl font-bold text-[#f5a101]">80%+</div>
+                          <div className="text-xs text-slate-200">Success Rate</div>
+                        </div>
+                      </div>
+
+                      {/* Floating Experience Card */}
+                      <div className="absolute -bottom-4 -left-4 bg-white/15 backdrop-blur-xl rounded-xl border border-white/30 shadow-xl p-4 transform rotate-6 hover:rotate-0 transition-transform duration-500">
+                        <div className="text-center">
+                          <div className="text-2xl font-bold text-[#f5a101]">5+</div>
+                          <div className="text-xs text-slate-200">Years Experience</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
