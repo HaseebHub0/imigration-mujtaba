@@ -338,10 +338,28 @@ export default function HomePage() {
       {/* Professional Associations */}
       <section className="py-12 bg-alt">
         <div className="container mx-auto px-4">
-          <div className="flex justify-center items-center space-x-12 opacity-60">
-            <div className="text-2xl font-bold text-foreground">ICCRC</div>
-            <div className="text-xl font-bold text-foreground">★ RCIC</div>
-            <div className="text-xl font-bold text-foreground border-2 border-foreground px-3 py-1">CAPIC</div>
+          <div className="flex justify-center items-center space-x-8 md:space-x-12">
+            <div className="flex-shrink-0">
+              <img 
+                src="/images/1.png" 
+                alt="Professional Association 1" 
+                className="h-16 md:h-20 w-auto opacity-80 hover:opacity-100 transition-opacity duration-300"
+              />
+            </div>
+            <div className="flex-shrink-0">
+              <img 
+                src="/images/2.png" 
+                alt="Professional Association 2" 
+                className="h-16 md:h-20 w-auto opacity-80 hover:opacity-100 transition-opacity duration-300"
+              />
+            </div>
+            <div className="flex-shrink-0">
+              <img 
+                src="/images/3.png" 
+                alt="Professional Association 3" 
+                className="h-16 md:h-20 w-auto opacity-80 hover:opacity-100 transition-opacity duration-300"
+              />
+            </div>
           </div>
         </div>
       </section>
@@ -361,11 +379,13 @@ export default function HomePage() {
           <div className="grid lg:grid-cols-2 gap-12 items-start max-w-6xl mx-auto">
             {/* Left side - Image */}
             <div className="relative">
-              <img
-                src="/mujtaba.jpg"
-                alt="Professional immigration consulting - helping dreams come true"
-                className="w-full h-auto rounded-lg shadow-lg"
-              />
+              <div className="w-full h-150 overflow-hidden rounded-lg shadow-lg">
+                <img
+                  src="/mujtaba.jpg"
+                  alt="Professional immigration consulting - helping dreams come true"
+                  className="w-full h-full object-cover "
+                />
+              </div>
               <div className="absolute bottom-8 left-8 right-8 bg-white/90 backdrop-blur-sm p-6 rounded-lg">
                 <h3 className="text-2xl font-bold text-foreground mb-2">
                   A consultant dedicated to helping you achieve your Canadian immigration dreams.
@@ -374,7 +394,7 @@ export default function HomePage() {
             </div>
 
             {/* Right side - Content */}
-            <div className="space-y-6 content-center items-center justify-center pt-40">
+            <div className="space-y-6">
               <p className="text-lg text-foreground leading-relaxed">
                 Navigating Canadian immigration can be complex and overwhelming. With constantly changing policies and
                 detailed requirements, having expert guidance makes all the difference.
