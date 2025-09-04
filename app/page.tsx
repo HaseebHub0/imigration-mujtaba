@@ -13,7 +13,7 @@ import { AutoPlayCarousel } from "@/components/AutoPlayCarousel"
 export default function HomePage() {
   return (
     <div className="min-h-screen bg-background">
-                                       {/* Hero Section - Enhanced Desktop Layout */}
+      {/* Hero Section - Enhanced Desktop Layout */}
       <section className="relative min-h-screen flex items-center overflow-hidden hero-section">
         {/* Image Carousel Background */}
         <div className="absolute inset-0 z-0 overflow-hidden h-full">
@@ -59,7 +59,7 @@ export default function HomePage() {
                         </div>
                         <div className="text-center mb-6 sm:mb-8">
                           <p className="text-sm sm:text-base md:text-lg text-slate-200 leading-relaxed max-w-lg mx-auto px-2">
-                            Free 30-minute consultations - only for cases we can win. Get expert guidance from a licensed immigration consultant.
+                            <span className="font-bold">Free 30 minute consultations only</span> for cases we can win. Get expert guidance from a licensed immigration consultant.
                           </p>
                         </div>
                         <div className="flex flex-col gap-3 sm:gap-4 justify-center mb-6 sm:mb-8">
@@ -126,10 +126,10 @@ export default function HomePage() {
                   <div className="space-y-6">
                     <h1 className="text-5xl xl:text-6xl 2xl:text-7xl font-bold text-white leading-tight">
                       Expert Immigration Guidance with{" "}
-                      <span className="text-[#f5a101]">Transparent Assessment</span>
+                      <span className="text-[#f5a101] text-5xl">Transparent Assessment</span>
                     </h1>
                     <p className="text-xl xl:text-2xl text-slate-200 leading-relaxed max-w-2xl">
-                      Free 30-minute consultations - only for cases we can win. Get expert guidance from a licensed immigration consultant.
+                      <span className="font-bold">Free 30 minute consultations only</span> for cases we can win. Get expert guidance from a licensed immigration consultant.
                     </p>
                   </div>
 
