@@ -338,9 +338,9 @@ export default function HomePage() {
       {/* Professional Associations */}
       <section className="py-12 bg-alt">
         <div className="container mx-auto px-4">
-          <div className="flex justify-center items-center space-x-8 md:space-x-12">
-          <div className="flex-shrink-0">
-              <h1 className="text-2xl font-bold">Licensed & Certified</h1>
+          <div className="flex flex-col md:flex-row justify-center items-center space-y-4 md:space-y-0 md:space-x-8 lg:space-x-12">
+            <div className="flex-shrink-0">
+              <h1 className="text-xl md:text-2xl font-bold text-center">Licensed & Certified</h1>
             </div>
             <div className="flex-shrink-0">
               <img 
