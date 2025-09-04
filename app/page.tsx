@@ -59,7 +59,7 @@ export default function HomePage() {
                         </div>
                         <div className="text-center mb-6 sm:mb-8">
                           <p className="text-sm sm:text-base md:text-lg text-slate-200 leading-relaxed max-w-lg mx-auto px-2">
-                            <span className="font-bold">Free 30 minute consultations only</span> for cases we can win. Get expert guidance from a licensed immigration consultant.
+                            <span className="font-bold">Free 30 minute consultations only</span> for cases we can win.
                           </p>
                         </div>
                         <div className="flex flex-col gap-3 sm:gap-4 justify-center mb-6 sm:mb-8">
@@ -129,18 +129,19 @@ export default function HomePage() {
                       <span className="text-[#f5a101] text-5xl">Transparent Assessment</span>
                     </h1>
                     <p className="text-xl xl:text-2xl text-slate-200 leading-relaxed max-w-2xl">
-                      <span className="font-bold">Free 30 minute consultations only</span> for cases we can win. Get expert guidance from a licensed immigration consultant.
+                      <span className="font-bold">Free 30 minute consultations only</span> for cases we can win.
                     </p>
                   </div>
 
                   <div className="space-y-4">
                     <Button
                       size="lg"
-                      className="bg-gradient-to-r from-[#f5a101] to-[#e09401] hover:from-[#e09401] hover:to-[#f5a101] text-white border-none px-8 py-6 text-lg xl:text-xl h-16 xl:h-18 font-semibold transition-all duration-300 shadow-[0_4px_15px_rgba(245,161,1,0.3)] hover:shadow-[0_6px_20px_rgba(245,161,1,0.4)] hover:-translate-y-0.5 transform hover:scale-105 group"
+                      variant="outline"
+                      className="border-white/50 text-white hover:bg-white/20 hover:border-white px-6 py-4 text-base xl:text-lg h-14 w-150 xl:h-16 bg-white/10 backdrop-blur-sm hover:backdrop-blur-md transition-all duration-300 shadow-xl hover:shadow-2xl transform hover:scale-105 group"
                     >
                       <a href="/services/permanent-residency" className="flex items-center justify-center">
                         <span>Permanent Residency</span>
-                        <div className="ml-3 transform group-hover:translate-x-1 transition-transform duration-300">
+                        <div className="ml-2 transform group-hover:translate-x-1 transition-transform duration-300">
                           →
                         </div>
                       </a>
@@ -150,7 +151,7 @@ export default function HomePage() {
                       <Button
                         size="lg"
                         variant="outline"
-                        className="border-white/50 text-white hover:bg-white/20 hover:border-white px-6 py-4 text-base xl:text-lg h-14 xl:h-16 bg-white/10 backdrop-blur-sm hover:backdrop-blur-md transition-all duration-300 shadow-xl hover:shadow-2xl transform hover:scale-105 group"
+                        className="border-white/50 text-white hover:bg-white/20 w-72 hover:border-white px-6 py-4 text-base xl:text-lg h-14 xl:h-16 bg-white/10 backdrop-blur-sm hover:backdrop-blur-md transition-all duration-300 shadow-xl hover:shadow-2xl transform hover:scale-105 group"
                       >
                         <a href="/services/status-services" className="flex items-center justify-center">
                           <span>Status Services</span>
@@ -162,7 +163,7 @@ export default function HomePage() {
                       <Button
                         size="lg"
                         variant="outline"
-                        className="border-white/50 text-white hover:bg-white/20 hover:border-white px-6 py-4 text-base xl:text-lg h-14 xl:h-16 bg-white/10 backdrop-blur-sm hover:backdrop-blur-md transition-all duration-300 shadow-xl hover:shadow-2xl transform hover:scale-105 group"
+                        className="border-white/50 text-white hover:bg-white/20 hover:border-white px-6 py-4 text-base xl:text-lg h-14 w-72 xl:h-16 bg-white/10 backdrop-blur-sm hover:backdrop-blur-md transition-all duration-300 shadow-xl hover:shadow-2xl transform hover:scale-105 group"
                       >
                         <a href="/training" className="flex items-center justify-center">
                           <span>RCIC Training</span>
@@ -341,8 +342,6 @@ export default function HomePage() {
             <div className="text-2xl font-bold text-foreground">ICCRC</div>
             <div className="text-xl font-bold text-foreground">★ RCIC</div>
             <div className="text-xl font-bold text-foreground border-2 border-foreground px-3 py-1">CAPIC</div>
-
-
           </div>
         </div>
       </section>
@@ -363,7 +362,7 @@ export default function HomePage() {
             {/* Left side - Image */}
             <div className="relative">
               <img
-                src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&h=600&fit=crop&crop=center&q=80"
+                src="/mujtaba.jpg"
                 alt="Professional immigration consulting - helping dreams come true"
                 className="w-full h-auto rounded-lg shadow-lg"
               />
@@ -375,7 +374,7 @@ export default function HomePage() {
             </div>
 
             {/* Right side - Content */}
-            <div className="space-y-6">
+            <div className="space-y-6 content-center items-center justify-center pt-40">
               <p className="text-lg text-foreground leading-relaxed">
                 Navigating Canadian immigration can be complex and overwhelming. With constantly changing policies and
                 detailed requirements, having expert guidance makes all the difference.
@@ -397,31 +396,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Bottom CTA Section */}
-      <section className="py-20 bg-gradient-to-r from-[#f5a101] to-[#e09401]">
-        <div className="container mx-auto px-4">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div className="space-y-6">
-              <h2 className="text-4xl lg:text-5xl font-bold text-white leading-tight">
-                Dedicated to advocating for immigrant communities and individuals since 2016.
-              </h2>
-            </div>
-            <div className="space-y-6 text-white">
-              <p className="text-lg leading-relaxed">
-                Our team has years of experience working with people from around the world to ensure that they can
-                build new lives in Canada. With our understanding of the procedures followed when applying
-                for permanent residency, work permits, and study permits, we can ensure that applications are prepared correctly, and we can also help
-                gather and submit all required supporting documentation.
-              </p>
-              <p className="leading-relaxed">
-                We can also help determine the best options for resolving issues that may affect a person's immigration
-                status, including options for relief through humanitarian and compassionate grounds, or{" "}
-                <strong>extreme hardship</strong> applications.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
+      
 
       {/* Footer */}
       <footer className="bg-slate-900 py-16">

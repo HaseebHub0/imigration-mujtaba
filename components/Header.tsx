@@ -79,7 +79,8 @@ const Header: React.FC = () => {
 
   return (
     <CardNav
-      logo="/placeholder-logo.svg"
+      logo=""
+      logoText="Mujtaba Sarwar"
       logoAlt="Mujtaba Sarwar Immigration Consulting"
       items={navigationItems}
       baseColor="#ffffff"

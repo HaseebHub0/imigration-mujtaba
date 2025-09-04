@@ -19,6 +19,7 @@ export type CardNavItem = {
 
 export interface CardNavProps {
   logo: string;
+  logoText?: string;
   logoAlt?: string;
   items: CardNavItem[];
   className?: string;
@@ -31,6 +32,7 @@ export interface CardNavProps {
 
 const CardNav: React.FC<CardNavProps> = ({
   logo,
+  logoText,
   logoAlt = "Logo",
   items,
   className = "",
@@ -178,7 +180,13 @@ const CardNav: React.FC<CardNavProps> = ({
           </div>
 
           <div className="logo-container">
-            <img src={logo} alt={logoAlt} className="logo" />
+            {logoText ? (
+              <div className="logo-text" style={{ color: menuColor || "#000", fontSize: "1.5rem", fontWeight: "bold" }}>
+                {logoText}
+              </div>
+            ) : (
+              <img src={logo} alt={logoAlt} className="logo" />
+            )}
           </div>
 
           <button
