@@ -339,6 +339,9 @@ export default function HomePage() {
       <section className="py-12 bg-alt">
         <div className="container mx-auto px-4">
           <div className="flex justify-center items-center space-x-8 md:space-x-12">
+          <div className="flex-shrink-0">
+              <h1 className="text-2xl font-bold">Licensed & Certified</h1>
+            </div>
             <div className="flex-shrink-0">
               <img 
                 src="/images/1.png" 
@@ -346,13 +349,7 @@ export default function HomePage() {
                 className="h-16 md:h-20 w-auto opacity-80 hover:opacity-100 transition-opacity duration-300"
               />
             </div>
-            <div className="flex-shrink-0">
-              <img 
-                src="/images/2.png" 
-                alt="Professional Association 2" 
-                className="h-16 md:h-20 w-auto opacity-80 hover:opacity-100 transition-opacity duration-300"
-              />
-            </div>
+            
             <div className="flex-shrink-0">
               <img 
                 src="/images/3.png" 
