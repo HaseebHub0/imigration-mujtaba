@@ -58,7 +58,7 @@ export default function HomePage() {
                           </h1>
                         </div>
                         <div className="text-center mb-6 sm:mb-8">
-                          <p className="text-sm sm:text-base md:text-lg text-slate-200 leading-relaxed max-w-lg mx-auto px-2">
+                          <p className="text-sm sm:text-base md:text-lg text-gray-200 leading-relaxed max-w-lg mx-auto px-2">
                             <span className="font-bold">Free 30 minute consultations only</span> for cases we can win.
                           </p>
                         </div>
@@ -99,7 +99,7 @@ export default function HomePage() {
                             </a>
                           </Button>
                         </div>
-                        <div className="flex flex-wrap justify-center items-center gap-4 text-xs text-slate-200">
+                        <div className="flex flex-wrap justify-center items-center gap-4 text-xs text-gray-200">
                           <div className="flex items-center gap-2 group">
                             <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse group-hover:scale-125 transition-transform duration-300"></div>
                             <span className="group-hover:text-white transition-colors duration-300">Licensed RCIC</span>
@@ -128,7 +128,7 @@ export default function HomePage() {
                       Expert Immigration Guidance with{" "}
                       <span className="text-[#66a380] text-5xl">Transparent Assessment</span>
                     </h1>
-                    <p className="text-xl xl:text-2xl text-slate-200 leading-relaxed max-w-2xl">
+                    <p className="text-xl xl:text-2xl text-gray-200 leading-relaxed max-w-2xl">
                       <span className="font-bold">Free 30 minute consultations only</span> for cases we can win.
                     </p>
                   </div>
@@ -175,7 +175,7 @@ export default function HomePage() {
                     </div>
                   </div>
 
-                  <div className="flex flex-wrap items-center gap-6 text-sm xl:text-base text-slate-200">
+                  <div className="flex flex-wrap items-center gap-6 text-sm xl:text-base text-gray-200">
                     <div className="flex items-center gap-3 group">
                       <div className="w-3 h-3 bg-green-400 rounded-full animate-pulse group-hover:scale-125 transition-transform duration-300"></div>
                       <span className="group-hover:text-white transition-colors duration-300 font-medium">Licensed RCIC</span>
@@ -203,7 +203,7 @@ export default function HomePage() {
                             <Award className="w-8 h-8 text-white" />
                           </div>
                           <h3 className="text-xl font-bold text-white">RCIC Licensed</h3>
-                          <p className="text-slate-200 text-sm">Regulated Canadian Immigration Consultant</p>
+                          <p className="text-gray-200 text-sm">Regulated Canadian Immigration Consultant</p>
                           <Badge className="bg-[#66a380] text-white">License #R712505</Badge>
                         </div>
                       </div>
@@ -212,7 +212,7 @@ export default function HomePage() {
                       <div className="absolute -top-4 -right-4 bg-white/15 backdrop-blur-xl rounded-xl border border-white/30 shadow-xl p-4 transform -rotate-6 hover:rotate-0 transition-transform duration-500">
                         <div className="text-center">
                           <div className="text-2xl font-bold text-[#66a380]">80%+</div>
-                          <div className="text-xs text-slate-200">Success Rate</div>
+                          <div className="text-xs text-gray-200">Success Rate</div>
                         </div>
                       </div>
 
@@ -220,7 +220,7 @@ export default function HomePage() {
                       <div className="absolute -bottom-4 -left-4 bg-white/15 backdrop-blur-xl rounded-xl border border-white/30 shadow-xl p-4 transform rotate-6 hover:rotate-0 transition-transform duration-500">
                         <div className="text-center">
                           <div className="text-2xl font-bold text-[#66a380]">5+</div>
-                          <div className="text-xs text-slate-200">Years Experience</div>
+                          <div className="text-xs text-gray-200">Years Experience</div>
                         </div>
                       </div>
                     </div>
@@ -246,7 +246,7 @@ export default function HomePage() {
                   <CardTitle className="text-2xl">Expertise</CardTitle>
                 </CardHeader>
                 <CardContent className="text-center space-y-4">
-                  <p className="group-hover:text-slate-700">
+                  <p className="group-hover:text-gray-700">
                     Regulated Canadian Immigration Consultant with deep knowledge of Express Entry, PNP, and all
                     immigration pathways.
                   </p>
@@ -272,7 +272,7 @@ export default function HomePage() {
                   <CardTitle className="text-2xl">Success</CardTitle>
                 </CardHeader>
                 <CardContent className="text-center space-y-4">
-                  <p className="group-hover:text-slate-700">
+                  <p className="group-hover:text-gray-700">
                     80% success rate with transparent assessment process. We only take cases we can win, ensuring your
                     investment pays off.
                   </p>
@@ -298,7 +298,7 @@ export default function HomePage() {
                   <CardTitle className="text-2xl">Trust</CardTitle>
                 </CardHeader>
                 <CardContent className="text-center space-y-4">
-                  <p className="group-hover:text-slate-700">
+                  <p className="group-hover:text-gray-700">
                     Transparent pricing, honest assessments, and dedicated support throughout your immigration journey to
                     Canada.
                   </p>
@@ -416,79 +416,119 @@ export default function HomePage() {
       
 
       {/* Footer */}
-      <footer className="bg-slate-900 py-16">
+      <footer className="bg-[#144d5e] py-16">
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-4 gap-8">
             <div className="space-y-4">
               <div className="flex items-center space-x-2">
-                <div className="w-8 h-8 bg-primary rounded flex items-center justify-center">
-                  <span className="text-white font-bold text-sm">MS</span>
+                <div className="w-10 h-10 bg-[#66a380] rounded-lg flex items-center justify-center">
+                  <span className="text-white font-bold text-lg">MS</span>
                 </div>
-                <span className="text-lg font-bold text-white">Mujtaba Sarwar</span>
+                <span className="text-xl font-bold text-white">Mujtaba Sarwar</span>
               </div>
-              <p className="text-slate-300">
-                Regulated Canadian Immigration Consultant providing expert guidance for your immigration journey.
+              <p className="text-gray-200 leading-relaxed">
+                Regulated Canadian Immigration Consultant providing expert guidance for your immigration journey to Canada.
               </p>
               <div className="flex items-center space-x-2">
-                <Badge variant="outline" className="border-primary text-primary">
+                <Badge variant="outline" className="border-[#66a380] text-[#66a380] bg-transparent">
                   RCIC #R712505
                 </Badge>
               </div>
-            </div>
-
-            <div className="space-y-4">
-              <h3 className="font-semibold text-white">Services</h3>
-              <div className="space-y-2 text-sm text-slate-300">
-                <p>Express Entry</p>
-                <p>Provincial Nominee Program</p>
-                <p>Work Permits</p>
-                <p>Study Permits</p>
-                <p>Family Sponsorship</p>
+              <div className="flex space-x-3 pt-2">
+                <a href="#" className="w-8 h-8 bg-[#66a380] rounded-full flex items-center justify-center hover:bg-[#4a8a6b] transition-colors">
+                  <span className="text-white text-sm">f</span>
+                </a>
+                <a href="#" className="w-8 h-8 bg-[#66a380] rounded-full flex items-center justify-center hover:bg-[#4a8a6b] transition-colors">
+                  <span className="text-white text-sm">t</span>
+                </a>
+                <a href="#" className="w-8 h-8 bg-[#66a380] rounded-full flex items-center justify-center hover:bg-[#4a8a6b] transition-colors">
+                  <span className="text-white text-sm">in</span>
+                </a>
               </div>
             </div>
 
             <div className="space-y-4">
-              <h3 className="font-semibold text-white">Resources</h3>
-              <div className="space-y-2 text-sm text-slate-300">
-                <p>Immigration Updates</p>
-                <p>How-To Guides</p>
-                <p>Case Studies</p>
-                <p>FAQ</p>
-                <p>YouTube Channel</p>
+              <h3 className="font-semibold text-white text-lg">Services</h3>
+              <div className="space-y-3 text-sm text-gray-200">
+                <a href="/services/permanent-residency" className="block hover:text-[#66a380] transition-colors">
+                  Express Entry
+                </a>
+                <a href="/services/permanent-residency" className="block hover:text-[#66a380] transition-colors">
+                  Provincial Nominee Program
+                </a>
+                <a href="/services/status-services" className="block hover:text-[#66a380] transition-colors">
+                  Work Permits
+                </a>
+                <a href="/services/status-services" className="block hover:text-[#66a380] transition-colors">
+                  Study Permits
+                </a>
+                <a href="/services/status-services" className="block hover:text-[#66a380] transition-colors">
+                  Family Sponsorship
+                </a>
               </div>
             </div>
 
             <div className="space-y-4">
-              <h3 className="font-semibold text-white">Contact</h3>
-              <div className="space-y-3">
-                <div className="flex items-center space-x-2 text-sm text-slate-300">
-                  <MapPin className="h-4 w-4" />
+              <h3 className="font-semibold text-white text-lg">Resources</h3>
+              <div className="space-y-3 text-sm text-gray-200">
+                <a href="/blog" className="block hover:text-[#66a380] transition-colors">
+                  Immigration Blog
+                </a>
+                <a href="/resources" className="block hover:text-[#66a380] transition-colors">
+                  Free Tools & Guides
+                </a>
+                <a href="/assessment" className="block hover:text-[#66a380] transition-colors">
+                  Assessment Tools
+                </a>
+                <a href="/resources" className="block hover:text-[#66a380] transition-colors">
+                  Download Resources
+                </a>
+                <a href="#" className="block hover:text-[#66a380] transition-colors">
+                  YouTube Channel
+                </a>
+              </div>
+            </div>
+
+            <div className="space-y-4">
+              <h3 className="font-semibold text-white text-lg">Contact Info</h3>
+              <div className="space-y-4">
+                <div className="flex items-start space-x-3 text-sm text-gray-200">
+                  <MapPin className="h-5 w-5 text-[#66a380] mt-0.5 flex-shrink-0" />
                   <span>Mississauga, Ontario, Canada</span>
                 </div>
-                <div className="flex items-center space-x-2 text-lg text-slate-300">
-                  <Phone className="h-4 w-4" />
-                  <span>514-506-0671</span>
+                <div className="flex items-center space-x-3 text-gray-200">
+                  <Phone className="h-5 w-5 text-[#66a380] flex-shrink-0" />
+                  <a href="tel:514-506-0671" className="hover:text-[#66a380] transition-colors">
+                    514-506-0671
+                  </a>
                 </div>
-                <div className="flex items-center space-x-2 text-lg text-slate-300">
-                  <Mail className="h-4 w-4" />
-                  <span>info@example.com</span>
+                <div className="flex items-center space-x-3 text-gray-200">
+                  <Mail className="h-5 w-5 text-[#66a380] flex-shrink-0" />
+                  <a href="mailto:info@mujtabasarwar.com" className="hover:text-[#66a380] transition-colors">
+                    info@mujtabasarwar.com
+                  </a>
+                </div>
+                <div className="pt-2">
+                  <a href="/booking" className="inline-flex items-center px-4 py-2 bg-[#66a380] text-white rounded-lg hover:bg-[#4a8a6b] transition-colors text-sm font-medium">
+                    Book Free Consultation
+                  </a>
                 </div>
               </div>
             </div>
           </div>
 
-          <Separator className="my-8 bg-slate-700" />
+          <Separator className="my-8 bg-gray-600" />
 
-          <div className="flex flex-col md:flex-row justify-between items-center text-sm text-slate-400">
+          <div className="flex flex-col md:flex-row justify-between items-center text-sm text-gray-300">
             <p>&copy; 2025 Mujtaba Sarwar Canadian Immigration Consulting. All rights reserved.</p>
-            <div className="flex space-x-4 mt-4 md:mt-0">
-              <a href="#" className="hover:text-white transition-colors">
+            <div className="flex space-x-6 mt-4 md:mt-0">
+              <a href="#" className="hover:text-[#66a380] transition-colors">
                 Privacy Policy
               </a>
-              <a href="#" className="hover:text-white transition-colors">
+              <a href="#" className="hover:text-[#66a380] transition-colors">
                 Terms of Service
               </a>
-              <a href="#" className="hover:text-white transition-colors">
+              <a href="#" className="hover:text-[#66a380] transition-colors">
                 ICCRC Compliance
               </a>
             </div>
