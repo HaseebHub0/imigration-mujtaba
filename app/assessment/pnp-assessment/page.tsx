@@ -102,7 +102,7 @@ export default function PNPAssessmentPage() {
     <div className="min-h-screen bg-white">
       {/* Hero Section */}
       <section className="relative bg-cover bg-center bg-no-repeat py-20" style={{ backgroundImage: 'url("https://images.unsplash.com/photo-1560472354-b33ff0c44a43?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2026&q=80")' }}>
-        <div className="absolute inset-0 bg-[#0f172b]/80"></div>
+        <div className="absolute inset-0 bg-[#66a380]/80"></div>
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl font-bold mb-6 text-white">PNP Assessment Tool</h1>
@@ -121,7 +121,7 @@ export default function PNPAssessmentPage() {
               <div>
                 <Card className="mb-8">
                   <CardHeader>
-                    <CardTitle className="text-xl text-[#0f172b]">Personal Information</CardTitle>
+                    <CardTitle className="text-xl text-[#144d5e]">Personal Information</CardTitle>
                   </CardHeader>
                   <CardContent className="space-y-4">
                     <div>
@@ -201,7 +201,7 @@ export default function PNPAssessmentPage() {
               <div>
                 <Card className="mb-8">
                   <CardHeader>
-                    <CardTitle className="text-xl text-[#0f172b]">Provincial Connections</CardTitle>
+                    <CardTitle className="text-xl text-[#144d5e]">Provincial Connections</CardTitle>
                   </CardHeader>
                   <CardContent className="space-y-4">
                     <div>
@@ -271,7 +271,7 @@ export default function PNPAssessmentPage() {
 
             {showResults && (
               <div className="mt-12">
-                <h2 className="text-3xl font-bold text-[#0f172b] mb-8 text-center">
+                <h2 className="text-3xl font-bold text-[#144d5e] mb-8 text-center">
                   Your PNP Assessment Results
                 </h2>
 
@@ -282,7 +282,7 @@ export default function PNPAssessmentPage() {
                         <CardHeader>
                           <div className="flex items-center gap-2 mb-2">
                             <MapPin className="w-5 h-5 text-[#66a380]" />
-                            <CardTitle className="text-lg text-[#0f172b]">{result.province}</CardTitle>
+                            <CardTitle className="text-lg text-[#144d5e]">{result.province}</CardTitle>
                           </div>
                           <Badge
                             variant="outline"
@@ -329,7 +329,7 @@ export default function PNPAssessmentPage() {
                   <Card className="bg-[#f5f2ec] border-[#66a380]">
                     <CardContent className="p-6">
                       <CheckCircle className="w-12 h-12 text-[#66a380] mx-auto mb-4" />
-                      <h3 className="text-xl font-semibold text-[#0f172b] mb-2">
+                      <h3 className="text-xl font-semibold text-[#144d5e] mb-2">
                         Ready for the Next Step?
                       </h3>
                       <p className="text-gray-700 mb-4">
@@ -351,7 +351,7 @@ export default function PNPAssessmentPage() {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-12">
-              <h2 className="text-3xl font-bold text-[#0f172b] mb-4">Need Help with Your PNP Assessment?</h2>
+              <h2 className="text-3xl font-bold text-[#144d5e] mb-4">Need Help with Your PNP Assessment?</h2>
               <p className="text-gray-700 max-w-2xl mx-auto">
                 Have questions about your results or need help understanding PNP programs? Send us a message and we'll get back to you.
               </p>

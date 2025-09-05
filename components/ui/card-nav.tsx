@@ -3,6 +3,7 @@
 import React, { useLayoutEffect, useRef, useState } from "react";
 import { gsap } from "gsap";
 import { GoArrowUpRight } from "react-icons/go";
+import Link from "next/link";
 
 type CardNavLink = {
   label: string;
@@ -159,6 +160,18 @@ const CardNav: React.FC<CardNavProps> = ({
     if (el) cardsRef.current[i] = el;
   };
 
+  const handleLinkClick = () => {
+    // Close the menu when a link is clicked
+    if (isExpanded) {
+      const tl = tlRef.current;
+      if (tl) {
+        setIsHamburgerOpen(false);
+        tl.eventCallback("onReverseComplete", () => setIsExpanded(false));
+        tl.reverse();
+      }
+    }
+  };
+
   return (
     <div className={`card-nav-container ${className}`}>
       <nav
@@ -189,13 +202,13 @@ const CardNav: React.FC<CardNavProps> = ({
             )}
           </div>
 
-          <button
-            type="button"
+          <Link
+            href="/booking"
             className="card-nav-cta-button"
             style={{ backgroundColor: buttonBgColor, color: buttonTextColor }}
           >
             Get Started
-          </button>
+          </Link>
         </div>
 
         <div className="card-nav-content" aria-hidden={!isExpanded}>
@@ -210,18 +223,19 @@ const CardNav: React.FC<CardNavProps> = ({
               <div className="nav-card-label">{item.label}</div>
               <div className="nav-card-links">
                 {item.links?.map((lnk, i) => (
-                  <a
+                  <Link
                     key={`${lnk.label}-${i}`}
                     className="nav-card-link"
                     href={lnk.href}
                     aria-label={lnk.ariaLabel}
+                    onClick={handleLinkClick}
                   >
                     <GoArrowUpRight
                       className="nav-card-link-icon"
                       aria-hidden="true"
                     />
                     {lnk.label}
-                  </a>
+                  </Link>
                 ))}
               </div>
             </div>

@@ -88,7 +88,7 @@ export default function BlogPage() {
     <div className="min-h-screen">
       {/* Hero Section */}
       <section className="relative bg-cover bg-center bg-no-repeat py-20" style={{ backgroundImage: 'url("https://images.unsplash.com/photo-1481627834876-b7833e8f5570?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2028&q=80")' }}>
-        <div className="absolute inset-0 bg-[#0f172b]/80"></div>
+        <div className="absolute inset-0 bg-[#66a380]/80"></div>
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl font-bold mb-6 text-white">Immigration Insights</h1>
@@ -104,7 +104,7 @@ export default function BlogPage() {
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-12">
-              <h2 className="text-3xl font-bold text-[#0f172b] mb-4">Featured Article</h2>
+              <h2 className="text-3xl font-bold text-[#144d5e] mb-4">Featured Article</h2>
             </div>
 
             <Card className="hover:bg-[#f5f2ec] transition-colors duration-300 overflow-hidden">
@@ -129,7 +129,7 @@ export default function BlogPage() {
                       <span>{featuredPost.readTime}</span>
                     </div>
                   </div>
-                  <h3 className="text-2xl font-bold text-[#0f172b] mb-4">{featuredPost.title}</h3>
+                  <h3 className="text-2xl font-bold text-[#144d5e] mb-4">{featuredPost.title}</h3>
                   <p className="text-gray-700 mb-6 leading-relaxed">{featuredPost.excerpt}</p>
                   <Link href={`/blog/${featuredPost.slug}`}>
                     <Button className="bg-[#66a380] hover:bg-[#66a380]/90 text-white">
@@ -183,7 +183,7 @@ export default function BlogPage() {
                       </Badge>
                       <span className="text-xs text-gray-500">{post.readTime}</span>
                     </div>
-                    <CardTitle className="text-lg text-[#0f172b] line-clamp-2">{post.title}</CardTitle>
+                    <CardTitle className="text-lg text-[#144d5e] line-clamp-2">{post.title}</CardTitle>
                   </CardHeader>
                   <CardContent>
                     <p className="text-gray-700 text-sm mb-4 line-clamp-3">{post.excerpt}</p>
@@ -215,7 +215,7 @@ export default function BlogPage() {
       <section className="py-16 bg-[#f5f2ec]">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-3xl font-bold text-[#0f172b] mb-4">Stay Updated</h2>
+            <h2 className="text-3xl font-bold text-[#144d5e] mb-4">Stay Updated</h2>
             <p className="text-gray-700 mb-8 max-w-2xl mx-auto">
               Subscribe to our newsletter and get the latest immigration updates, policy changes, and expert insights
               delivered to your inbox.
@@ -234,7 +234,7 @@ export default function BlogPage() {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-12">
-              <h2 className="text-3xl font-bold text-[#0f172b] mb-4">Have Questions About Our Articles?</h2>
+              <h2 className="text-3xl font-bold text-[#144d5e] mb-4">Have Questions About Our Articles?</h2>
               <p className="text-gray-700 max-w-2xl mx-auto">
                 Need clarification on any of our blog posts or have specific immigration questions? Send us a message and we'll get back to you.
               </p>
@@ -291,7 +291,7 @@ export default function BlogPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="bg-[#0f172b] text-white py-16">
+      <section className="bg-[#66a380] text-white py-16">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold mb-4">Need Personalized Immigration Guidance?</h2>
           <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
@@ -305,7 +305,7 @@ export default function BlogPage() {
             <Button
               size="lg"
               variant="outline"
-                              className="border-white text-white hover:bg-white hover:text-[#0f172b] bg-transparent"
+                              className="border-white text-white hover:bg-white hover:text-[#144d5e] bg-transparent"
             >
               Take Assessment Quiz
             </Button>

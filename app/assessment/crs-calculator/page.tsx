@@ -129,7 +129,7 @@ export default function CRSCalculatorPage() {
     if (score >= 470)
       return { status: "excellent", message: "Excellent chance of receiving an invitation", color: "text-green-600" }
     if (score >= 450)
-      return { status: "good", message: "Good chance of receiving an invitation", color: "text-blue-600" }
+      return { status: "good", message: "Good chance of receiving an invitation", color: "text-green-600" }
     if (score >= 400)
       return {
         status: "moderate",
@@ -143,7 +143,7 @@ export default function CRSCalculatorPage() {
     <div className="min-h-screen bg-white">
       {/* Hero Section */}
       <section className="relative bg-cover bg-center bg-no-repeat py-20" style={{ backgroundImage: 'url("https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80")' }}>
-        <div className="absolute inset-0 bg-[#0f172b]/80"></div>
+        <div className="absolute inset-0 bg-[#66a380]/80"></div>
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl font-bold mb-6 text-white">CRS Score Calculator</h1>
@@ -162,7 +162,7 @@ export default function CRSCalculatorPage() {
               <div>
                 <Card className="mb-8">
                   <CardHeader>
-                    <CardTitle className="text-xl text-[#0f172b]">Personal Information</CardTitle>
+                    <CardTitle className="text-xl text-[#144d5e]">Personal Information</CardTitle>
                   </CardHeader>
                   <CardContent className="space-y-4">
                     <div>
@@ -236,7 +236,7 @@ export default function CRSCalculatorPage() {
 
                 <Card>
                   <CardHeader>
-                    <CardTitle className="text-xl text-[#0f172b]">
+                    <CardTitle className="text-xl text-[#144d5e]">
                       English Language Skills (IELTS/CELPIP)
                     </CardTitle>
                   </CardHeader>
@@ -298,7 +298,7 @@ export default function CRSCalculatorPage() {
               <div>
                 <Card className="mb-8">
                   <CardHeader>
-                    <CardTitle className="text-xl text-[#0f172b]">Additional Factors</CardTitle>
+                    <CardTitle className="text-xl text-[#144d5e]">Additional Factors</CardTitle>
                   </CardHeader>
                   <CardContent className="space-y-4">
                     <div>
@@ -362,7 +362,7 @@ export default function CRSCalculatorPage() {
                   <Card className="mt-8 border-2 border-[#66a380]">
                     <CardHeader className="text-center">
                       <div className="text-6xl font-bold text-[#66a380] mb-4">{crsScore}</div>
-                      <CardTitle className="text-2xl text-[#0f172b]">Your CRS Score</CardTitle>
+                      <CardTitle className="text-2xl text-[#144d5e]">Your CRS Score</CardTitle>
                     </CardHeader>
                     <CardContent className="text-center">
                       <div className={`text-lg font-semibold mb-4 ${getScoreStatus(crsScore).color}`}>

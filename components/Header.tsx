@@ -17,8 +17,8 @@ const Header: React.FC = () => {
     },
     {
       label: "About",
-      bgColor: "#ffffff",
-      textColor: "#0f172b",
+              bgColor: "#144d5e",
+        textColor: "#ffffff",
       links: [
         { label: "About Us", ariaLabel: "About Company", href: "/about" },
         
@@ -36,8 +36,8 @@ const Header: React.FC = () => {
     },
     {
       label: "Assessment",
-      bgColor: "#ffffff",
-      textColor: "#0f172b",
+              bgColor: "#144d5e",
+        textColor: "#ffffff",
       links: [
         { label: "CRS Calculator", ariaLabel: "CRS Score Calculator", href: "/assessment/crs-calculator" },
         { label: "PNP Assessment", ariaLabel: "PNP Assessment Tool", href: "/assessment/pnp-assessment" },
@@ -56,8 +56,8 @@ const Header: React.FC = () => {
     },
     {
       label: "Booking",
-      bgColor: "#ffffff",
-      textColor: "#0f172b",
+              bgColor: "#144d5e",
+        textColor: "#ffffff",
       links: [
         { label: "Free Consultation", ariaLabel: "Book Free Consultation", href: "/booking/free-consultation" },
         { label: "Paid Consultation", ariaLabel: "Book Paid Consultation", href: "/booking/paid-consultation" },

@@ -233,12 +233,12 @@ export default function HomePage() {
       </section>
 
       {/* Three Cards Section - Enhanced with Scroll Animations */}
-      <section className="py-20 bg-slate-800">
+      <section className="py-20">
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
             {/* Expertise Card */}
             <div>
-              <Card className="bg-slate-700/50 border-slate-600 text-white hover:bg-[#f5f2ec] hover:text-slate-900 transition-all duration-300 group shadow-lg hover:shadow-2xl">
+              <Card className="  text-white bg-[#f5f2ec] text-[#144d5e] transition-all duration-300 group shadow-lg hover:shadow-2xl">
                 <CardHeader className="text-center pb-4">
                   <div>
                     <Award className="h-12 w-12 text-primary group-hover:text-primary mx-auto mb-4" />
@@ -264,7 +264,7 @@ export default function HomePage() {
 
             {/* Success Card */}
             <div>
-              <Card className="bg-slate-700/50 border-slate-600 text-white hover:bg-[#f5f2ec] hover:text-slate-900 transition-all duration-300 group shadow-lg hover:shadow-2xl">
+              <Card className="  text-white bg-[#f5f2ec] text-[#144d5e] transition-all duration-300 group shadow-lg hover:shadow-2xl">
                 <CardHeader className="text-center pb-4">
                   <div>
                     <TrendingUp className="h-12 w-12 text-primary group-hover:text-primary mx-auto mb-4" />
@@ -290,7 +290,7 @@ export default function HomePage() {
 
             {/* Trust Card */}
             <div>
-              <Card className="bg-slate-700/50 border-slate-600 text-white hover:bg-[#f5f2ec] hover:text-slate-900 transition-all duration-300 group shadow-lg hover:shadow-2xl">
+              <Card className="  text-white bg-[#f5f2ec] text-[#144d5e] transition-all duration-300 group shadow-lg hover:shadow-2xl">
                 <CardHeader className="text-center pb-4">
                   <div>
                     <Heart className="h-12 w-12 text-primary group-hover:text-primary mx-auto mb-4" />
@@ -318,10 +318,10 @@ export default function HomePage() {
       </section>
 
       {/* Location Banner */}
-      <section className="py-8 bg-slate-900">
+      <section className="py-8 ">
         <div className="container mx-auto px-4">
           <div className="text-center">
-            <h3 className="text-white text-lg font-medium mb-2">
+            <h3 className="text-[#144d5e] text-lg font-medium mb-2">
               Serving Immigration Clients Across Canada and Internationally. Based in:
             </h3>
             <div className="flex justify-center items-center space-x-8 text-primary">
