@@ -27,9 +27,9 @@ export default function AssessmentPage() {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <div className="grid md:grid-cols-2 gap-8">
-              <Card className="hover:bg-[#f5f2ec] transition-colors duration-300 border-2 border-[#f5a101]">
+              <Card className="hover:bg-[#f5f2ec] transition-colors duration-300 border-2 border-[#66a380]">
                 <CardHeader className="text-center pb-4">
-                  <Calculator className="w-16 h-16 text-[#f5a101] mx-auto mb-4" />
+                  <Calculator className="w-16 h-16 text-[#66a380] mx-auto mb-4" />
                   <CardTitle className="text-2xl text-[#0f172b]">CRS Score Calculator</CardTitle>
                   <p className="text-gray-600">Calculate your Comprehensive Ranking System score for Express Entry</p>
                 </CardHeader>
@@ -39,16 +39,16 @@ export default function AssessmentPage() {
                     Entry
                   </p>
                   <Link href="/assessment/crs-calculator">
-                    <Button className="bg-[#f5a101] hover:bg-[#f5a101]/90 text-white">
+                    <Button className="bg-[#66a380] hover:bg-[#66a380]/90 text-white">
                       Calculate CRS Score <ArrowRight className="w-4 h-4 ml-2" />
                     </Button>
                   </Link>
                 </CardContent>
               </Card>
 
-              <Card className="hover:bg-[#f5f2ec] transition-colors duration-300 border-2 border-[#f5a101]">
+              <Card className="hover:bg-[#f5f2ec] transition-colors duration-300 border-2 border-[#66a380]">
                 <CardHeader className="text-center pb-4">
-                  <FileCheck className="w-16 h-16 text-[#f5a101] mx-auto mb-4" />
+                  <FileCheck className="w-16 h-16 text-[#66a380] mx-auto mb-4" />
                   <CardTitle className="text-2xl text-[#0f172b]">PNP Assessment</CardTitle>
                   <p className="text-gray-600">Find out which Provincial Nominee Programs you may qualify for</p>
                 </CardHeader>
@@ -58,7 +58,7 @@ export default function AssessmentPage() {
                     success
                   </p>
                   <Link href="/assessment/pnp-assessment">
-                    <Button className="bg-[#f5a101] hover:bg-[#f5a101]/90 text-white">
+                    <Button className="bg-[#66a380] hover:bg-[#66a380]/90 text-white">
                       Start PNP Assessment <ArrowRight className="w-4 h-4 ml-2" />
                     </Button>
                   </Link>
@@ -80,7 +80,7 @@ export default function AssessmentPage() {
 
             <div className="grid md:grid-cols-3 gap-8">
               <div className="text-center">
-                <div className="w-16 h-16 bg-[#f5a101] text-white rounded-full flex items-center justify-center mx-auto mb-4 text-xl font-bold">
+                <div className="w-16 h-16 bg-[#66a380] text-white rounded-full flex items-center justify-center mx-auto mb-4 text-xl font-bold">
                   1
                 </div>
                 <h3 className="text-lg font-semibold text-[#0f172b] mb-2">Answer Questions</h3>
@@ -89,7 +89,7 @@ export default function AssessmentPage() {
                 </p>
               </div>
               <div className="text-center">
-                <div className="w-16 h-16 bg-[#f5a101] text-white rounded-full flex items-center justify-center mx-auto mb-4 text-xl font-bold">
+                <div className="w-16 h-16 bg-[#66a380] text-white rounded-full flex items-center justify-center mx-auto mb-4 text-xl font-bold">
                   2
                 </div>
                 <h3 className="text-lg font-semibold text-[#0f172b] mb-2">Get Results</h3>
@@ -98,7 +98,7 @@ export default function AssessmentPage() {
                 </p>
               </div>
               <div className="text-center">
-                <div className="w-16 h-16 bg-[#f5a101] text-white rounded-full flex items-center justify-center mx-auto mb-4 text-xl font-bold">
+                <div className="w-16 h-16 bg-[#66a380] text-white rounded-full flex items-center justify-center mx-auto mb-4 text-xl font-bold">
                   3
                 </div>
                 <h3 className="text-lg font-semibold text-[#0f172b] mb-2">Next Steps</h3>
@@ -156,7 +156,7 @@ export default function AssessmentPage() {
                     />
                   </div>
                   
-                  <Button type="submit" className="w-full bg-[#f5a101] hover:bg-[#f5a101]/90 text-white">
+                  <Button type="submit" className="w-full bg-[#66a380] hover:bg-[#66a380]/90 text-white">
                     <Send className="w-4 h-4 mr-2" />
                     Send Question
                   </Button>

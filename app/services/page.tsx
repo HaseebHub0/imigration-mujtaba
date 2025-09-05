@@ -65,13 +65,13 @@ export default function ServicesPage() {
               Comprehensive immigration solutions tailored to your unique situation and goals
             </p>
             <div className="flex flex-wrap justify-center gap-4">
-              <Badge variant="secondary" className="bg-[#f5a101] text-white px-4 py-2">
+              <Badge variant="secondary" className="bg-[#66a380] text-white px-4 py-2">
                 80% Success Rate
               </Badge>
-              <Badge variant="secondary" className="bg-[#f5a101] text-white px-4 py-2">
+              <Badge variant="secondary" className="bg-[#66a380] text-white px-4 py-2">
                 Free Consultation
               </Badge>
-              <Badge variant="secondary" className="bg-[#f5a101] text-white px-4 py-2">
+              <Badge variant="secondary" className="bg-[#66a380] text-white px-4 py-2">
                 Transparent Pricing
               </Badge>
             </div>
@@ -84,9 +84,9 @@ export default function ServicesPage() {
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <div className="grid md:grid-cols-2 gap-8 mb-16">
-              <Card className="hover:bg-[#f5f2ec] transition-colors duration-300 border-2 border-[#f5a101]">
+              <Card className="hover:bg-[#f5f2ec] transition-colors duration-300 border-2 border-[#66a380]">
                 <CardHeader className="text-center pb-4">
-                  <Globe className="w-16 h-16 text-[#f5a101] mx-auto mb-4" />
+                  <Globe className="w-16 h-16 text-[#66a380] mx-auto mb-4" />
                   <CardTitle className="text-2xl text-[#0f172b]">Permanent Residency</CardTitle>
                   <p className="text-gray-600">Make Canada your permanent home</p>
                 </CardHeader>
@@ -95,16 +95,16 @@ export default function ServicesPage() {
                     Comprehensive support for Express Entry, PNP, and category-based immigration programs
                   </p>
                   <Link href="/services/permanent-residency">
-                    <Button className="bg-[#f5a101] hover:bg-[#f5a101]/90 text-white">
+                    <Button className="bg-[#66a380] hover:bg-[#66a380]/90 text-white">
                       Explore PR Services <ArrowRight className="w-4 h-4 ml-2" />
                     </Button>
                   </Link>
                 </CardContent>
               </Card>
 
-              <Card className="hover:bg-[#f5f2ec] transition-colors duration-300 border-2 border-[#f5a101]">
+              <Card className="hover:bg-[#f5f2ec] transition-colors duration-300 border-2 border-[#66a380]">
                 <CardHeader className="text-center pb-4">
-                  <FileText className="w-16 h-16 text-[#f5a101] mx-auto mb-4" />
+                  <FileText className="w-16 h-16 text-[#66a380] mx-auto mb-4" />
                   <CardTitle className="text-2xl text-[#0f172b]">Status Services</CardTitle>
                   <p className="text-gray-600">Work, study, and visit Canada</p>
                 </CardHeader>
@@ -113,7 +113,7 @@ export default function ServicesPage() {
                     Work permits, study permits, family sponsorship, and LMIA applications
                   </p>
                   <Link href="/services/status-services">
-                    <Button className="bg-[#f5a101] hover:bg-[#f5a101]/90 text-white">
+                    <Button className="bg-[#66a380] hover:bg-[#66a380]/90 text-white">
                       Explore Status Services <ArrowRight className="w-4 h-4 ml-2" />
                     </Button>
                   </Link>
@@ -141,18 +141,18 @@ export default function ServicesPage() {
                   <CardHeader>
                     <CardTitle className="text-xl text-[#0f172b]">{service.title}</CardTitle>
                     <p className="text-gray-600">{service.description}</p>
-                    <div className="text-2xl font-bold text-[#f5a101]">{service.price}</div>
+                    <div className="text-2xl font-bold text-[#66a380]">{service.price}</div>
                   </CardHeader>
                   <CardContent>
                     <ul className="space-y-2 mb-6">
                       {service.features.map((feature, idx) => (
                         <li key={idx} className="flex items-center gap-2">
-                          <CheckCircle className="w-4 h-4 text-[#f5a101]" />
+                          <CheckCircle className="w-4 h-4 text-[#66a380]" />
                           <span className="text-gray-700">{feature}</span>
                         </li>
                       ))}
                     </ul>
-                    <Button className="w-full bg-[#f5a101] hover:bg-[#f5a101]/90 text-white">Get Started</Button>
+                    <Button className="w-full bg-[#66a380] hover:bg-[#66a380]/90 text-white">Get Started</Button>
                   </CardContent>
                 </Card>
               ))}
@@ -178,18 +178,18 @@ export default function ServicesPage() {
                   <CardHeader>
                     <CardTitle className="text-lg text-[#0f172b]">{service.title}</CardTitle>
                     <p className="text-gray-600 text-sm">{service.description}</p>
-                    <div className="text-xl font-bold text-[#f5a101]">{service.price}</div>
+                    <div className="text-xl font-bold text-[#66a380]">{service.price}</div>
                   </CardHeader>
                   <CardContent>
                     <ul className="space-y-1 mb-4">
                       {service.features.map((feature, idx) => (
                         <li key={idx} className="flex items-center gap-2">
-                          <CheckCircle className="w-3 h-3 text-[#f5a101]" />
+                          <CheckCircle className="w-3 h-3 text-[#66a380]" />
                           <span className="text-gray-700 text-sm">{feature}</span>
                         </li>
                       ))}
                     </ul>
-                    <Button size="sm" className="w-full bg-[#f5a101] hover:bg-[#f5a101]/90 text-white">
+                    <Button size="sm" className="w-full bg-[#66a380] hover:bg-[#66a380]/90 text-white">
                       Learn More
                     </Button>
                   </CardContent>
@@ -207,21 +207,21 @@ export default function ServicesPage() {
             <h2 className="text-3xl font-bold text-[#0f172b] mb-8">Why Choose Our Services?</h2>
             <div className="grid md:grid-cols-3 gap-8">
               <div className="text-center">
-                <Users className="w-12 h-12 text-[#f5a101] mx-auto mb-4" />
+                <Users className="w-12 h-12 text-[#66a380] mx-auto mb-4" />
                 <h3 className="text-xl font-semibold text-[#0f172b] mb-2">Personalized Approach</h3>
                 <p className="text-gray-700">
                   Every case is unique. We provide tailored solutions for your specific situation.
                 </p>
               </div>
               <div className="text-center">
-                <CheckCircle className="w-12 h-12 text-[#f5a101] mx-auto mb-4" />
+                <CheckCircle className="w-12 h-12 text-[#66a380] mx-auto mb-4" />
                 <h3 className="text-xl font-semibold text-[#0f172b] mb-2">Proven Success</h3>
                 <p className="text-gray-700">
                   80% success rate with transparent assessment - we only take cases we can win.
                 </p>
               </div>
               <div className="text-center">
-                <Heart className="w-12 h-12 text-[#f5a101] mx-auto mb-4" />
+                <Heart className="w-12 h-12 text-[#66a380] mx-auto mb-4" />
                 <h3 className="text-xl font-semibold text-[#0f172b] mb-2">Ongoing Support</h3>
                 <p className="text-gray-700">
                   From initial consultation to final approval, we're with you every step of the way.
@@ -240,7 +240,7 @@ export default function ServicesPage() {
             Book your free 30-minute consultation to discuss your immigration goals and get expert guidance.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" className="bg-[#f5a101] hover:bg-[#f5a101]/90 text-white">
+            <Button size="lg" className="bg-[#66a380] hover:bg-[#66a380]/90 text-white">
               Book Free Consultation
             </Button>
             <Button

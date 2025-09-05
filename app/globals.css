@@ -13,21 +13,21 @@
   --card-foreground: #0f172b;
   --popover: oklch(1 0 0);
   --popover-foreground: #0f172b;
-  --primary: #f5a101; /* Orange primary color for buttons and cards - updated */
+  --primary: #66a380; /* Green primary color for buttons and cards */
   --primary-foreground: oklch(1 0 0);
-  --secondary: #0f172b; /* Dark blue secondary - updated to #0f172b */
-  --secondary-foreground: oklch(1 0 0);
+  --secondary: #ffffff; /* White secondary */
+  --secondary-foreground: #0f172b;
   --muted: #f5f2ec;
   --muted-foreground: #0f172b;
-  --accent: #f5a101; /* Orange accent - updated */
+  --accent: #66a380; /* Green accent */
   --accent-foreground: oklch(1 0 0);
   --destructive: oklch(0.55 0.2 25);
   --destructive-foreground: oklch(1 0 0);
   --border: oklch(0.9 0 0);
   --input: oklch(1 0 0);
-  --ring: #f5a101; /* Updated to orange */
-  --chart-1: #f5a101; /* Updated to orange */
-  --chart-2: #0f172b; /* Updated to #0f172b */
+  --ring: #66a380; /* Updated to green */
+  --chart-1: #66a380; /* Updated to green */
+  --chart-2: #ffffff; /* Updated to white */
   --chart-3: #f5f2ec;
   --chart-4: oklch(0.55 0.2 25);
   --chart-5: oklch(0.45 0 0);
@@ -56,32 +56,32 @@
   --card-foreground: oklch(0.95 0 0);
   --popover: oklch(0.1 0 0);
   --popover-foreground: oklch(0.95 0 0);
-  --primary: #f5a101; /* Updated to orange */
+  --primary: #66a380; /* Updated to green */
   --primary-foreground: oklch(0.1 0 0);
-  --secondary: #0f172b; /* Updated to #0f172b */
-  --secondary-foreground: oklch(0.95 0 0);
+  --secondary: #ffffff; /* Updated to white */
+  --secondary-foreground: #0f172b;
   --muted: oklch(0.2 0 0);
   --muted-foreground: oklch(0.6 0 0);
-  --accent: #f5a101; /* Updated to orange */
+  --accent: #66a380; /* Updated to green */
   --accent-foreground: oklch(0.1 0 0);
   --destructive: oklch(0.5 0.2 25);
   --destructive-foreground: oklch(0.95 0 0);
   --border: oklch(0.2 0 0);
   --input: oklch(0.15 0 0);
-  --ring: #f5a101; /* Updated to orange */
-  --chart-1: #f5a101; /* Updated to orange */
-  --chart-2: #0f172b; /* Updated to #0f172b */
+  --ring: #66a380; /* Updated to green */
+  --chart-1: #66a380; /* Updated to green */
+  --chart-2: #ffffff; /* Updated to white */
   --chart-3: oklch(0.7 0.1 85);
   --chart-4: oklch(0.5 0.2 25);
   --chart-5: oklch(0.6 0 0);
   --sidebar: oklch(0.1 0 0);
   --sidebar-foreground: oklch(0.95 0 0);
-  --sidebar-primary: #f5a101; /* Updated to orange */
+  --sidebar-primary: #66a380; /* Updated to green */
   --sidebar-primary-foreground: oklch(0.1 0 0);
-  --sidebar-accent: #0f172b; /* Updated to #0f172b */
-  --sidebar-accent-foreground: oklch(0.95 0 0);
+  --sidebar-accent: #ffffff; /* Updated to white */
+  --sidebar-accent-foreground: #0f172b;
   --sidebar-border: oklch(0.2 0 0);
-  --sidebar-ring: #f5a101; /* Updated to orange */
+  --sidebar-ring: #66a380; /* Updated to green */
 }
 
 @theme inline {
@@ -169,32 +169,32 @@
 /* Updated glassmorphism utilities for new color scheme */
 @layer utilities {
   .glass {
-    background: rgba(245, 161, 1, 0.1); /* Updated to orange */
+    background: rgba(102, 163, 128, 0.1); /* Updated to green */
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
-    border: 1px solid rgba(245, 161, 1, 0.2); /* Updated to orange */
+    border: 1px solid rgba(102, 163, 128, 0.2); /* Updated to green */
   }
 
   .glass-card {
     background: rgba(255, 255, 255, 0.8);
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
-    border: 1px solid rgba(245, 161, 1, 0.1); /* Updated to orange */
-    box-shadow: 0 8px 32px rgba(245, 161, 1, 0.1); /* Updated to orange */
+    border: 1px solid rgba(102, 163, 128, 0.1); /* Updated to green */
+    box-shadow: 0 8px 32px rgba(102, 163, 128, 0.1); /* Updated to green */
   }
 
   .glass-nav {
     background: rgba(255, 255, 255, 0.95);
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
-    border-bottom: 1px solid rgba(245, 161, 1, 0.1); /* Updated to orange */
+    border-bottom: 1px solid rgba(102, 163, 128, 0.1); /* Updated to green */
   }
 
   .glass-button {
-    background: rgba(245, 161, 1, 0.1); /* Updated to orange */
+    background: rgba(102, 163, 128, 0.1); /* Updated to green */
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
-    border: 1px solid rgba(245, 161, 1, 0.3); /* Updated to orange */
+    border: 1px solid rgba(102, 163, 128, 0.3); /* Updated to green */
   }
 
   .bg-alt {
@@ -225,9 +225,9 @@
   height: 60px;
   padding: 0;
   background-color: white;
-  border: 1px solid rgba(245, 161, 1, 0.2);
+  border: 1px solid rgba(102, 163, 128, 0.2);
   border-radius: 0.75rem;
-  box-shadow: 0 8px 32px rgba(245, 161, 1, 0.15);
+  box-shadow: 0 8px 32px rgba(102, 163, 128, 0.15);
   position: relative;
   overflow: hidden;
   will-change: height;
@@ -261,7 +261,7 @@
 }
 
 .hamburger-menu:hover {
-  background-color: rgba(245, 161, 1, 0.1);
+  background-color: rgba(102, 163, 128, 0.1);
 }
 
 .hamburger-menu:hover .hamburger-line {
@@ -271,7 +271,7 @@
 .hamburger-line {
   width: 30px;
   height: 2px;
-  background-color: #f5a101;
+  background-color: #66a380;
   transition: transform 0.25s ease, opacity 0.2s ease, margin 0.3s ease;
   transform-origin: 50% 50%;
 }
@@ -298,7 +298,7 @@
 }
 
 .card-nav-cta-button {
-  background: linear-gradient(135deg, #f5a101 0%, #e09401 100%);
+  background: linear-gradient(135deg, #66a380 0%, #4a8a6b 100%);
   color: white;
   border: none;
   border-radius: calc(0.75rem - 0.35rem);
@@ -307,13 +307,13 @@
   font-weight: 600;
   cursor: pointer;
   transition: all 0.3s ease;
-  box-shadow: 0 4px 15px rgba(245, 161, 1, 0.3);
+  box-shadow: 0 4px 15px rgba(102, 163, 128, 0.3);
 }
 
 .card-nav-cta-button:hover {
-  background: linear-gradient(135deg, #e09401 0%, #f5a101 100%);
+  background: linear-gradient(135deg, #4a8a6b 0%, #66a380 100%);
   transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(245, 161, 1, 0.4);
+  box-shadow: 0 6px 20px rgba(102, 163, 128, 0.4);
 }
 
 .card-nav-content {

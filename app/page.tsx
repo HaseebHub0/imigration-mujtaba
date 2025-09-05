@@ -65,7 +65,7 @@ export default function HomePage() {
                         <div className="flex flex-col gap-3 sm:gap-4 justify-center mb-6 sm:mb-8">
                           <Button
                             size="lg"
-                            className="bg-gradient-to-r from-[#f5a101] to-[#e09401] hover:from-[#e09401] hover:to-[#f5a101] text-white border-none px-6 py-4 text-sm sm:text-base h-12 sm:h-14 font-semibold transition-all duration-300 shadow-[0_4px_15px_rgba(245,161,1,0.3)] hover:shadow-[0_6px_20px_rgba(245,161,1,0.4)] hover:-translate-y-0.5 transform hover:scale-105"
+                            className="bg-gradient-to-r from-[#66a380] to-[#4a8a6b] hover:from-[#4a8a6b] hover:to-[#66a380] text-white border-none px-6 py-4 text-sm sm:text-base h-12 sm:h-14 font-semibold transition-all duration-300 shadow-[0_4px_15px_rgba(102,163,128,0.3)] hover:shadow-[0_6px_20px_rgba(102,163,128,0.4)] hover:-translate-y-0.5 transform hover:scale-105"
                           >
                             <a href="/services/permanent-residency" className="flex items-center justify-center">
                               <span>Permanent Residency</span>
@@ -126,7 +126,7 @@ export default function HomePage() {
                   <div className="space-y-6">
                     <h1 className="text-5xl xl:text-6xl 2xl:text-7xl font-bold text-white leading-tight">
                       Expert Immigration Guidance with{" "}
-                      <span className="text-[#f5a101] text-5xl">Transparent Assessment</span>
+                      <span className="text-[#66a380] text-5xl">Transparent Assessment</span>
                     </h1>
                     <p className="text-xl xl:text-2xl text-slate-200 leading-relaxed max-w-2xl">
                       <span className="font-bold">Free 30 minute consultations only</span> for cases we can win.
@@ -199,19 +199,19 @@ export default function HomePage() {
                       {/* Main Card */}
                       <div className="bg-white/10 backdrop-blur-xl rounded-2xl border border-white/20 shadow-2xl p-8 transform rotate-3 hover:rotate-0 transition-transform duration-500">
                         <div className="text-center space-y-4">
-                          <div className="w-16 h-16 bg-[#f5a101] rounded-full flex items-center justify-center mx-auto">
+                          <div className="w-16 h-16 bg-[#66a380] rounded-full flex items-center justify-center mx-auto">
                             <Award className="w-8 h-8 text-white" />
                           </div>
                           <h3 className="text-xl font-bold text-white">RCIC Licensed</h3>
                           <p className="text-slate-200 text-sm">Regulated Canadian Immigration Consultant</p>
-                          <Badge className="bg-[#f5a101] text-white">License #R712505</Badge>
+                          <Badge className="bg-[#66a380] text-white">License #R712505</Badge>
                         </div>
                       </div>
 
                       {/* Floating Stats Card */}
                       <div className="absolute -top-4 -right-4 bg-white/15 backdrop-blur-xl rounded-xl border border-white/30 shadow-xl p-4 transform -rotate-6 hover:rotate-0 transition-transform duration-500">
                         <div className="text-center">
-                          <div className="text-2xl font-bold text-[#f5a101]">80%+</div>
+                          <div className="text-2xl font-bold text-[#66a380]">80%+</div>
                           <div className="text-xs text-slate-200">Success Rate</div>
                         </div>
                       </div>
@@ -219,7 +219,7 @@ export default function HomePage() {
                       {/* Floating Experience Card */}
                       <div className="absolute -bottom-4 -left-4 bg-white/15 backdrop-blur-xl rounded-xl border border-white/30 shadow-xl p-4 transform rotate-6 hover:rotate-0 transition-transform duration-500">
                         <div className="text-center">
-                          <div className="text-2xl font-bold text-[#f5a101]">5+</div>
+                          <div className="text-2xl font-bold text-[#66a380]">5+</div>
                           <div className="text-xs text-slate-200">Years Experience</div>
                         </div>
                       </div>

@@ -20,7 +20,7 @@ export default function AboutPage() {
               Regulated Canadian Immigration Consultant (RCIC) dedicated to helping families achieve their Canadian
               dreams
             </p>
-            <Badge variant="secondary" className="bg-[#f5a101] text-white text-lg px-6 py-2">
+            <Badge variant="secondary" className="bg-[#66a380] text-white text-lg px-6 py-2">
               RCIC License #R712505
             </Badge>
           </div>
@@ -53,7 +53,7 @@ export default function AboutPage() {
                   permits, and family sponsorship cases. My approach combines legal expertise with genuine care for each
                   client's unique situation.
                 </p>
-                <div className="flex items-center gap-2 text-[#f5a101] mb-4">
+                <div className="flex items-center gap-2 text-[#66a380] mb-4">
                   <MapPin className="w-5 h-5" />
                   <span className="font-medium">Mississauga, Ontario, Canada</span>
                 </div>
@@ -64,7 +64,7 @@ export default function AboutPage() {
             <div className="grid md:grid-cols-3 gap-8 mb-16">
               <Card className="hover:bg-[#f5f2ec] transition-colors duration-300">
                 <CardContent className="p-6 text-center">
-                  <Award className="w-12 h-12 text-[#f5a101] mx-auto mb-4" />
+                  <Award className="w-12 h-12 text-[#66a380] mx-auto mb-4" />
                   <h3 className="text-xl font-semibold text-[#0f172b] mb-3">Professional Credentials</h3>
                   <ul className="text-gray-700 space-y-2">
                     <li>RCIC License #R712505</li>
@@ -76,7 +76,7 @@ export default function AboutPage() {
 
               <Card className="hover:bg-[#f5f2ec] transition-colors duration-300">
                 <CardContent className="p-6 text-center">
-                  <Users className="w-12 h-12 text-[#f5a101] mx-auto mb-4" />
+                  <Users className="w-12 h-12 text-[#66a380] mx-auto mb-4" />
                   <h3 className="text-xl font-semibold text-[#0f172b] mb-3">Community Involvement</h3>
                   <ul className="text-gray-700 space-y-2">
                     <li>RCIC Mentoring Program</li>
@@ -88,7 +88,7 @@ export default function AboutPage() {
 
               <Card className="hover:bg-[#f5f2ec] transition-colors duration-300">
                 <CardContent className="p-6 text-center">
-                  <BookOpen className="w-12 h-12 text-[#f5a101] mx-auto mb-4" />
+                  <BookOpen className="w-12 h-12 text-[#66a380] mx-auto mb-4" />
                   <h3 className="text-xl font-semibold text-[#0f172b] mb-3">Educational Content</h3>
                   <ul className="text-gray-700 space-y-2">
                     <li>Immigration Blog Author</li>
@@ -102,7 +102,7 @@ export default function AboutPage() {
             {/* YouTube Channel */}
             <div className="bg-[#f5f2ec] rounded-lg p-8 mb-16">
               <div className="text-center">
-                <Youtube className="w-16 h-16 text-[#f5a101] mx-auto mb-4" />
+                <Youtube className="w-16 h-16 text-[#66a380] mx-auto mb-4" />
                 <h3 className="text-2xl font-bold text-[#0f172b] mb-4">
                   Immigration Insights with Mujtaba
                 </h3>
@@ -110,22 +110,22 @@ export default function AboutPage() {
                   Stay informed with the latest immigration updates, policy changes, and expert insights through my
                   educational YouTube channel.
                 </p>
-                <Button className="bg-[#f5a101] hover:bg-[#f5a101]/90 text-white">Visit YouTube Channel</Button>
+                <Button className="bg-[#66a380] hover:bg-[#66a380]/90 text-white">Visit YouTube Channel</Button>
               </div>
             </div>
 
             {/* Success Metrics */}
             <div className="grid md:grid-cols-3 gap-8 text-center">
               <div>
-                <div className="text-4xl font-bold text-[#f5a101] mb-2">80%+</div>
+                <div className="text-4xl font-bold text-[#66a380] mb-2">80%+</div>
                 <p className="text-gray-700">Success Rate</p>
               </div>
               <div>
-                <div className="text-4xl font-bold text-[#f5a101] mb-2">500+</div>
+                <div className="text-4xl font-bold text-[#66a380] mb-2">500+</div>
                 <p className="text-gray-700">Families Helped</p>
               </div>
               <div>
-                <div className="text-4xl font-bold text-[#f5a101] mb-2">5+</div>
+                <div className="text-4xl font-bold text-[#66a380] mb-2">5+</div>
                 <p className="text-gray-700">Years Experience</p>
               </div>
             </div>
@@ -183,7 +183,7 @@ export default function AboutPage() {
                     />
                   </div>
                   
-                  <Button type="submit" className="w-full bg-[#f5a101] hover:bg-[#f5a101]/90 text-white">
+                  <Button type="submit" className="w-full bg-[#66a380] hover:bg-[#66a380]/90 text-white">
                     <Send className="w-4 h-4 mr-2" />
                     Send Message
                   </Button>
@@ -201,7 +201,7 @@ export default function AboutPage() {
           <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
             Book your free 30-minute consultation and take the first step toward your Canadian dream.
           </p>
-          <Button size="lg" className="bg-[#f5a101] hover:bg-[#f5a101]/90 text-white">
+          <Button size="lg" className="bg-[#66a380] hover:bg-[#66a380]/90 text-white">
             Book Free Consultation
           </Button>
         </div>

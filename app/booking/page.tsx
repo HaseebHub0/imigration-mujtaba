@@ -35,34 +35,34 @@ export default function BookingPage() {
             </div>
 
             <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-              <Card className="hover:bg-[#f5f2ec] transition-colors duration-300 border-2 border-[#f5a101] relative">
+              <Card className="hover:bg-[#f5f2ec] transition-colors duration-300 border-2 border-[#66a380] relative">
                 <div className="absolute -top-3 left-1/2 transform -translate-x-1/2">
-                  <Badge className="bg-[#f5a101] text-white px-4 py-1">Most Popular</Badge>
+                  <Badge className="bg-[#66a380] text-white px-4 py-1">Most Popular</Badge>
                 </div>
                 <CardHeader className="text-center pb-4 pt-8">
-                  <div className="w-16 h-16 bg-[#f5a101] text-white rounded-full flex items-center justify-center mx-auto mb-4">
+                  <div className="w-16 h-16 bg-[#66a380] text-white rounded-full flex items-center justify-center mx-auto mb-4">
                     <DollarSign className="w-8 h-8" />
                   </div>
                   <CardTitle className="text-2xl text-[#0f172b]">Free Consultation</CardTitle>
-                  <div className="text-3xl font-bold text-[#f5a101]">$0 CAD</div>
+                  <div className="text-3xl font-bold text-[#66a380]">$0 CAD</div>
                   <p className="text-gray-600">30-minute assessment call</p>
                 </CardHeader>
                 <CardContent className="space-y-4">
                   <div className="space-y-3">
                     <div className="flex items-center gap-2">
-                      <CheckCircle className="w-4 h-4 text-[#f5a101]" />
+                      <CheckCircle className="w-4 h-4 text-[#66a380]" />
                       <span className="text-gray-700">Eligibility assessment</span>
                     </div>
                     <div className="flex items-center gap-2">
-                      <CheckCircle className="w-4 h-4 text-[#f5a101]" />
+                      <CheckCircle className="w-4 h-4 text-[#66a380]" />
                       <span className="text-gray-700">Immigration pathway review</span>
                     </div>
                     <div className="flex items-center gap-2">
-                      <CheckCircle className="w-4 h-4 text-[#f5a101]" />
+                      <CheckCircle className="w-4 h-4 text-[#66a380]" />
                       <span className="text-gray-700">Next steps guidance</span>
                     </div>
                     <div className="flex items-center gap-2">
-                      <CheckCircle className="w-4 h-4 text-[#f5a101]" />
+                      <CheckCircle className="w-4 h-4 text-[#66a380]" />
                       <span className="text-gray-700">Honest assessment of chances</span>
                     </div>
                   </div>
@@ -75,7 +75,7 @@ export default function BookingPage() {
                   </div>
 
                   <Link href="/booking/free-consultation">
-                    <Button className="w-full bg-[#f5a101] hover:bg-[#f5a101]/90 text-white">
+                    <Button className="w-full bg-[#66a380] hover:bg-[#66a380]/90 text-white">
                       Book Free Consultation <ArrowRight className="w-4 h-4 ml-2" />
                     </Button>
                   </Link>
@@ -88,29 +88,29 @@ export default function BookingPage() {
                     <Clock className="w-8 h-8" />
                   </div>
                   <CardTitle className="text-2xl text-[#0f172b]">Paid Consultation</CardTitle>
-                  <div className="text-3xl font-bold text-[#f5a101]">$50 CAD</div>
+                  <div className="text-3xl font-bold text-[#66a380]">$50 CAD</div>
                   <p className="text-gray-600">60-minute detailed consultation</p>
                 </CardHeader>
                 <CardContent className="space-y-4">
                   <div className="space-y-3">
                     <div className="flex items-center gap-2">
-                      <CheckCircle className="w-4 h-4 text-[#f5a101]" />
+                      <CheckCircle className="w-4 h-4 text-[#66a380]" />
                       <span className="text-gray-700">Comprehensive case review</span>
                     </div>
                     <div className="flex items-center gap-2">
-                      <CheckCircle className="w-4 h-4 text-[#f5a101]" />
+                      <CheckCircle className="w-4 h-4 text-[#66a380]" />
                       <span className="text-gray-700">Detailed strategy discussion</span>
                     </div>
                     <div className="flex items-center gap-2">
-                      <CheckCircle className="w-4 h-4 text-[#f5a101]" />
+                      <CheckCircle className="w-4 h-4 text-[#66a380]" />
                       <span className="text-gray-700">Document checklist provided</span>
                     </div>
                     <div className="flex items-center gap-2">
-                      <CheckCircle className="w-4 h-4 text-[#f5a101]" />
+                      <CheckCircle className="w-4 h-4 text-[#66a380]" />
                       <span className="text-gray-700">Timeline and cost breakdown</span>
                     </div>
                     <div className="flex items-center gap-2">
-                      <CheckCircle className="w-4 h-4 text-[#f5a101]" />
+                      <CheckCircle className="w-4 h-4 text-[#66a380]" />
                       <span className="text-gray-700">Follow-up email summary</span>
                     </div>
                   </div>
@@ -144,28 +144,28 @@ export default function BookingPage() {
 
             <div className="grid md:grid-cols-4 gap-8">
               <div className="text-center">
-                <div className="w-16 h-16 bg-[#f5a101] text-white rounded-full flex items-center justify-center mx-auto mb-4 text-xl font-bold">
+                <div className="w-16 h-16 bg-[#66a380] text-white rounded-full flex items-center justify-center mx-auto mb-4 text-xl font-bold">
                   1
                 </div>
                 <h3 className="text-lg font-semibold text-[#0f172b] mb-2">Choose Consultation</h3>
                 <p className="text-gray-700 text-sm">Select free or paid consultation based on your needs</p>
               </div>
               <div className="text-center">
-                <div className="w-16 h-16 bg-[#f5a101] text-white rounded-full flex items-center justify-center mx-auto mb-4 text-xl font-bold">
+                <div className="w-16 h-16 bg-[#66a380] text-white rounded-full flex items-center justify-center mx-auto mb-4 text-xl font-bold">
                   2
                 </div>
                 <h3 className="text-lg font-semibold text-[#0f172b] mb-2">Book Time Slot</h3>
                 <p className="text-gray-700 text-sm">Pick a convenient time from our available calendar</p>
               </div>
               <div className="text-center">
-                <div className="w-16 h-16 bg-[#f5a101] text-white rounded-full flex items-center justify-center mx-auto mb-4 text-xl font-bold">
+                <div className="w-16 h-16 bg-[#66a380] text-white rounded-full flex items-center justify-center mx-auto mb-4 text-xl font-bold">
                   3
                 </div>
                 <h3 className="text-lg font-semibold text-[#0f172b] mb-2">Prepare Documents</h3>
                 <p className="text-gray-700 text-sm">Gather relevant documents as outlined in confirmation email</p>
               </div>
               <div className="text-center">
-                <div className="w-16 h-16 bg-[#f5a101] text-white rounded-full flex items-center justify-center mx-auto mb-4 text-xl font-bold">
+                <div className="w-16 h-16 bg-[#66a380] text-white rounded-full flex items-center justify-center mx-auto mb-4 text-xl font-bold">
                   4
                 </div>
                 <h3 className="text-lg font-semibold text-[#0f172b] mb-2">Get Expert Advice</h3>
@@ -303,7 +303,7 @@ export default function BookingPage() {
                     />
                   </div>
                   
-                  <Button type="submit" className="w-full bg-[#f5a101] hover:bg-[#f5a101]/90 text-white">
+                  <Button type="submit" className="w-full bg-[#66a380] hover:bg-[#66a380]/90 text-white">
                     <Send className="w-4 h-4 mr-2" />
                     Send Question
                   </Button>
@@ -323,7 +323,7 @@ export default function BookingPage() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link href="/booking/free-consultation">
-              <Button size="lg" className="bg-[#f5a101] hover:bg-[#f5a101]/90 text-white">
+              <Button size="lg" className="bg-[#66a380] hover:bg-[#66a380]/90 text-white">
                 Book Free Consultation
               </Button>
             </Link>

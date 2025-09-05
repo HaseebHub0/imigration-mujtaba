@@ -91,8 +91,8 @@ export default function PermanentResidencyPage() {
                     <CardTitle className="text-xl text-[#0f172b]">{program.title}</CardTitle>
                     <p className="text-gray-600">{program.description}</p>
                     <div className="flex justify-between items-center">
-                      <span className="text-2xl font-bold text-[#f5a101]">{program.price}</span>
-                      <Badge variant="outline" className="border-[#f5a101] text-[#f5a101]">
+                      <span className="text-2xl font-bold text-[#66a380]">{program.price}</span>
+                      <Badge variant="outline" className="border-[#66a380] text-[#66a380]">
                         {program.processingTime}
                       </Badge>
                     </div>
@@ -102,12 +102,12 @@ export default function PermanentResidencyPage() {
                     <ul className="space-y-2 mb-6">
                       {program.minRequirements.map((req, idx) => (
                         <li key={idx} className="flex items-start gap-2">
-                          <CheckCircle className="w-4 h-4 text-[#f5a101] mt-0.5 flex-shrink-0" />
+                          <CheckCircle className="w-4 h-4 text-[#66a380] mt-0.5 flex-shrink-0" />
                           <span className="text-gray-700 text-sm">{req}</span>
                         </li>
                       ))}
                     </ul>
-                    <Button className="w-full bg-[#f5a101] hover:bg-[#f5a101]/90 text-white">Get Assessment</Button>
+                    <Button className="w-full bg-[#66a380] hover:bg-[#66a380]/90 text-white">Get Assessment</Button>
                   </CardContent>
                 </Card>
               ))}
@@ -127,28 +127,28 @@ export default function PermanentResidencyPage() {
 
             <div className="grid md:grid-cols-4 gap-8">
               <div className="text-center">
-                <div className="w-16 h-16 bg-[#f5a101] text-white rounded-full flex items-center justify-center mx-auto mb-4 text-xl font-bold">
+                <div className="w-16 h-16 bg-[#66a380] text-white rounded-full flex items-center justify-center mx-auto mb-4 text-xl font-bold">
                   1
                 </div>
                 <h3 className="text-lg font-semibold text-[#0f172b] mb-2">Assessment</h3>
                 <p className="text-gray-700 text-sm">Free eligibility assessment and CRS score calculation</p>
               </div>
               <div className="text-center">
-                <div className="w-16 h-16 bg-[#f5a101] text-white rounded-full flex items-center justify-center mx-auto mb-4 text-xl font-bold">
+                <div className="w-16 h-16 bg-[#66a380] text-white rounded-full flex items-center justify-center mx-auto mb-4 text-xl font-bold">
                   2
                 </div>
                 <h3 className="text-lg font-semibold text-[#0f172b] mb-2">Strategy</h3>
                 <p className="text-gray-700 text-sm">Develop personalized immigration strategy and timeline</p>
               </div>
               <div className="text-center">
-                <div className="w-16 h-16 bg-[#f5a101] text-white rounded-full flex items-center justify-center mx-auto mb-4 text-xl font-bold">
+                <div className="w-16 h-16 bg-[#66a380] text-white rounded-full flex items-center justify-center mx-auto mb-4 text-xl font-bold">
                   3
                 </div>
                 <h3 className="text-lg font-semibold text-[#0f172b] mb-2">Preparation</h3>
                 <p className="text-gray-700 text-sm">Document collection and application preparation</p>
               </div>
               <div className="text-center">
-                <div className="w-16 h-16 bg-[#f5a101] text-white rounded-full flex items-center justify-center mx-auto mb-4 text-xl font-bold">
+                <div className="w-16 h-16 bg-[#66a380] text-white rounded-full flex items-center justify-center mx-auto mb-4 text-xl font-bold">
                   4
                 </div>
                 <h3 className="text-lg font-semibold text-[#0f172b] mb-2">Success</h3>
@@ -170,7 +170,7 @@ export default function PermanentResidencyPage() {
             <div className="grid md:grid-cols-3 gap-8">
               <Card className="hover:bg-[#f5f2ec] transition-colors duration-300 text-center">
                 <CardContent className="p-6">
-                  <TrendingUp className="w-12 h-12 text-[#f5a101] mx-auto mb-4" />
+                  <TrendingUp className="w-12 h-12 text-[#66a380] mx-auto mb-4" />
                   <h3 className="text-xl font-semibold text-[#0f172b] mb-3">CRS Optimization</h3>
                   <p className="text-gray-700">Strategic advice to maximize your Comprehensive Ranking System score</p>
                 </CardContent>
@@ -178,7 +178,7 @@ export default function PermanentResidencyPage() {
 
               <Card className="hover:bg-[#f5f2ec] transition-colors duration-300 text-center">
                 <CardContent className="p-6">
-                  <Users className="w-12 h-12 text-[#f5a101] mx-auto mb-4" />
+                  <Users className="w-12 h-12 text-[#66a380] mx-auto mb-4" />
                   <h3 className="text-xl font-semibold text-[#0f172b] mb-3">Family Support</h3>
                   <p className="text-gray-700">Include your spouse and dependent children in your PR application</p>
                 </CardContent>
@@ -186,7 +186,7 @@ export default function PermanentResidencyPage() {
 
               <Card className="hover:bg-[#f5f2ec] transition-colors duration-300 text-center">
                 <CardContent className="p-6">
-                  <Award className="w-12 h-12 text-[#f5a101] mx-auto mb-4" />
+                  <Award className="w-12 h-12 text-[#66a380] mx-auto mb-4" />
                   <h3 className="text-xl font-semibold text-[#0f172b] mb-3">Expert Guidance</h3>
                   <p className="text-gray-700">RCIC-regulated consultant with proven track record of success</p>
                 </CardContent>
@@ -246,7 +246,7 @@ export default function PermanentResidencyPage() {
                     />
                   </div>
                   
-                  <Button type="submit" className="w-full bg-[#f5a101] hover:bg-[#f5a101]/90 text-white">
+                  <Button type="submit" className="w-full bg-[#66a380] hover:bg-[#66a380]/90 text-white">
                     <Send className="w-4 h-4 mr-2" />
                     Get Started
                   </Button>
@@ -265,7 +265,7 @@ export default function PermanentResidencyPage() {
             Take our free CRS calculator to see if you qualify for Canadian permanent residency
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" className="bg-[#f5a101] hover:bg-[#f5a101]/90 text-white">
+            <Button size="lg" className="bg-[#66a380] hover:bg-[#66a380]/90 text-white">
               Calculate CRS Score
             </Button>
             <Button

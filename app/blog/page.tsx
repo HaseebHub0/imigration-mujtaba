@@ -119,7 +119,7 @@ export default function BlogPage() {
                 </div>
                 <div className="p-8">
                   <div className="flex items-center gap-4 mb-4">
-                    <Badge className="bg-[#f5a101] text-white">{featuredPost.category}</Badge>
+                    <Badge className="bg-[#66a380] text-white">{featuredPost.category}</Badge>
                     <div className="flex items-center gap-2 text-gray-600 text-sm">
                       <Calendar className="w-4 h-4" />
                       <span>{featuredPost.date}</span>
@@ -132,7 +132,7 @@ export default function BlogPage() {
                   <h3 className="text-2xl font-bold text-[#0f172b] mb-4">{featuredPost.title}</h3>
                   <p className="text-gray-700 mb-6 leading-relaxed">{featuredPost.excerpt}</p>
                   <Link href={`/blog/${featuredPost.slug}`}>
-                    <Button className="bg-[#f5a101] hover:bg-[#f5a101]/90 text-white">
+                    <Button className="bg-[#66a380] hover:bg-[#66a380]/90 text-white">
                       Read Full Article <ArrowRight className="w-4 h-4 ml-2" />
                     </Button>
                   </Link>
@@ -154,8 +154,8 @@ export default function BlogPage() {
                   variant={category === "All" ? "default" : "outline"}
                   className={
                     category === "All"
-                      ? "bg-[#f5a101] hover:bg-[#f5a101]/90 text-white"
-                      : "border-[#f5a101] text-[#f5a101] hover:bg-[#f5a101] hover:text-white"
+                      ? "bg-[#66a380] hover:bg-[#66a380]/90 text-white"
+                      : "border-[#66a380] text-[#66a380] hover:bg-[#66a380] hover:text-white"
                   }
                 >
                   {category}
@@ -178,7 +178,7 @@ export default function BlogPage() {
                   </div>
                   <CardHeader className="pb-2">
                     <div className="flex items-center justify-between mb-2">
-                      <Badge variant="outline" className="border-[#f5a101] text-[#f5a101] text-xs">
+                      <Badge variant="outline" className="border-[#66a380] text-[#66a380] text-xs">
                         {post.category}
                       </Badge>
                       <span className="text-xs text-gray-500">{post.readTime}</span>
@@ -193,7 +193,7 @@ export default function BlogPage() {
                         <span>{post.date}</span>
                       </div>
                       <Link href={`/blog/${post.slug}`}>
-                        <Button size="sm" variant="ghost" className="text-[#f5a101] hover:text-[#f5a101]/80 p-0">
+                        <Button size="sm" variant="ghost" className="text-[#66a380] hover:text-[#66a380]/80 p-0">
                           Read More <ArrowRight className="w-3 h-3 ml-1" />
                         </Button>
                       </Link>
@@ -205,7 +205,7 @@ export default function BlogPage() {
 
             {/* Load More Button */}
             <div className="text-center mt-12">
-              <Button className="bg-[#f5a101] hover:bg-[#f5a101]/90 text-white">Load More Articles</Button>
+              <Button className="bg-[#66a380] hover:bg-[#66a380]/90 text-white">Load More Articles</Button>
             </div>
           </div>
         </div>
@@ -222,7 +222,7 @@ export default function BlogPage() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
               <Input placeholder="Enter your email address" className="flex-1" />
-              <Button className="bg-[#f5a101] hover:bg-[#f5a101]/90 text-white">Subscribe</Button>
+              <Button className="bg-[#66a380] hover:bg-[#66a380]/90 text-white">Subscribe</Button>
             </div>
             <p className="text-xs text-gray-600 mt-4">No spam, unsubscribe at any time. We respect your privacy.</p>
           </div>
@@ -279,7 +279,7 @@ export default function BlogPage() {
                     />
                   </div>
                   
-                  <Button type="submit" className="w-full bg-[#f5a101] hover:bg-[#f5a101]/90 text-white">
+                  <Button type="submit" className="w-full bg-[#66a380] hover:bg-[#66a380]/90 text-white">
                     <Send className="w-4 h-4 mr-2" />
                     Send Question
                   </Button>

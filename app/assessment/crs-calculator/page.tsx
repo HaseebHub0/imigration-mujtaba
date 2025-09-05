@@ -353,15 +353,15 @@ export default function CRSCalculatorPage() {
 
                 <Button
                   onClick={calculateCRS}
-                  className="w-full bg-[#f5a101] hover:bg-[#f5a101]/90 text-white text-lg py-6"
+                  className="w-full bg-[#66a380] hover:bg-[#66a380]/90 text-white text-lg py-6"
                 >
                   Calculate My CRS Score
                 </Button>
 
                 {showResults && crsScore !== null && (
-                  <Card className="mt-8 border-2 border-[#f5a101]">
+                  <Card className="mt-8 border-2 border-[#66a380]">
                     <CardHeader className="text-center">
-                      <div className="text-6xl font-bold text-[#f5a101] mb-4">{crsScore}</div>
+                      <div className="text-6xl font-bold text-[#66a380] mb-4">{crsScore}</div>
                       <CardTitle className="text-2xl text-[#0f172b]">Your CRS Score</CardTitle>
                     </CardHeader>
                     <CardContent className="text-center">
@@ -375,7 +375,7 @@ export default function CRSCalculatorPage() {
                             <CheckCircle className="w-5 h-5" />
                             <span>You may qualify for Express Entry!</span>
                           </div>
-                          <Button className="bg-[#f5a101] hover:bg-[#f5a101]/90 text-white">
+                          <Button className="bg-[#66a380] hover:bg-[#66a380]/90 text-white">
                             Book Free Consultation
                           </Button>
                         </div>
@@ -385,7 +385,7 @@ export default function CRSCalculatorPage() {
                             <AlertCircle className="w-5 h-5" />
                             <span>Consider improving your profile</span>
                           </div>
-                          <Button className="bg-[#f5a101] hover:bg-[#f5a101]/90 text-white">
+                          <Button className="bg-[#66a380] hover:bg-[#66a380]/90 text-white">
                             Get Improvement Strategy
                           </Button>
                         </div>

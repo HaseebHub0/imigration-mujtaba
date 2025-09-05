@@ -148,16 +148,16 @@ export default function ResourcesPage() {
               {tools.map((tool, index) => (
                 <Card key={index} className="hover:bg-[#f5f2ec] transition-colors duration-300 text-center">
                   <CardHeader>
-                    <tool.icon className="w-12 h-12 text-[#f5a101] mx-auto mb-4" />
+                    <tool.icon className="w-12 h-12 text-[#66a380] mx-auto mb-4" />
                     <CardTitle className="text-xl text-[#0f172b]">{tool.title}</CardTitle>
-                    <Badge variant="outline" className="border-[#f5a101] text-[#f5a101] w-fit mx-auto">
+                    <Badge variant="outline" className="border-[#66a380] text-[#66a380] w-fit mx-auto">
                       {tool.type}
                     </Badge>
                   </CardHeader>
                   <CardContent>
                     <p className="text-gray-700 mb-6">{tool.description}</p>
                     <Link href={tool.link}>
-                      <Button className="bg-[#f5a101] hover:bg-[#f5a101]/90 text-white">Use Tool</Button>
+                      <Button className="bg-[#66a380] hover:bg-[#66a380]/90 text-white">Use Tool</Button>
                     </Link>
                   </CardContent>
                 </Card>
@@ -183,7 +183,7 @@ export default function ResourcesPage() {
                 <Card key={index} className="hover:bg-white transition-colors duration-300">
                   <CardContent className="p-6">
                     <div className="flex items-start gap-4">
-                      <div className="w-12 h-12 bg-[#f5a101] text-white rounded-lg flex items-center justify-center flex-shrink-0">
+                      <div className="w-12 h-12 bg-[#66a380] text-white rounded-lg flex items-center justify-center flex-shrink-0">
                         <resource.icon className="w-6 h-6" />
                       </div>
                       <div className="flex-1">
@@ -194,7 +194,7 @@ export default function ResourcesPage() {
                           <span>{resource.size}</span>
                           <span>{resource.downloads} downloads</span>
                         </div>
-                        <Button size="sm" className="bg-[#f5a101] hover:bg-[#f5a101]/90 text-white">
+                        <Button size="sm" className="bg-[#66a380] hover:bg-[#66a380]/90 text-white">
                           <Download className="w-4 h-4 mr-2" />
                           Download
                         </Button>
@@ -242,7 +242,7 @@ export default function ResourcesPage() {
                     <p className="text-gray-700 text-sm mb-3 line-clamp-2">{video.description}</p>
                     <div className="flex items-center justify-between text-xs text-gray-600">
                       <span>{video.views} views</span>
-                      <Button size="sm" variant="ghost" className="text-[#f5a101] hover:text-[#f5a101]/80 p-0">
+                      <Button size="sm" variant="ghost" className="text-[#66a380] hover:text-[#66a380]/80 p-0">
                         Watch Now
                       </Button>
                     </div>
@@ -252,7 +252,7 @@ export default function ResourcesPage() {
             </div>
 
             <div className="text-center mt-8">
-              <Button className="bg-[#f5a101] hover:bg-[#f5a101]/90 text-white">
+              <Button className="bg-[#66a380] hover:bg-[#66a380]/90 text-white">
                 <Video className="w-4 h-4 mr-2" />
                 Visit YouTube Channel
               </Button>
@@ -280,11 +280,11 @@ export default function ResourcesPage() {
                       <div className="flex-1">
                         <h3 className="text-lg font-semibold text-[#0f172b] mb-2">{resource.title}</h3>
                         <p className="text-gray-700 text-sm mb-3">{resource.description}</p>
-                        <Badge variant="outline" className="border-[#f5a101] text-[#f5a101] text-xs">
+                        <Badge variant="outline" className="border-[#66a380] text-[#66a380] text-xs">
                           {resource.type}
                         </Badge>
                       </div>
-                      <Button size="sm" variant="ghost" className="text-[#f5a101] hover:text-[#f5a101]/80">
+                      <Button size="sm" variant="ghost" className="text-[#66a380] hover:text-[#66a380]/80">
                         <ExternalLink className="w-4 h-4" />
                       </Button>
                     </div>
@@ -346,7 +346,7 @@ export default function ResourcesPage() {
                     />
                   </div>
                   
-                  <Button type="submit" className="w-full bg-[#f5a101] hover:bg-[#f5a101]/90 text-white">
+                  <Button type="submit" className="w-full bg-[#66a380] hover:bg-[#66a380]/90 text-white">
                     <Send className="w-4 h-4 mr-2" />
                     Send Question
                   </Button>

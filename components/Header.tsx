@@ -8,7 +8,7 @@ const Header: React.FC = () => {
   const navigationItems = [
     {
       label: "Home",
-      bgColor: "#f5a101",
+      bgColor: "#66a380",
       textColor: "#ffffff",
       links: [
         { label: "Main Page", ariaLabel: "Go to Home Page", href: "/" },
@@ -17,17 +17,16 @@ const Header: React.FC = () => {
     },
     {
       label: "About",
-      bgColor: "#0f172b",
-      textColor: "#ffffff",
+      bgColor: "#ffffff",
+      textColor: "#0f172b",
       links: [
-        { label: "Company Profile", ariaLabel: "About Company", href: "/about" },
-        { label: "Professional Credentials", ariaLabel: "Professional Credentials", href: "/about" },
-        { label: "Years of Experience", ariaLabel: "Years of Experience", href: "/about" }
+        { label: "About Us", ariaLabel: "About Company", href: "/about" },
+        
       ]
     },
     {
       label: "Services", 
-      bgColor: "#f5a101",
+      bgColor: "#66a380",
       textColor: "#ffffff",
       links: [
         { label: "Permanent Residency", ariaLabel: "Permanent Residency Services", href: "/services/permanent-residency" },
@@ -37,8 +36,8 @@ const Header: React.FC = () => {
     },
     {
       label: "Assessment",
-      bgColor: "#0f172b",
-      textColor: "#ffffff",
+      bgColor: "#ffffff",
+      textColor: "#0f172b",
       links: [
         { label: "CRS Calculator", ariaLabel: "CRS Score Calculator", href: "/assessment/crs-calculator" },
         { label: "PNP Assessment", ariaLabel: "PNP Assessment Tool", href: "/assessment/pnp-assessment" },
@@ -47,7 +46,7 @@ const Header: React.FC = () => {
     },
     {
       label: "Resources",
-      bgColor: "#f5a101",
+      bgColor: "#66a380",
       textColor: "#ffffff",
       links: [
         { label: "Immigration Blog", ariaLabel: "Immigration Blog", href: "/blog" },
@@ -57,8 +56,8 @@ const Header: React.FC = () => {
     },
     {
       label: "Booking",
-      bgColor: "#0f172b",
-      textColor: "#ffffff",
+      bgColor: "#ffffff",
+      textColor: "#0f172b",
       links: [
         { label: "Free Consultation", ariaLabel: "Book Free Consultation", href: "/booking/free-consultation" },
         { label: "Paid Consultation", ariaLabel: "Book Paid Consultation", href: "/booking/paid-consultation" },
@@ -67,7 +66,7 @@ const Header: React.FC = () => {
     },
     {
       label: "Contact",
-      bgColor: "#f5a101",
+      bgColor: "#66a380",
       textColor: "#ffffff",
       links: [
         { label: "Phone: 514-506-0671", ariaLabel: "Call us", href: "tel:514-506-0671" },
@@ -84,8 +83,8 @@ const Header: React.FC = () => {
       logoAlt="Mujtaba Sarwar Immigration Consulting"
       items={navigationItems}
       baseColor="#ffffff"
-      menuColor="#f5a101"
-      buttonBgColor="#f5a101"
+      menuColor="#66a380"
+      buttonBgColor="#66a380"
       buttonTextColor="#ffffff"
       ease="power3.out"
     />

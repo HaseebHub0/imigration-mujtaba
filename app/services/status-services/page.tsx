@@ -113,7 +113,7 @@ export default function StatusServicesPage() {
                     <div className="grid lg:grid-cols-3 gap-8">
                       <div className="lg:col-span-1">
                         <div className="flex items-center gap-4 mb-4">
-                          <service.icon className="w-12 h-12 text-[#f5a101]" />
+                          <service.icon className="w-12 h-12 text-[#66a380]" />
                           <div>
                             <h3 className="text-2xl font-bold text-[#0f172b]">{service.title}</h3>
                             <p className="text-gray-600">{service.description}</p>
@@ -121,7 +121,7 @@ export default function StatusServicesPage() {
                         </div>
                         <div className="flex gap-4 mb-4">
                           <div className="text-center">
-                            <div className="text-2xl font-bold text-[#f5a101]">{service.price}</div>
+                            <div className="text-2xl font-bold text-[#66a380]">{service.price}</div>
                             <div className="text-sm text-gray-600">Starting Price</div>
                           </div>
                           <div className="text-center">
@@ -129,7 +129,7 @@ export default function StatusServicesPage() {
                             <div className="text-sm text-gray-600">Processing Time</div>
                           </div>
                         </div>
-                        <Button className="w-full bg-[#f5a101] hover:bg-[#f5a101]/90 text-white">Get Started</Button>
+                        <Button className="w-full bg-[#66a380] hover:bg-[#66a380]/90 text-white">Get Started</Button>
                       </div>
 
                       <div className="lg:col-span-1">
@@ -137,7 +137,7 @@ export default function StatusServicesPage() {
                         <ul className="space-y-2">
                           {service.features.map((feature, idx) => (
                             <li key={idx} className="flex items-start gap-2">
-                              <CheckCircle className="w-4 h-4 text-[#f5a101] mt-0.5 flex-shrink-0" />
+                              <CheckCircle className="w-4 h-4 text-[#66a380] mt-0.5 flex-shrink-0" />
                               <span className="text-gray-700 text-sm">{feature}</span>
                             </li>
                           ))}
@@ -151,7 +151,7 @@ export default function StatusServicesPage() {
                             <Badge
                               key={idx}
                               variant="outline"
-                              className="block w-fit border-[#f5a101] text-[#f5a101] text-xs"
+                              className="block w-fit border-[#66a380] text-[#66a380] text-xs"
                             >
                               {type}
                             </Badge>
@@ -178,28 +178,28 @@ export default function StatusServicesPage() {
 
             <div className="grid md:grid-cols-4 gap-8">
               <div className="text-center">
-                <div className="w-16 h-16 bg-[#f5a101] text-white rounded-full flex items-center justify-center mx-auto mb-4 text-xl font-bold">
+                <div className="w-16 h-16 bg-[#66a380] text-white rounded-full flex items-center justify-center mx-auto mb-4 text-xl font-bold">
                   1
                 </div>
                 <h3 className="text-lg font-semibold text-[#0f172b] mb-2">Consultation</h3>
                 <p className="text-gray-700 text-sm">Free initial consultation to assess your needs</p>
               </div>
               <div className="text-center">
-                <div className="w-16 h-16 bg-[#f5a101] text-white rounded-full flex items-center justify-center mx-auto mb-4 text-xl font-bold">
+                <div className="w-16 h-16 bg-[#66a380] text-white rounded-full flex items-center justify-center mx-auto mb-4 text-xl font-bold">
                   2
                 </div>
                 <h3 className="text-lg font-semibold text-[#0f172b] mb-2">Documentation</h3>
                 <p className="text-gray-700 text-sm">Gather and prepare all required documents</p>
               </div>
               <div className="text-center">
-                <div className="w-16 h-16 bg-[#f5a101] text-white rounded-full flex items-center justify-center mx-auto mb-4 text-xl font-bold">
+                <div className="w-16 h-16 bg-[#66a380] text-white rounded-full flex items-center justify-center mx-auto mb-4 text-xl font-bold">
                   3
                 </div>
                 <h3 className="text-lg font-semibold text-[#0f172b] mb-2">Application</h3>
                 <p className="text-gray-700 text-sm">Complete and submit your application</p>
               </div>
               <div className="text-center">
-                <div className="w-16 h-16 bg-[#f5a101] text-white rounded-full flex items-center justify-center mx-auto mb-4 text-xl font-bold">
+                <div className="w-16 h-16 bg-[#66a380] text-white rounded-full flex items-center justify-center mx-auto mb-4 text-xl font-bold">
                   4
                 </div>
                 <h3 className="text-lg font-semibold text-[#0f172b] mb-2">Support</h3>
@@ -260,7 +260,7 @@ export default function StatusServicesPage() {
                     />
                   </div>
                   
-                  <Button type="submit" className="w-full bg-[#f5a101] hover:bg-[#f5a101]/90 text-white">
+                  <Button type="submit" className="w-full bg-[#66a380] hover:bg-[#66a380]/90 text-white">
                     <Send className="w-4 h-4 mr-2" />
                     Get Started
                   </Button>
@@ -279,7 +279,7 @@ export default function StatusServicesPage() {
             Book a free consultation to discuss your specific needs and get expert guidance
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" className="bg-[#f5a101] hover:bg-[#f5a101]/90 text-white">
+            <Button size="lg" className="bg-[#66a380] hover:bg-[#66a380]/90 text-white">
               Book Free Consultation
             </Button>
             <Button
