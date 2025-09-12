@@ -343,17 +343,17 @@ export default function HomePage() {
               <h1 className="text-xl md:text-2xl font-bold text-center">Licensed & Certified</h1>
             </div>
             <div className="flex-shrink-0">
-              <img 
-                src="/images/1.png" 
-                alt="Professional Association 1" 
+              <img
+                src="/images/1.png"
+                alt="Professional Association 1"
                 className="h-16 md:h-20 w-auto opacity-80 hover:opacity-100 transition-opacity duration-300"
               />
             </div>
-            
+
             <div className="flex-shrink-0">
-              <img 
-                src="/images/3.png" 
-                alt="Professional Association 3" 
+              <img
+                src="/images/3.png"
+                alt="Professional Association 3"
                 className="h-16 md:h-20 w-auto opacity-80 hover:opacity-100 transition-opacity duration-300"
               />
             </div>
@@ -393,27 +393,21 @@ export default function HomePage() {
             {/* Right side - Content */}
             <div className="space-y-6">
               <p className="text-lg text-foreground leading-relaxed">
-                Navigating Canadian immigration can be complex and overwhelming. With constantly changing policies and
-                detailed requirements, having expert guidance makes all the difference.
+                Navigating Canada’s immigration system can feel complex and overwhelming but the right guidance makes all the difference. As a Regulated Canadian Immigration Consultant (RCIC), I provide honest assessments, transparent advice, and personalized strategies tailored to your unique situation.
               </p>
               <p className="text-foreground leading-relaxed">
-                As a Regulated Canadian Immigration Consultant (RCIC), I provide transparent assessments and honest
-                guidance for your <strong>Canadian immigration</strong> journey. Whether you're exploring Express Entry,
-                Provincial Nominee Programs, or need assistance with work permits and family sponsorship, I'm here to
-                help you understand your options and achieve your goals.
+                At Mujtaba Sarwar Canadian Immigration Consulting, we focus on quality over quantity. I only accept cases with a strong likelihood of success, ensuring every client receives the attention and expertise their application deserves. Whether you’re pursuing Express Entry, Provincial Nominee Programs, study or work permits, LMIA, or family sponsorship, my role is to help you present your application as a clear, compelling story — not just a set of forms.
               </p>
               <p className="text-foreground leading-relaxed">
-                With my commitment to only taking cases I can win and providing free 30-minute consultations for
-                qualified applicants, you can trust that your investment will be worthwhile.{" "}
-                <strong>Contact me today</strong> to schedule your consultation and take the first step toward your
-                Canadian future.
+                Start with a free 30-minute consultation to understand your eligibility and next steps. If your case is a fit, you’ll know exactly how we’ll proceed and what it will cost. Your Canadian journey deserves expert, caring advocacy.
+
               </p>
             </div>
           </div>
         </div>
       </section>
 
-      
+
 
       {/* Footer */}
       <footer className="bg-[#144d5e] py-16">

@@ -17,8 +17,8 @@ export default function AboutPage() {
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl font-bold mb-6 text-white">Meet Mujtaba Sarwar</h1>
             <p className="text-xl text-gray-200 mb-8">
-              Regulated Canadian Immigration Consultant (RCIC) dedicated to helping families achieve their Canadian
-              dreams
+              Dedicated RCIC offering transparent, caring support for your Canadian journey.
+
             </p>
             <Badge variant="secondary" className="bg-[#66a380] text-white text-lg px-6 py-2">
               RCIC License #R712505
@@ -42,16 +42,26 @@ export default function AboutPage() {
                 />
               </div>
               <div>
-                <h2 className="text-3xl font-bold text-[#144d5e] mb-6">Your Trusted Immigration Partner</h2>
+                <h2 className="text-3xl font-bold text-[#144d5e] mb-6">Immigration Expertise You Can Rely On</h2>
                 <p className="text-gray-700 mb-6 leading-relaxed">
-                  With years of experience in Canadian immigration law and a deep understanding of the challenges faced
-                  by newcomers, I provide personalized guidance to help you navigate the complex immigration process
-                  with confidence.
+                  Welcome to Mujtaba Sarwar Canadian Immigration Consulting, where your goals are our mission. Led by licensed RCIC Mujtaba (License #R712505), we combine proven expertise with an approachable, human touch.
+
                 </p>
                 <p className="text-gray-700 mb-6 leading-relaxed">
-                  Based in Mississauga, Ontario, I specialize in permanent residency applications, work permits, study
-                  permits, and family sponsorship cases. My approach combines legal expertise with genuine care for each
-                  client's unique situation.
+                  Based in Mississauga, Ontario, we specialize in guiding temporary residents across Canada toward permanent residency and provide trusted support for study permits, work permits, spousal sponsorships, and LMIA applications.
+
+                </p>
+                <p className="text-gray-700 mb-6 leading-relaxed">
+                  We believe strong immigration applications are more than forms—they are stories that must be told clearly and strategically. That’s why we craft each case with care, presenting evidence and narrative that resonates with decision-makers.
+
+                </p>
+                <p className="text-gray-700 mb-6 leading-relaxed">
+                  Our practice is built on transparency and selectivity: if we don’t think we can win your case, we’ll tell you honestly. If we can, you’ll know exactly how we’ll proceed and what it will cost.
+
+                </p>
+                <p className="text-gray-700 mb-6 leading-relaxed">
+                  With free 30-minute consultations, attentive service, and proven guidance, we help you move forward with confidence.
+
                 </p>
                 <div className="flex items-center gap-2 text-[#66a380] mb-4">
                   <MapPin className="w-5 h-5" />
