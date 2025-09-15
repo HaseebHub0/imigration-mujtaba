@@ -96,8 +96,8 @@ export default function Footer() {
                 </a>
               </div>
               <div className="pt-2">
-                <a href="/booking" className="inline-flex items-center px-4 py-2 bg-[#66a380] text-white rounded-lg hover:bg-[#4a8a6b] transition-colors text-sm font-medium">
-                  Book Free Consultation
+                <a href="/contact" className="inline-flex items-center px-4 py-2 bg-[#66a380] text-white rounded-lg hover:bg-[#4a8a6b] transition-colors text-sm font-medium">
+                  Contact Us
                 </a>
               </div>
             </div>

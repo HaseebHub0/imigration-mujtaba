@@ -203,11 +203,11 @@ const CardNav: React.FC<CardNavProps> = ({
           </div>
 
           <Link
-            href="/booking"
+            href="/contact"
             className="card-nav-cta-button"
             style={{ backgroundColor: buttonBgColor, color: buttonTextColor }}
           >
-            Get Started
+            Contact Us
           </Link>
         </div>
 

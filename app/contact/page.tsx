@@ -7,7 +7,7 @@ import { Textarea } from "@/components/ui/textarea"
 import { Calendar, Clock, DollarSign, CheckCircle, ArrowRight, Send } from "lucide-react"
 import Link from "next/link"
 
-export default function BookingPage() {
+export default function ContactPage() {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
@@ -15,22 +15,22 @@ export default function BookingPage() {
         <div className="absolute inset-0 bg-[#66a380]/80"></div>
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-4xl md:text-5xl font-bold mb-6 text-white">Book Your Consultation</h1>
+            <h1 className="text-4xl md:text-5xl font-bold mb-6 text-white">Contact Us</h1>
             <p className="text-xl text-gray-200 mb-8">
-              Schedule your free consultation and take the first step toward your Canadian immigration journey
+              Get in touch with our immigration experts and start your Canadian immigration journey today
             </p>
           </div>
         </div>
       </section>
 
-      {/* Consultation Options */}
+      {/* Contact Options */}
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-12">
-              <h2 className="text-3xl font-bold text-[#144d5e] mb-4">Choose Your Consultation Type</h2>
+              <h2 className="text-3xl font-bold text-[#144d5e] mb-4">Get In Touch</h2>
               <p className="text-gray-700 max-w-2xl mx-auto">
-                Select the consultation that best fits your immigration needs and timeline
+                Choose how you'd like to connect with our immigration experts
               </p>
             </div>
 
@@ -43,9 +43,9 @@ export default function BookingPage() {
                   <div className="w-16 h-16 bg-[#66a380] text-white rounded-full flex items-center justify-center mx-auto mb-4">
                     <DollarSign className="w-8 h-8" />
                   </div>
-                  <CardTitle className="text-2xl text-[#144d5e]">Free Consultation</CardTitle>
+                  <CardTitle className="text-2xl text-[#144d5e]">Free Assessment</CardTitle>
                   <div className="text-3xl font-bold text-[#66a380]">$0 CAD</div>
-                  <p className="text-gray-600">30-minute assessment call</p>
+                  <p className="text-gray-600">30-minute eligibility assessment</p>
                 </CardHeader>
                 <CardContent className="space-y-4">
                   <div className="space-y-3">
@@ -74,9 +74,9 @@ export default function BookingPage() {
                     </p>
                   </div>
 
-                  <Link href="/booking/free-consultation">
+                  <Link href="/contact/free-consultation">
                     <Button className="w-full bg-[#66a380] hover:bg-[#66a380]/90 text-white">
-                      Book Free Consultation <ArrowRight className="w-4 h-4 ml-2" />
+                      Schedule Free Assessment <ArrowRight className="w-4 h-4 ml-2" />
                     </Button>
                   </Link>
                 </CardContent>
@@ -87,9 +87,9 @@ export default function BookingPage() {
                   <div className="w-16 h-16 bg-[#66a380] text-white rounded-full flex items-center justify-center mx-auto mb-4">
                     <Clock className="w-8 h-8" />
                   </div>
-                  <CardTitle className="text-2xl text-[#144d5e]">Paid Consultation</CardTitle>
+                  <CardTitle className="text-2xl text-[#144d5e]">Detailed Consultation</CardTitle>
                   <div className="text-3xl font-bold text-[#66a380]">$50 CAD</div>
-                  <p className="text-gray-600">60-minute detailed consultation</p>
+                  <p className="text-gray-600">60-minute comprehensive consultation</p>
                 </CardHeader>
                 <CardContent className="space-y-4">
                   <div className="space-y-3">
@@ -121,9 +121,9 @@ export default function BookingPage() {
                     </p>
                   </div>
 
-                  <Link href="/booking/paid-consultation">
+                  <Link href="/contact/paid-consultation">
                     <Button className="w-full bg-[#66a380] hover:bg-[#66a380]/90 text-white">
-                      Book Paid Consultation <ArrowRight className="w-4 h-4 ml-2" />
+                      Schedule Detailed Consultation <ArrowRight className="w-4 h-4 ml-2" />
                     </Button>
                   </Link>
                 </CardContent>
@@ -138,8 +138,8 @@ export default function BookingPage() {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-12">
-              <h2 className="text-3xl font-bold text-[#144d5e] mb-4">How It Works</h2>
-              <p className="text-gray-700">Simple steps to get the immigration guidance you need</p>
+              <h2 className="text-3xl font-bold text-[#144d5e] mb-4">How We Help</h2>
+              <p className="text-gray-700">Simple steps to connect with our immigration experts</p>
             </div>
 
             <div className="grid md:grid-cols-4 gap-8">
@@ -147,14 +147,14 @@ export default function BookingPage() {
                 <div className="w-16 h-16 bg-[#66a380] text-white rounded-full flex items-center justify-center mx-auto mb-4 text-xl font-bold">
                   1
                 </div>
-                <h3 className="text-lg font-semibold text-[#144d5e] mb-2">Choose Consultation</h3>
-                <p className="text-gray-700 text-sm">Select free or paid consultation based on your needs</p>
+                <h3 className="text-lg font-semibold text-[#144d5e] mb-2">Choose Service</h3>
+                <p className="text-gray-700 text-sm">Select free assessment or detailed consultation</p>
               </div>
               <div className="text-center">
                 <div className="w-16 h-16 bg-[#66a380] text-white rounded-full flex items-center justify-center mx-auto mb-4 text-xl font-bold">
                   2
                 </div>
-                <h3 className="text-lg font-semibold text-[#144d5e] mb-2">Book Time Slot</h3>
+                <h3 className="text-lg font-semibold text-[#144d5e] mb-2">Schedule Meeting</h3>
                 <p className="text-gray-700 text-sm">Pick a convenient time from our available calendar</p>
               </div>
               <div className="text-center">
@@ -258,9 +258,9 @@ export default function BookingPage() {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-12">
-              <h2 className="text-3xl font-bold text-[#144d5e] mb-4">Have Questions About Booking?</h2>
+              <h2 className="text-3xl font-bold text-[#144d5e] mb-4">Have Questions?</h2>
               <p className="text-gray-700 max-w-2xl mx-auto">
-                Not sure which consultation type is right for you? Send us a message and we'll help you choose the best option.
+                Not sure which service is right for you? Send us a message and we'll help you choose the best option for your immigration needs.
               </p>
             </div>
             
@@ -289,8 +289,8 @@ export default function BookingPage() {
                   </div>
                   
                   <div>
-                    <Label htmlFor="consultationType">Consultation Type</Label>
-                    <Input id="consultationType" placeholder="Free, Paid, or Not Sure" />
+                    <Label htmlFor="serviceType">Service Type</Label>
+                    <Input id="serviceType" placeholder="Free Assessment, Detailed Consultation, or Not Sure" />
                   </div>
                   
                   <div>
@@ -317,23 +317,23 @@ export default function BookingPage() {
       {/* CTA Section */}
       <section className="bg-[#66a380] text-white py-16">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl font-bold mb-4">Ready to Take the Next Step?</h2>
+          <h2 className="text-3xl font-bold mb-4">Ready to Get Started?</h2>
           <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
-            Book your consultation today and get expert guidance on your Canadian immigration journey
+            Contact us today and get expert guidance on your Canadian immigration journey
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link href="/booking/free-consultation">
+            <Link href="/contact/free-consultation">
               <Button size="lg" className="bg-[#66a380] hover:bg-[#66a380]/90 text-white">
-                Book Free Consultation
+                Schedule Free Assessment
               </Button>
             </Link>
-            <Link href="/booking/paid-consultation">
+            <Link href="/contact/paid-consultation">
               <Button
                 size="lg"
                 variant="outline"
                 className="border-white text-white hover:bg-white hover:text-[#144d5e] bg-transparent"
               >
-                Book Paid Consultation
+                Schedule Detailed Consultation
               </Button>
             </Link>
           </div>

@@ -55,23 +55,13 @@ const Header: React.FC = () => {
       ]
     },
     {
-      label: "Booking",
-              bgColor: "#144d5e",
-        textColor: "#ffffff",
-      links: [
-        { label: "Free Consultation", ariaLabel: "Book Free Consultation", href: "/booking/free-consultation" },
-        { label: "Paid Consultation", ariaLabel: "Book Paid Consultation", href: "/booking/paid-consultation" },
-        { label: "All Options", ariaLabel: "View All Booking Options", href: "/booking" }
-      ]
-    },
-    {
       label: "Contact",
-      bgColor: "#66a380",
+      bgColor: "#144d5e",
       textColor: "#ffffff",
       links: [
-        { label: "Phone: 514-506-0671", ariaLabel: "Call us", href: "tel:514-506-0671" },
-        { label: "Mississauga, ON", ariaLabel: "Our Location", href: "/about" },
-        { label: "Get Started", ariaLabel: "Start Your Journey", href: "/booking" }
+        { label: "Free Assessment", ariaLabel: "Schedule Free Assessment", href: "/contact/free-consultation" },
+        { label: "Detailed Consultation", ariaLabel: "Schedule Detailed Consultation", href: "/contact/paid-consultation" },
+        { label: "All Options", ariaLabel: "View All Contact Options", href: "/contact" }
       ]
     }
   ]

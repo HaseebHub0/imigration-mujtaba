@@ -356,29 +356,6 @@ export default function ResourcesPage() {
           </div>
         </div>
       </section>
-
-      {/* CTA Section */}
-      <section className="bg-[#66a380] text-white py-16">
-        <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl font-bold mb-4">Need More Personalized Help?</h2>
-          <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
-            While these resources provide valuable information, every immigration case is unique. Get expert guidance
-            tailored to your situation.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" className="bg-[#f5a101] hover:bg-[#f5a101]/90 text-white">
-              Book Free Consultation
-            </Button>
-            <Button
-              size="lg"
-              variant="outline"
-                              className="border-white text-white hover:bg-white hover:text-[#144d5e] bg-transparent"
-            >
-              Take Assessment Quiz
-            </Button>
-          </div>
-        </div>
-      </section>
     </div>
   )
 }
