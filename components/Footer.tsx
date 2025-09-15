@@ -39,17 +39,19 @@ export default function Footer() {
           </div>
 
           <div className="space-y-4">
-            <h3 className="font-semibold text-white text-lg">Services</h3>
+            <h3 className="font-semibold text-white text-lg">Quick Links</h3>
             <div className="space-y-3 text-sm text-gray-200">
+            <a href="/about" className="block hover:text-[#66a380] transition-colors">
+                About Us
+            </a>
+
               <a href="/services/permanent-residency" className="block hover:text-[#66a380] transition-colors">
                 Express Entry
               </a>
               <a href="/services/status-services" className="block hover:text-[#66a380] transition-colors">
                 Status Services
               </a>
-              <a href="/about" className="block hover:text-[#66a380] transition-colors">
-                About Us
-              </a>
+              
               <a href="/blog" className="block hover:text-[#66a380] transition-colors">
                 Blog
               </a>
@@ -60,15 +62,17 @@ export default function Footer() {
           </div>
 
           <div className="space-y-4">
-            <h3 className="font-semibold text-white text-lg">Resources</h3>
+            <h3 className="font-semibold text-white text-lg">Tools & Downloads</h3>
             <div className="space-y-3 text-sm text-gray-200">  
-              <a href="/assessment" className="block hover:text-[#66a380] transition-colors">
-                Assessment Tools
+              <a href="/crs-calculator" className="block hover:text-[#66a380] transition-colors">
+                CRS Calculator
+              </a>
+              <a href="/pnp-assessment" className="block hover:text-[#66a380] transition-colors">
+                PNP Assessment Tool
               </a>
               <a href="/resources" className="block hover:text-[#66a380] transition-colors">
-                Download Resources
+                Resource Downloads
               </a>
-            
             </div>
           </div>
 
