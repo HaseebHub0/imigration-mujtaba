@@ -9,6 +9,18 @@ import { CheckCircle, Globe, TrendingUp, Users, Award, Send } from "lucide-react
 export default function PermanentResidencyPage() {
   const programs = [
     {
+      title: "Provincial Nominee Program (PNP)",
+      description: "Province-specific programs for skilled workers",
+      minRequirements: [
+        "Varies by province",
+        "Job offer may be required",
+        "Meet provincial criteria",
+        "Express Entry profile",
+      ],
+      processingTime: "15-19 months",
+      price: "$3,000",
+    },
+    {
       title: "Express Entry - Federal Skilled Worker",
       description: "For skilled workers with foreign work experience",
       minRequirements: [
@@ -32,18 +44,7 @@ export default function PermanentResidencyPage() {
       processingTime: "6 months",
       price: "$2,500",
     },
-    {
-      title: "Provincial Nominee Program (PNP)",
-      description: "Province-specific programs for skilled workers",
-      minRequirements: [
-        "Varies by province",
-        "Job offer may be required",
-        "Meet provincial criteria",
-        "Express Entry profile",
-      ],
-      processingTime: "15-19 months",
-      price: "$3,000",
-    },
+    
     {
       title: "Category-Based Selection",
       description: "Targeted draws for specific occupations",
