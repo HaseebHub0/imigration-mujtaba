@@ -72,7 +72,7 @@ export default function AboutPage() {
 
             {/* Credentials & Expertise */}
             <div className="grid md:grid-cols-3 gap-8 mb-16">
-              <Card className="hover:bg-[#e8eaed] transition-colors duration-300">
+              <Card className="hover:bg-[#d2d4d8] transition-colors duration-300">
                 <CardContent className="p-6 text-center">
                   <Award className="w-12 h-12 text-[#6aad81] mx-auto mb-4" />
                   <h3 className="text-xl font-semibold text-[#144d5e] mb-3">Professional Credentials</h3>
@@ -84,7 +84,7 @@ export default function AboutPage() {
                 </CardContent>
               </Card>
 
-              <Card className="hover:bg-[#e8eaed] transition-colors duration-300">
+              <Card className="hover:bg-[#d2d4d8] transition-colors duration-300">
                 <CardContent className="p-6 text-center">
                   <Users className="w-12 h-12 text-[#6aad81] mx-auto mb-4" />
                   <h3 className="text-xl font-semibold text-[#144d5e] mb-3">Community Involvement</h3>
@@ -96,7 +96,7 @@ export default function AboutPage() {
                 </CardContent>
               </Card>
 
-              <Card className="hover:bg-[#e8eaed] transition-colors duration-300">
+              <Card className="hover:bg-[#d2d4d8] transition-colors duration-300">
                 <CardContent className="p-6 text-center">
                   <BookOpen className="w-12 h-12 text-[#6aad81] mx-auto mb-4" />
                   <h3 className="text-xl font-semibold text-[#144d5e] mb-3">Educational Content</h3>
@@ -110,7 +110,7 @@ export default function AboutPage() {
             </div>
 
             {/* YouTube Channel */}
-            <div className="bg-[#e8eaed] rounded-lg p-8 mb-16">
+            <div className="bg-[#d2d4d8] rounded-lg p-8 mb-16">
               <div className="text-center">
                 <Youtube className="w-16 h-16 text-[#6aad81] mx-auto mb-4" />
                 <h3 className="text-2xl font-bold text-[#144d5e] mb-4">
@@ -144,7 +144,7 @@ export default function AboutPage() {
       </section>
 
       {/* Contact Form Section */}
-      <section className="py-16 bg-[#e8eaed]">
+      <section className="py-16 bg-[#d2d4d8]">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-12">

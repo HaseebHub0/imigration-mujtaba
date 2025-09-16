@@ -67,7 +67,7 @@ export default function ContactPage() {
                     </div>
                   </div>
 
-                  <div className="bg-[#e8eaed] p-4 rounded-lg">
+                  <div className="bg-[#d2d4d8] p-4 rounded-lg">
                     <p className="text-sm text-gray-700 font-medium">
                       <strong>Note:</strong> Free consultations are only offered for cases we believe we can
                       successfully help with.
@@ -82,7 +82,7 @@ export default function ContactPage() {
                 </CardContent>
               </Card>
 
-              <Card className="hover:bg-[#e8eaed] transition-colors duration-300 border-2 border-gray-200">
+              <Card className="hover:bg-[#d2d4d8] transition-colors duration-300 border-2 border-gray-200">
                 <CardHeader className="text-center pb-4">
                   <div className="w-16 h-16 text-white rounded-full flex items-center justify-center mx-auto mb-4" style={{backgroundColor: '#6aad81'}}>
                     <Clock className="w-8 h-8" />
@@ -115,7 +115,7 @@ export default function ContactPage() {
                     </div>
                   </div>
 
-                  <div className="bg-[#e8eaed] p-4 rounded-lg">
+                  <div className="bg-[#d2d4d8] p-4 rounded-lg">
                     <p className="text-sm text-gray-700 font-medium">
                       <strong>Best for:</strong> Complex cases, multiple pathways, or when you need detailed guidance.
                     </p>
@@ -134,7 +134,7 @@ export default function ContactPage() {
       </section>
 
       {/* How It Works */}
-      <section className="py-16 bg-[#e8eaed]">
+      <section className="py-16 bg-[#d2d4d8]">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-12">
@@ -254,7 +254,7 @@ export default function ContactPage() {
       </section>
 
       {/* Contact Form Section */}
-      <section className="py-16 bg-[#e8eaed]">
+      <section className="py-16 bg-[#d2d4d8]">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-12">

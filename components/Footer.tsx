@@ -11,11 +11,9 @@ export default function Footer() {
       <div className="container mx-auto px-4">
         <div className="grid md:grid-cols-4 gap-8">
           <div className="space-y-4">
-            <div className="flex items-center space-x-2">
-              <div className="w-10 h-10 bg-[#6aad81] rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-lg">MS</span>
-              </div>
-              <span className="text-xl font-bold text-white">Mujtaba Sarwar</span>
+            <div className="flex items-center space-x-3">
+              <img src="/logowhite.png" alt="Mujtaba Sarwar Immigration Consulting" className="h-20 w-auto" />
+              
             </div>
             <p className="text-gray-200 leading-relaxed">
               Regulated Canadian Immigration Consultant providing expert guidance for your immigration journey to Canada. Dedicated to making the process smooth and stress-free.
@@ -41,21 +39,21 @@ export default function Footer() {
           <div className="space-y-4">
             <h3 className="font-semibold text-white text-lg">Quick Links</h3>
             <div className="space-y-3 text-sm text-gray-200">
-            <a href="/about" className="block hover:text-[#6aad81] transition-colors">
+            <a href="/about-me" className="block hover:text-[#6aad81] transition-colors">
               About Me
             </a>
 
               <a href="/services/permanent-residency" className="block hover:text-[#6aad81] transition-colors">
                 Express Entry
               </a>
-              <a href="/services/status-services" className="block hover:text-[#6aad81] transition-colors">
-                Status Services
+              <a href="/services/immigration-pathways" className="block hover:text-[#6aad81] transition-colors">
+                Immigration Pathways
               </a>
               
               <a href="/blog" className="block hover:text-[#6aad81] transition-colors">
                 Blog
               </a>
-              <a href="/contact" className="block hover:text-[#6aad81] transition-colors">
+              <a href="/contact-me" className="block hover:text-[#6aad81] transition-colors">
                 Contact Me
               </a>
             </div>
@@ -96,7 +94,7 @@ export default function Footer() {
                 </a>
               </div>
               <div className="pt-2">
-                <a href="/contact" className="inline-flex items-center px-4 py-2 bg-[#6aad81] text-white rounded-lg hover:bg-[#5a9d71] transition-colors text-sm font-medium">
+                <a href="/contact-me" className="inline-flex items-center px-4 py-2 bg-[#6aad81] text-white rounded-lg hover:bg-[#5a9d71] transition-colors text-sm font-medium">
                   Contact Me
                 </a>
               </div>

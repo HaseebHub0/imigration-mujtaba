@@ -7,19 +7,15 @@ import Link from "next/link"
 export default function MentoringPage() {
   return (
     <div className="min-h-screen">
-      {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-[#144d5e] via-[#1a5a6f] to-[#144d5e] py-24">
-        <div className="absolute inset-0 bg-black/20"></div>
+       {/* Hero Section */}
+       <section className="relative bg-cover bg-center bg-no-repeat py-20" style={{ backgroundImage: 'url("https://images.unsplash.com/photo-1556761175-5973dc0f32e7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80")' }}>
+        <div className="absolute inset-0 bg-[#6aad81]/80"></div>
         <div className="container mx-auto px-4 relative z-10">
-          <div className="max-w-5xl mx-auto text-center">
-            <div className="inline-block p-2 bg-white/10 backdrop-blur-sm rounded-full mb-6">
-              <Badge className="bg-[#6aad81] text-white px-4 py-2">Professional Mentoring</Badge>
-            </div>
-            <h1 className="text-4xl md:text-6xl font-bold mb-8 text-white leading-tight">
-              RCIC Mentoring &<br/>
-              <span className="text-[#6aad81]">Private Practice Coaching</span>
-            </h1>
-            <div className="w-32 h-1 bg-gradient-to-r from-[#6aad81] to-[#5a9d71] mx-auto"></div>
+          <div className="max-w-4xl mx-auto text-center">
+            <h1 className="text-4xl md:text-5xl font-bold mb-6 text-white">RCIC Mentoring & Private Practice Coaching</h1>
+            <p className="text-xl text-gray-200 mb-8">
+              Whether you're just starting out or looking to grow your RCIC practice, Mujtaba offers personalized mentorship focused on real casework, business systems, and strategy.
+            </p>
           </div>
         </div>
       </section>
@@ -30,11 +26,11 @@ export default function MentoringPage() {
           <div className="max-w-5xl mx-auto">
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               <div>
-                <h2 className="text-4xl md:text-5xl font-bold mb-8 leading-tight" style={{color: '#144d5e'}}>
-                  Build the Practice You Imagined — With Guidance That Works
-                </h2>
+            <h2 className="text-3xl font-bold mb-4" style={{color: '#144d5e'}}>
+              Build the Practice You Imagined — With Guidance That Works
+            </h2>
                 <div className="w-16 h-1 bg-[#6aad81] mb-6"></div>
-                <p className="text-xl text-gray-700 leading-relaxed mb-8">
+                <p className="text-gray-700 leading-relaxed mb-8">
                   Whether you're just starting out or looking to grow your RCIC practice, Mujtaba offers personalized mentorship focused on real casework, business systems, and strategy.
                 </p>
                 <div className="flex gap-4">
@@ -42,7 +38,7 @@ export default function MentoringPage() {
                     <Link href="#pricing">View Packages</Link>
                   </Button>
                   <Button variant="outline" className="border-[#144d5e] text-[#144d5e] hover:bg-[#144d5e] hover:text-white px-6 py-3">
-                    <Link href="#about">Learn More</Link>
+                    <Link href="/about-me">Learn More</Link>
                   </Button>
                 </div>
               </div>
@@ -77,17 +73,21 @@ export default function MentoringPage() {
       </section>
 
       {/* Who This Is For Section */}
-      <section className="py-16 bg-[#d2d4d8]">
+      <section className="py-16 bg-[#e8eaed]">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
              <div className="text-center mb-12">
-               <h2 className="text-3xl font-bold mb-4" style={{color: '#144d5e'}}>Who This Is For</h2>
+               <h2 className="text-3xl font-bold text-[#144d5e] mb-4">Who This Is For</h2>
+               <p className="text-gray-700 max-w-2xl mx-auto">
+                 This mentorship program is designed for specific types of immigration professionals
+               </p>
              </div>
             
             <div className="grid md:grid-cols-2 gap-8">
-              <Card className="border-2 border-[#6aad81]">
-                <CardHeader>
-                   <CardTitle className="text-xl" style={{color: '#144d5e'}}>Perfect For:</CardTitle>
+              <Card className="hover:bg-white transition-colors duration-300 border-2 border-[#6aad81]">
+                <CardHeader className="text-center pb-4">
+                   <CheckCircle className="w-16 h-16 text-[#6aad81] mx-auto mb-4" />
+                   <CardTitle className="text-2xl text-[#144d5e]">Perfect For:</CardTitle>
                 </CardHeader>
                 <CardContent className="space-y-4">
                   <div className="flex items-start space-x-3">
@@ -109,11 +109,14 @@ export default function MentoringPage() {
                 </CardContent>
               </Card>
 
-              <Card className="bg-red-50 border-2 border-red-200">
-                <CardHeader>
-                   <CardTitle className="text-xl text-red-600">Not For:</CardTitle>
+              <Card className="hover:bg-white transition-colors duration-300 border-2 border-red-300 bg-red-50">
+                <CardHeader className="text-center pb-4">
+                   <div className="w-16 h-16 bg-red-100 text-red-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                     <span className="text-2xl font-bold">✗</span>
+                   </div>
+                   <CardTitle className="text-2xl text-red-600">Not For:</CardTitle>
                 </CardHeader>
-                <CardContent>
+                <CardContent className="text-center">
                   <p className="text-red-700">
                     Those looking for shortcuts or mass coaching. This is selective, 1-on-1, quality-first guidance.
                   </p>
@@ -125,23 +128,22 @@ export default function MentoringPage() {
       </section>
 
       {/* What You Get Section */}
-      <section className="py-20 bg-white">
+      <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
           <div className="max-w-7xl mx-auto">
-            <div className="text-center mb-16">
-               <h2 className="text-4xl font-bold mb-6" style={{color: '#144d5e'}}>What You Get</h2>
-               <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <div className="text-center mb-12">
+               <h2 className="text-3xl font-bold text-[#144d5e] mb-4">What You Get</h2>
+               <p className="text-gray-700 max-w-2xl mx-auto">
                  Comprehensive mentorship covering every aspect of building a successful RCIC practice
                </p>
             </div>
 
             <div className="grid lg:grid-cols-3 gap-8">
-              <Card className="group hover:shadow-xl transition-all duration-300 border-0 shadow-lg">
-                <CardHeader className="pb-4">
-                  <div className="w-16 h-16 bg-gradient-to-br from-[#6aad81] to-[#5a9d71] text-white rounded-xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
-                    <BookOpen className="w-8 h-8" />
-                  </div>
-                   <CardTitle className="text-2xl font-bold text-center mb-4" style={{color: '#144d5e'}}>Case Strategy Coaching</CardTitle>
+              <Card className="hover:bg-[#e8eaed] transition-colors duration-300">
+                <CardHeader className="text-center pb-4">
+                  <BookOpen className="w-16 h-16 text-[#6aad81] mx-auto mb-4" />
+                   <CardTitle className="text-xl text-[#144d5e]">Case Strategy Coaching</CardTitle>
+                   <p className="text-gray-600">Expert guidance on complex cases</p>
                 </CardHeader>
                 <CardContent className="space-y-4">
                   <div className="flex items-start space-x-3">
@@ -163,56 +165,54 @@ export default function MentoringPage() {
                 </CardContent>
               </Card>
 
-              <Card className="group hover:shadow-xl transition-all duration-300 border-0 shadow-lg">
-                <CardHeader className="pb-4">
-                  <div className="w-16 h-16 bg-gradient-to-br from-[#6aad81] to-[#5a9d71] text-white rounded-xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
-                    <Users className="w-8 h-8" />
-                  </div>
-                   <CardTitle className="text-2xl font-bold text-center mb-4" style={{color: '#144d5e'}}>Private Practice Setup</CardTitle>
+              <Card className="hover:bg-[#e8eaed] transition-colors duration-300">
+                <CardHeader className="text-center pb-4">
+                  <Users className="w-16 h-16 text-[#6aad81] mx-auto mb-4" />
+                   <CardTitle className="text-xl text-[#144d5e]">Private Practice Setup</CardTitle>
+                   <p className="text-gray-600">Build your independent practice</p>
                 </CardHeader>
-                <CardContent className="space-y-3 text-left">
-                  <div className="flex items-start space-x-2">
-                    <div className="w-2 h-2 bg-[#6aad81] rounded-full mt-2 flex-shrink-0"></div>
-                    <span className="text-sm">Choosing your niche or service focus</span>
+                <CardContent className="space-y-4">
+                  <div className="flex items-start space-x-3">
+                    <CheckCircle className="w-5 h-5 text-[#6aad81] mt-0.5 flex-shrink-0" />
+                    <span className="text-gray-700">Choosing your niche or service focus</span>
                   </div>
-                  <div className="flex items-start space-x-2">
-                    <div className="w-2 h-2 bg-[#6aad81] rounded-full mt-2 flex-shrink-0"></div>
-                    <span className="text-sm">Client intake systems</span>
+                  <div className="flex items-start space-x-3">
+                    <CheckCircle className="w-5 h-5 text-[#6aad81] mt-0.5 flex-shrink-0" />
+                    <span className="text-gray-700">Client intake systems</span>
                   </div>
-                  <div className="flex items-start space-x-2">
-                    <div className="w-2 h-2 bg-[#6aad81] rounded-full mt-2 flex-shrink-0"></div>
-                    <span className="text-sm">Retainer agreements and pricing structures</span>
+                  <div className="flex items-start space-x-3">
+                    <CheckCircle className="w-5 h-5 text-[#6aad81] mt-0.5 flex-shrink-0" />
+                    <span className="text-gray-700">Retainer agreements and pricing structures</span>
                   </div>
-                  <div className="flex items-start space-x-2">
-                    <div className="w-2 h-2 bg-[#6aad81] rounded-full mt-2 flex-shrink-0"></div>
-                    <span className="text-sm">Operational workflow setup (email, forms, CRM)</span>
+                  <div className="flex items-start space-x-3">
+                    <CheckCircle className="w-5 h-5 text-[#6aad81] mt-0.5 flex-shrink-0" />
+                    <span className="text-gray-700">Operational workflow setup (email, forms, CRM)</span>
                   </div>
                 </CardContent>
               </Card>
 
-              <Card className="group hover:shadow-xl transition-all duration-300 border-0 shadow-lg">
-                <CardHeader className="pb-4">
-                  <div className="w-16 h-16 bg-gradient-to-br from-[#6aad81] to-[#5a9d71] text-white rounded-xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
-                    <Target className="w-8 h-8" />
-                  </div>
-                   <CardTitle className="text-2xl font-bold text-center mb-4" style={{color: '#144d5e'}}>Ongoing Business Guidance</CardTitle>
+              <Card className="hover:bg-[#e8eaed] transition-colors duration-300">
+                <CardHeader className="text-center pb-4">
+                  <Target className="w-16 h-16 text-[#6aad81] mx-auto mb-4" />
+                   <CardTitle className="text-xl text-[#144d5e]">Ongoing Business Guidance</CardTitle>
+                   <p className="text-gray-600">Grow your practice strategically</p>
                 </CardHeader>
-                <CardContent className="space-y-3 text-left">
-                  <div className="flex items-start space-x-2">
-                    <div className="w-2 h-2 bg-[#6aad81] rounded-full mt-2 flex-shrink-0"></div>
-                    <span className="text-sm">How to build predictable leads (without burning out)</span>
+                <CardContent className="space-y-4">
+                  <div className="flex items-start space-x-3">
+                    <CheckCircle className="w-5 h-5 text-[#6aad81] mt-0.5 flex-shrink-0" />
+                    <span className="text-gray-700">How to build predictable leads (without burning out)</span>
                   </div>
-                  <div className="flex items-start space-x-2">
-                    <div className="w-2 h-2 bg-[#6aad81] rounded-full mt-2 flex-shrink-0"></div>
-                    <span className="text-sm">Tools for automation and efficiency</span>
+                  <div className="flex items-start space-x-3">
+                    <CheckCircle className="w-5 h-5 text-[#6aad81] mt-0.5 flex-shrink-0" />
+                    <span className="text-gray-700">Tools for automation and efficiency</span>
                   </div>
-                  <div className="flex items-start space-x-2">
-                    <div className="w-2 h-2 bg-[#6aad81] rounded-full mt-2 flex-shrink-0"></div>
-                    <span className="text-sm">Branding and ethical marketing</span>
+                  <div className="flex items-start space-x-3">
+                    <CheckCircle className="w-5 h-5 text-[#6aad81] mt-0.5 flex-shrink-0" />
+                    <span className="text-gray-700">Branding and ethical marketing</span>
                   </div>
-                  <div className="flex items-start space-x-2">
-                    <div className="w-2 h-2 bg-[#6aad81] rounded-full mt-2 flex-shrink-0"></div>
-                    <span className="text-sm">Content strategy (YouTube, blogs, etc.)</span>
+                  <div className="flex items-start space-x-3">
+                    <CheckCircle className="w-5 h-5 text-[#6aad81] mt-0.5 flex-shrink-0" />
+                    <span className="text-gray-700">Content strategy (YouTube, blogs, etc.)</span>
                   </div>
                 </CardContent>
               </Card>
@@ -222,19 +222,19 @@ export default function MentoringPage() {
       </section>
 
       {/* How It Works Section */}
-      <section id="pricing" className="py-20 bg-gradient-to-br from-[#d2d4d8] to-[#c5c9cd]">
+      <section id="pricing" className="py-16 bg-[#e8eaed]">
         <div className="container mx-auto px-4">
           <div className="max-w-7xl mx-auto">
-            <div className="text-center mb-16">
-               <h2 className="text-4xl font-bold mb-6" style={{color: '#144d5e'}}>How The Mentorship Works</h2>
-               <p className="text-xl text-gray-700 max-w-3xl mx-auto">
+            <div className="text-center mb-12">
+               <h2 className="text-3xl font-bold text-[#144d5e] mb-4">How The Mentorship Works</h2>
+               <p className="text-gray-700 max-w-2xl mx-auto">
                  Flexible options designed to fit your schedule and specific needs
                </p>
             </div>
 
             <div className="grid lg:grid-cols-2 gap-16">
               <div>
-                <h3 className="text-2xl font-bold mb-6" style={{color: '#144d5e'}}>Format:</h3>
+                <h3 className="text-xl font-bold mb-4 text-[#144d5e]">Format:</h3>
                 <div className="space-y-4">
                   <div className="flex items-start space-x-3">
                     <CheckCircle className="w-5 h-5 text-[#6aad81] mt-1 flex-shrink-0" />
@@ -252,47 +252,62 @@ export default function MentoringPage() {
               </div>
 
               <div>
-                <h3 className="text-2xl font-bold mb-6" style={{color: '#144d5e'}}>Duration Options:</h3>
+                <h3 className="text-xl font-bold mb-4 text-[#144d5e]">Duration Options:</h3>
                 <div className="space-y-6">
-                  <Card className="group hover:shadow-xl transition-all duration-300 border-l-4 border-[#6aad81] bg-white">
-                    <CardContent className="p-8">
-                      <div className="flex justify-between items-start mb-4">
-                         <h4 className="font-bold text-2xl" style={{color: '#144d5e'}}>One-Time Strategy Call</h4>
-                        <Badge className="bg-[#6aad81] text-white px-3 py-1">60 mins</Badge>
+                  <Card className="hover:bg-[#e8eaed] transition-colors duration-300 border-2 border-[#6aad81]">
+                    <CardHeader className="text-center pb-4">
+                      <Calendar className="w-16 h-16 text-[#6aad81] mx-auto mb-4" />
+                      <CardTitle className="text-xl text-[#144d5e]">One-Time Strategy Call</CardTitle>
+                      <p className="text-gray-600">60-minute focused session</p>
+                    </CardHeader>
+                    <CardContent className="text-center">
+                      <div className="flex justify-between items-center mb-4">
+                        <span className="text-2xl font-bold text-[#6aad81]">$500 CAD</span>
+                        <Badge className="bg-[#6aad81] text-white">60 mins</Badge>
                       </div>
-                      <p className="text-4xl font-bold text-[#6aad81] mb-4">$500 <span className="text-lg text-gray-600">CAD</span></p>
-                      <p className="text-gray-700 mb-4">Perfect for specific guidance and immediate problem-solving</p>
-                      <Button className="w-full bg-[#6aad81] hover:bg-[#5a9d71] text-white">
-                        <Link href="/contact/paid-consultation">Book Strategy Call</Link>
-                      </Button>
+                      <p className="text-gray-700 mb-6">Perfect for specific guidance and immediate problem-solving</p>
+                      <Link href="/contact-me/paid-consultation">
+                        <Button className="w-full bg-[#6aad81] hover:bg-[#6aad81]/90 text-white">Book Strategy Call</Button>
+                      </Link>
                     </CardContent>
                   </Card>
 
-                  <Card className="group hover:shadow-xl transition-all duration-300 border-l-4 border-[#6aad81] bg-gradient-to-r from-green-50 to-emerald-50 relative overflow-hidden">
-                    <div className="absolute top-0 right-0 bg-[#6aad81] text-white px-4 py-2 text-sm font-bold">
-                      MOST POPULAR
+                  <Card className="hover:bg-[#e8eaed] transition-colors duration-300 border-2 border-[#6aad81] relative">
+                    <div className="absolute -top-3 left-1/2 transform -translate-x-1/2">
+                      <Badge className="bg-[#6aad81] text-white px-4 py-1">Most Popular</Badge>
                     </div>
-                    <CardContent className="p-8">
-                      <div className="flex justify-between items-start mb-4">
-                         <h4 className="font-bold text-2xl" style={{color: '#144d5e'}}>3-Session Package</h4>
-                        <Badge className="bg-green-600 text-white px-3 py-1">Save $300</Badge>
+                    <CardHeader className="text-center pb-4 pt-8">
+                      <Users className="w-16 h-16 text-[#6aad81] mx-auto mb-4" />
+                      <CardTitle className="text-xl text-[#144d5e]">3-Session Package</CardTitle>
+                      <p className="text-gray-600">Comprehensive mentoring program</p>
+                    </CardHeader>
+                    <CardContent className="text-center">
+                      <div className="flex justify-between items-center mb-4">
+                        <span className="text-2xl font-bold text-[#6aad81]">$1,200 CAD</span>
+                        <Badge className="bg-green-600 text-white">Save $300</Badge>
                       </div>
-                      <p className="text-4xl font-bold text-[#6aad81] mb-4">$1,200 <span className="text-lg text-gray-600">CAD</span></p>
-                      <p className="text-gray-700 mb-4">Comprehensive guidance with follow-up support</p>
-                      <Button className="w-full bg-[#6aad81] hover:bg-[#5a9d71] text-white">
-                        <Link href="/contact/paid-consultation">Start 3-Session Package</Link>
-                      </Button>
+                      <p className="text-gray-700 mb-6">Comprehensive guidance with follow-up support</p>
+                      <Link href="/contact-me/paid-consultation">
+                        <Button className="w-full bg-[#6aad81] hover:bg-[#6aad81]/90 text-white">Start 3-Session Package</Button>
+                      </Link>
                     </CardContent>
                   </Card>
 
-                  <Card className="group hover:shadow-xl transition-all duration-300 border-l-4 border-[#144d5e] bg-white">
-                    <CardContent className="p-8">
-                       <h4 className="font-bold text-2xl mb-4" style={{color: '#144d5e'}}>Ongoing Monthly Mentorship</h4>
-                      <p className="text-3xl font-bold text-[#6aad81] mb-4">Custom Pricing</p>
-                      <p className="text-gray-700 mb-4">Exclusive, long-term partnership (by application only)</p>
-                      <Button variant="outline" className="w-full border-[#144d5e] text-[#144d5e] hover:bg-[#144d5e] hover:text-white">
-                        <Link href="/contact">Apply for Monthly Mentorship</Link>
-                      </Button>
+                  <Card className="hover:bg-[#e8eaed] transition-colors duration-300 border-2 border-[#144d5e]">
+                    <CardHeader className="text-center pb-4">
+                      <Target className="w-16 h-16 text-[#144d5e] mx-auto mb-4" />
+                      <CardTitle className="text-xl text-[#144d5e]">Ongoing Monthly Mentorship</CardTitle>
+                      <p className="text-gray-600">Exclusive long-term partnership</p>
+                    </CardHeader>
+                    <CardContent className="text-center">
+                      <div className="flex justify-between items-center mb-4">
+                        <span className="text-2xl font-bold text-[#6aad81]">Custom Pricing</span>
+                        <Badge variant="outline" className="border-[#144d5e] text-[#144d5e]">By Application</Badge>
+                      </div>
+                      <p className="text-gray-700 mb-6">Exclusive, long-term partnership (by application only)</p>
+                      <Link href="/contact-me">
+                        <Button className="w-full bg-[#144d5e] hover:bg-[#144d5e]/90 text-white">Apply for Monthly Mentorship</Button>
+                      </Link>
                     </CardContent>
                   </Card>
                 </div>
@@ -314,21 +329,17 @@ export default function MentoringPage() {
                <h2 className="text-3xl font-bold mb-4" style={{color: '#144d5e'}}>What Mentees Say</h2>
             </div>
             
-            <Card className="bg-[#d2d4d8] border-l-4 border-[#6aad81]">
-              <CardContent className="p-8">
-                <div className="flex items-start space-x-4">
-                  <div className="flex-shrink-0">
-                    <div className="w-12 h-12 bg-[#6aad81] text-white rounded-full flex items-center justify-center">
-                      <Star className="w-6 h-6" />
-                    </div>
-                  </div>
-                  <div>
-                    <blockquote className="text-lg italic mb-4 text-gray-700">
-                      "The business side of this work used to overwhelm me. Mujtaba's mentorship helped me structure my first 5 paid retainers."
-                    </blockquote>
-                    <cite className="font-semibold" style={{color: '#144d5e'}}>— Fariha R., RCIC</cite>
-                  </div>
-                </div>
+            <Card className="hover:bg-[#e8eaed] transition-colors duration-300 border-2 border-[#6aad81]">
+              <CardHeader className="text-center pb-4">
+                <Star className="w-16 h-16 text-[#6aad81] mx-auto mb-4" />
+                <CardTitle className="text-2xl text-[#144d5e]">Client Success Story</CardTitle>
+                <p className="text-gray-600">Real feedback from mentees</p>
+              </CardHeader>
+              <CardContent className="text-center">
+                <blockquote className="text-lg italic mb-6 text-gray-700">
+                  "The business side of this work used to overwhelm me. Mujtaba's mentorship helped me structure my first 5 paid retainers."
+                </blockquote>
+                <cite className="font-semibold text-[#144d5e]">— Fariha R., RCIC</cite>
               </CardContent>
             </Card>
           </div>
@@ -352,7 +363,7 @@ export default function MentoringPage() {
                   <h3 className="font-bold text-lg mb-2">Book Your First Session</h3>
                   <p className="text-sm opacity-90 mb-4">Start with a strategy call</p>
                   <Button className="w-full bg-white text-[#6aad81] hover:bg-gray-100">
-                    <Link href="/contact/paid-consultation">Book Now</Link>
+                    <Link href="/contact-me/paid-consultation">Book Now</Link>
                   </Button>
                 </CardContent>
               </Card>
@@ -362,8 +373,8 @@ export default function MentoringPage() {
                   <Mail className="w-8 h-8 mx-auto mb-4 text-white" />
                   <h3 className="font-bold text-lg mb-2">Apply for Ongoing</h3>
                   <p className="text-sm opacity-90 mb-4">Long-term mentorship</p>
-                  <Button variant="outline" className="w-full border-white text-white hover:bg-white hover:text-[#6aad81]">
-                    <Link href="/contact">Apply Now</Link>
+                  <Button className="w-full bg-white text-[#6aad81] hover:bg-gray-100">
+                    <Link href="/contact-me">Apply Now</Link>
                   </Button>
                 </CardContent>
               </Card>
@@ -381,63 +392,63 @@ export default function MentoringPage() {
             </div>
 
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-              <Card className="text-center hover:shadow-lg transition-shadow">
-                <CardHeader>
-                  <Award className="w-12 h-12 text-[#6aad81] mx-auto mb-4" />
-                  <CardTitle className="text-lg" style={{color: '#144d5e'}}>Licensed RCIC</CardTitle>
+              <Card className="hover:bg-[#e8eaed] transition-colors duration-300 text-center">
+                <CardHeader className="text-center pb-4">
+                  <Award className="w-16 h-16 text-[#6aad81] mx-auto mb-4" />
+                  <CardTitle className="text-xl text-[#144d5e]">Licensed RCIC</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-sm text-gray-600">With successful private practice experience</p>
+                  <p className="text-gray-600">With successful private practice experience</p>
                 </CardContent>
               </Card>
 
-              <Card className="text-center hover:shadow-lg transition-shadow">
-                <CardHeader>
-                  <TrendingUp className="w-12 h-12 text-[#6aad81] mx-auto mb-4" />
-                  <CardTitle className="text-lg" style={{color: '#144d5e'}}>80% Success Rate</CardTitle>
+              <Card className="hover:bg-[#e8eaed] transition-colors duration-300 text-center">
+                <CardHeader className="text-center pb-4">
+                  <TrendingUp className="w-16 h-16 text-[#6aad81] mx-auto mb-4" />
+                  <CardTitle className="text-xl text-[#144d5e]">80% Success Rate</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-sm text-gray-600">Proven threshold for client cases</p>
+                  <p className="text-gray-600">Proven threshold for client cases</p>
                 </CardContent>
               </Card>
 
-              <Card className="text-center hover:shadow-lg transition-shadow">
-                <CardHeader>
-                  <BookOpen className="w-12 h-12 text-[#6aad81] mx-auto mb-4" />
-                  <CardTitle className="text-lg" style={{color: '#144d5e'}}>YouTube Educator</CardTitle>
+              <Card className="hover:bg-[#e8eaed] transition-colors duration-300 text-center">
+                <CardHeader className="text-center pb-4">
+                  <BookOpen className="w-16 h-16 text-[#6aad81] mx-auto mb-4" />
+                  <CardTitle className="text-xl text-[#144d5e]">YouTube Educator</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-sm text-gray-600">Immigration Insights with Mujtaba</p>
+                  <p className="text-gray-600">Immigration Insights with Mujtaba</p>
                 </CardContent>
               </Card>
 
-              <Card className="text-center hover:shadow-lg transition-shadow">
-                <CardHeader>
-                  <Target className="w-12 h-12 text-[#6aad81] mx-auto mb-4" />
-                  <CardTitle className="text-lg" style={{color: '#144d5e'}}>Strategic Storytelling</CardTitle>
+              <Card className="hover:bg-[#e8eaed] transition-colors duration-300 text-center">
+                <CardHeader className="text-center pb-4">
+                  <Target className="w-16 h-16 text-[#6aad81] mx-auto mb-4" />
+                  <CardTitle className="text-xl text-[#144d5e]">Strategic Storytelling</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-sm text-gray-600">Known for strategy, not just form-filling</p>
+                  <p className="text-gray-600">Known for strategy, not just form-filling</p>
                 </CardContent>
               </Card>
 
-              <Card className="text-center hover:shadow-lg transition-shadow">
-                <CardHeader>
-                  <Users className="w-12 h-12 text-[#6aad81] mx-auto mb-4" />
-                  <CardTitle className="text-lg" style={{color: '#144d5e'}}>Caring Mentor</CardTitle>
+              <Card className="hover:bg-[#e8eaed] transition-colors duration-300 text-center">
+                <CardHeader className="text-center pb-4">
+                  <Users className="w-16 h-16 text-[#6aad81] mx-auto mb-4" />
+                  <CardTitle className="text-xl text-[#144d5e]">Caring Mentor</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-sm text-gray-600">Mentors new consultants with real care</p>
+                  <p className="text-gray-600">Mentors new consultants with real care</p>
                 </CardContent>
               </Card>
 
-              <Card className="text-center hover:shadow-lg transition-shadow">
-                <CardHeader>
-                  <CheckCircle className="w-12 h-12 text-[#6aad81] mx-auto mb-4" />
-                  <CardTitle className="text-lg" style={{color: '#144d5e'}}>Transparent Approach</CardTitle>
+              <Card className="hover:bg-[#e8eaed] transition-colors duration-300 text-center">
+                <CardHeader className="text-center pb-4">
+                  <CheckCircle className="w-16 h-16 text-[#6aad81] mx-auto mb-4" />
+                  <CardTitle className="text-xl text-[#144d5e]">Transparent Approach</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-sm text-gray-600">Honest guidance with no hidden agendas</p>
+                  <p className="text-gray-600">Honest guidance with no hidden agendas</p>
                 </CardContent>
               </Card>
             </div>

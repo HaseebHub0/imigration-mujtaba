@@ -107,7 +107,7 @@ export default function BlogPage() {
               <h2 className="text-3xl font-bold text-[#144d5e] mb-4">Featured Article</h2>
             </div>
 
-            <Card className="hover:bg-[#d2d4d8] transition-colors duration-300 overflow-hidden">
+            <Card className="hover:bg-[#e8eaed] transition-colors duration-300 overflow-hidden">
               <div className="grid lg:grid-cols-2 gap-0">
                 <div className="relative h-64 lg:h-auto">
                   <Image
@@ -144,7 +144,7 @@ export default function BlogPage() {
       </section>
 
       {/* Categories Filter */}
-      <section className="py-8 bg-[#d2d4d8]">
+      <section className="py-8 bg-[#e8eaed]">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <div className="flex flex-wrap justify-center gap-4">
@@ -172,7 +172,7 @@ export default function BlogPage() {
           <div className="max-w-6xl mx-auto">
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
               {blogPosts.map((post, index) => (
-                <Card key={index} className="hover:bg-[#d2d4d8] transition-colors duration-300 overflow-hidden">
+                <Card key={index} className="hover:bg-[#e8eaed] transition-colors duration-300 overflow-hidden">
                   <div className="relative h-48">
                     <Image src={post.image || "/placeholder.svg"} alt={post.title} fill className="object-cover" />
                   </div>
@@ -212,7 +212,7 @@ export default function BlogPage() {
       </section>
 
       {/* Newsletter Signup */}
-      <section className="py-16 bg-[#d2d4d8]">
+      <section className="py-16 bg-[#e8eaed]">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-3xl font-bold text-[#144d5e] mb-4">Stay Updated</h2>

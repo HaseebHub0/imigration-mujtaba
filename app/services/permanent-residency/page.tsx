@@ -5,6 +5,7 @@ import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 import { Textarea } from "@/components/ui/textarea"
 import { CheckCircle, Globe, TrendingUp, Users, Award, Send } from "lucide-react"
+import Link from "next/link"
 
 export default function PermanentResidencyPage() {
   const programs = [
@@ -87,7 +88,7 @@ export default function PermanentResidencyPage() {
 
             <div className="grid lg:grid-cols-2 gap-8">
               {programs.map((program, index) => (
-                <Card key={index} className="hover:bg-[#d2d4d8] transition-colors duration-300">
+                <Card key={index} className="hover:bg-[#e8eaed] transition-colors duration-300">
                   <CardHeader>
                     <CardTitle className="text-xl text-[#144d5e]">{program.title}</CardTitle>
                     <p className="text-gray-600">{program.description}</p>
@@ -108,7 +109,9 @@ export default function PermanentResidencyPage() {
                         </li>
                       ))}
                     </ul>
-                    <Button className="w-full bg-[#6aad81] hover:bg-[#6aad81]/90 text-white">Get Assessment</Button>
+                    <Link href="/contact-me">
+                      <Button className="w-full bg-[#6aad81] hover:bg-[#6aad81]/90 text-white">Get Assessment</Button>
+                    </Link>
                   </CardContent>
                 </Card>
               ))}
@@ -118,7 +121,7 @@ export default function PermanentResidencyPage() {
       </section>
 
       {/* Process Steps */}
-      <section className="py-16 bg-[#d2d4d8]">
+      <section className="py-16 bg-[#e8eaed]">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-12">
@@ -169,7 +172,7 @@ export default function PermanentResidencyPage() {
             </div>
 
             <div className="grid md:grid-cols-3 gap-8">
-              <Card className="hover:bg-[#d2d4d8] transition-colors duration-300 text-center">
+              <Card className="hover:bg-[#e8eaed] transition-colors duration-300 text-center">
                 <CardContent className="p-6">
                   <TrendingUp className="w-12 h-12 text-[#6aad81] mx-auto mb-4" />
                   <h3 className="text-xl font-semibold text-[#144d5e] mb-3">CRS Optimization</h3>
@@ -177,7 +180,7 @@ export default function PermanentResidencyPage() {
                 </CardContent>
               </Card>
 
-              <Card className="hover:bg-[#d2d4d8] transition-colors duration-300 text-center">
+              <Card className="hover:bg-[#e8eaed] transition-colors duration-300 text-center">
                 <CardContent className="p-6">
                   <Users className="w-12 h-12 text-[#6aad81] mx-auto mb-4" />
                   <h3 className="text-xl font-semibold text-[#144d5e] mb-3">Family Support</h3>
@@ -185,7 +188,7 @@ export default function PermanentResidencyPage() {
                 </CardContent>
               </Card>
 
-              <Card className="hover:bg-[#d2d4d8] transition-colors duration-300 text-center">
+              <Card className="hover:bg-[#e8eaed] transition-colors duration-300 text-center">
                 <CardContent className="p-6">
                   <Award className="w-12 h-12 text-[#6aad81] mx-auto mb-4" />
                   <h3 className="text-xl font-semibold text-[#144d5e] mb-3">Expert Guidance</h3>
@@ -198,7 +201,7 @@ export default function PermanentResidencyPage() {
       </section>
 
       {/* Contact Form Section */}
-      <section className="py-16 bg-[#d2d4d8]">
+      <section className="py-16 bg-[#e8eaed]">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-12">
@@ -249,7 +252,7 @@ export default function PermanentResidencyPage() {
                   
                   <Button type="submit" className="w-full bg-[#6aad81] hover:bg-[#6aad81]/90 text-white">
                     <Send className="w-4 h-4 mr-2" />
-                    Get Started
+                    <Link href="/contact-me">Get Started</Link>
                   </Button>
                 </form>
               </CardContent>

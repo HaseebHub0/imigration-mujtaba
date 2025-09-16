@@ -27,7 +27,7 @@ export default function AssessmentPage() {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <div className="grid md:grid-cols-2 gap-8">
-              <Card className="hover:bg-[#d2d4d8] transition-colors duration-300 border-2 border-[#6aad81]">
+              <Card className="hover:bg-[#e8eaed] transition-colors duration-300 border-2 border-[#6aad81]">
                 <CardHeader className="text-center pb-4">
                   <Calculator className="w-16 h-16 text-[#6aad81] mx-auto mb-4" />
                   <CardTitle className="text-2xl text-[#144d5e]">CRS Score Calculator</CardTitle>
@@ -46,7 +46,7 @@ export default function AssessmentPage() {
                 </CardContent>
               </Card>
 
-              <Card className="hover:bg-[#d2d4d8] transition-colors duration-300 border-2 border-[#6aad81]">
+              <Card className="hover:bg-[#e8eaed] transition-colors duration-300 border-2 border-[#6aad81]">
                 <CardHeader className="text-center pb-4">
                   <FileCheck className="w-16 h-16 text-[#6aad81] mx-auto mb-4" />
                   <CardTitle className="text-2xl text-[#144d5e]">PNP Assessment</CardTitle>
@@ -70,7 +70,7 @@ export default function AssessmentPage() {
       </section>
 
       {/* How It Works */}
-      <section className="py-16 bg-[#d2d4d8]">
+      <section className="py-16 bg-[#e8eaed]">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-12">

@@ -7,7 +7,7 @@
 :root {
   /* Updated color scheme to match user requirements */
   --background: oklch(1 0 0); /* White background */
-  --background-alt: #d2d4d8; /* Light Grey - Neutral/background color */
+  --background-alt: #e8eaed; /* Light Grey - Neutral/background color (lighter) */
   --foreground: #144d5e; /* Midnight Green */
   --card: oklch(1 0 0); /* White cards */
   --card-foreground: #144d5e;
@@ -17,7 +17,7 @@
   --primary-foreground: oklch(1 0 0);
   --secondary: #144d5e; /* Midnight Green */
   --secondary-foreground: #ffffff;
-  --muted: #d2d4d8; /* Light Grey - Neutral/background color */
+  --muted: #e8eaed; /* Light Grey - Neutral/background color (lighter) */
   --muted-foreground: #144d5e;
   --accent: #6aad81; /* Shiny Shamrock - Secondary/accent color */
   --accent-foreground: oklch(1 0 0);
@@ -28,7 +28,7 @@
   --ring: #6aad81; /* Shiny Shamrock - Secondary/accent color */
   --chart-1: #6aad81; /* Shiny Shamrock - Secondary/accent color */
   --chart-2: #144d5e; /* Updated to teal */
-  --chart-3: #d2d4d8; /* Light Grey - Neutral/background color */
+  --chart-3: #e8eaed; /* Light Grey - Neutral/background color (lighter) */
   --chart-4: oklch(0.55 0.2 25);
   --chart-5: oklch(0.45 0 0);
   --radius: 0.5rem;
@@ -179,9 +179,9 @@
   .border-brand-secondary { border-color: #6aad81; }
   
   /* Neutral Colors */
-  .bg-brand-neutral { background-color: #d2d4d8; } /* Light Grey */
-  .text-brand-neutral { color: #d2d4d8; }
-  .border-brand-neutral { border-color: #d2d4d8; }
+  .bg-brand-neutral { background-color: #e8eaed; } /* Light Grey (lighter) */
+  .text-brand-neutral { color: #e8eaed; }
+  .border-brand-neutral { border-color: #e8eaed; }
   
   .bg-brand-dark { background-color: #1b1b1b; } /* Eerie Black */
   .text-brand-dark { color: #1b1b1b; }
@@ -253,7 +253,7 @@
   }
 
   .bg-alt {
-    background-color: #d2d4d8; /* Light Grey - Neutral/background color */
+    background-color: #e8eaed; /* Light Grey - Neutral/background color (lighter) */
   }
   
   /* Kerdo rounded button style */

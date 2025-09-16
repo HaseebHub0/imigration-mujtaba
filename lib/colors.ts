@@ -10,7 +10,7 @@ export const brandColors = {
   
   // Neutral Colors
   neutral: {
-    lightGrey: '#d2d4d8',    // Light Grey - Neutral/background color
+    lightGrey: '#e8eaed',    // Light Grey - Neutral/background color (lighter)
     eerieBlack: '#1b1b1b',   // Eerie Black - Dark backgrounds
     white: '#ffffff',
     black: '#000000',

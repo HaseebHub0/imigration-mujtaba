@@ -20,7 +20,7 @@ const Header: React.FC = () => {
               bgColor: "#144d5e",
         textColor: "#ffffff",
       links: [
-        { label: "About Me", ariaLabel: "About Me", href: "/about" },
+        { label: "About Me", ariaLabel: "About Me", href: "/about-me" },
         
       ]
     },
@@ -30,7 +30,8 @@ const Header: React.FC = () => {
       textColor: "#ffffff",
       links: [
         { label: "Permanent Residency", ariaLabel: "Permanent Residency Services", href: "/services/permanent-residency" },
-        { label: "Status Services", ariaLabel: "Status Services", href: "/services/status-services" },
+          { label: "Immigration Pathways", ariaLabel: "Immigration Pathways", href: "/services/immigration-pathways" },
+        { label: "RCIC Mentoring", ariaLabel: "RCIC Mentoring & Coaching", href: "/mentoring" },
        
       ]
     },
@@ -54,23 +55,14 @@ const Header: React.FC = () => {
         
       ]
     },
-    {
-      label: "Mentoring", 
-      bgColor: "#6aad81",
-      textColor: "#ffffff",
-      links: [
-        { label: "RCIC Mentoring", ariaLabel: "RCIC Mentoring & Coaching", href: "/mentoring" },
-        { label: "Private Practice Setup", ariaLabel: "Private Practice Coaching", href: "/mentoring" },
-        
-        ]
-      },
+   
     {
       label: "Contact",
       bgColor: "#144d5e",
       textColor: "#ffffff",
       links: [
-        { label: "Free Assessment", ariaLabel: "Schedule Free Assessment", href: "/contact/free-consultation" },
-        { label: "Detailed Consultation", ariaLabel: "Schedule Detailed Consultation", href: "/contact/paid-consultation" },
+        { label: "Free Assessment", ariaLabel: "Schedule Free Assessment", href: "/contact-me/free-consultation" },
+        { label: "Detailed Consultation", ariaLabel: "Schedule Detailed Consultation", href: "/contact-me/paid-consultation" },
         
       ]
     }

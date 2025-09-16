@@ -146,7 +146,7 @@ export default function ResourcesPage() {
 
             <div className="grid md:grid-cols-3 gap-8">
               {tools.map((tool, index) => (
-                <Card key={index} className="hover:bg-[#d2d4d8] transition-colors duration-300 text-center">
+                <Card key={index} className="hover:bg-[#e8eaed] transition-colors duration-300 text-center">
                   <CardHeader>
                     <tool.icon className="w-12 h-12 text-[#6aad81] mx-auto mb-4" />
                     <CardTitle className="text-xl text-[#144d5e]">{tool.title}</CardTitle>
@@ -168,7 +168,7 @@ export default function ResourcesPage() {
       </section>
 
       {/* Downloadable Resources */}
-      <section className="py-16 bg-[#d2d4d8]">
+      <section className="py-16 bg-[#e8eaed]">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-12">
@@ -221,7 +221,7 @@ export default function ResourcesPage() {
 
             <div className="grid md:grid-cols-3 gap-8">
               {videoResources.map((video, index) => (
-                <Card key={index} className="hover:bg-[#d2d4d8] transition-colors duration-300 overflow-hidden">
+                <Card key={index} className="hover:bg-[#e8eaed] transition-colors duration-300 overflow-hidden">
                   <div className="relative">
                     <img
                       src={video.thumbnail || "/placeholder.svg"}
@@ -262,7 +262,7 @@ export default function ResourcesPage() {
       </section>
 
       {/* External Resources */}
-      <section className="py-16 bg-[#d2d4d8]">
+      <section className="py-16 bg-[#e8eaed]">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-12">

@@ -278,7 +278,7 @@ export default function PNPAssessmentPage() {
                 {results.length > 0 ? (
                   <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
                     {results.map((result, index) => (
-                      <Card key={index} className="hover:bg-[#d2d4d8] transition-colors duration-300">
+                      <Card key={index} className="hover:bg-[#e8eaed] transition-colors duration-300">
                         <CardHeader>
                           <div className="flex items-center gap-2 mb-2">
                             <MapPin className="w-5 h-5 text-[#6aad81]" />
@@ -326,7 +326,7 @@ export default function PNPAssessmentPage() {
                 )}
 
                 <div className="mt-8 text-center">
-                  <Card className="bg-[#d2d4d8] border-[#6aad81]">
+                  <Card className="bg-[#e8eaed] border-[#6aad81]">
                     <CardContent className="p-6">
                       <CheckCircle className="w-12 h-12 text-[#6aad81] mx-auto mb-4" />
                       <h3 className="text-xl font-semibold text-[#144d5e] mb-2">
@@ -347,7 +347,7 @@ export default function PNPAssessmentPage() {
       </section>
 
       {/* Contact Form Section */}
-      <section className="py-16 bg-[#d2d4d8]">
+      <section className="py-16 bg-[#e8eaed]">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-12">

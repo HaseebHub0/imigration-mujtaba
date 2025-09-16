@@ -207,7 +207,7 @@ const CardNav: React.FC<CardNavProps> = ({
           </div>
 
           <Link
-            href="/contact"
+            href="/contact-me"
             className="card-nav-cta-button"
             style={{ backgroundColor: buttonBgColor, color: buttonTextColor }}
           >

@@ -84,7 +84,7 @@ export default function ServicesPage() {
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <div className="grid md:grid-cols-2 gap-8 mb-16">
-              <Card className="hover:bg-[#d2d4d8] transition-colors duration-300 border-2 border-[#6aad81]">
+              <Card className="hover:bg-[#e8eaed] transition-colors duration-300 border-2 border-[#6aad81]">
                 <CardHeader className="text-center pb-4">
                   <Globe className="w-16 h-16 text-[#6aad81] mx-auto mb-4" />
                   <CardTitle className="text-2xl text-[#144d5e]">Permanent Residency</CardTitle>
@@ -102,19 +102,19 @@ export default function ServicesPage() {
                 </CardContent>
               </Card>
 
-              <Card className="hover:bg-[#d2d4d8] transition-colors duration-300 border-2 border-[#6aad81]">
+              <Card className="hover:bg-[#e8eaed] transition-colors duration-300 border-2 border-[#6aad81]">
                 <CardHeader className="text-center pb-4">
                   <FileText className="w-16 h-16 text-[#6aad81] mx-auto mb-4" />
-                  <CardTitle className="text-2xl text-[#144d5e]">Status Services</CardTitle>
+                  <CardTitle className="text-2xl text-[#144d5e]">Immigration Pathways</CardTitle>
                   <p className="text-gray-600">Work, study, and visit Canada</p>
                 </CardHeader>
                 <CardContent className="text-center">
                   <p className="text-gray-700 mb-6">
                     Work permits, study permits, family sponsorship, and LMIA applications
                   </p>
-                  <Link href="/services/status-services">
+                  <Link href="/services/immigration-pathways">
                     <Button className="bg-[#6aad81] hover:bg-[#6aad81]/90 text-white">
-                      Explore Status Services <ArrowRight className="w-4 h-4 ml-2" />
+                      Explore Immigration Pathways <ArrowRight className="w-4 h-4 ml-2" />
                     </Button>
                   </Link>
                 </CardContent>
@@ -125,7 +125,7 @@ export default function ServicesPage() {
       </section>
 
       {/* Permanent Residency Services */}
-      <section className="py-16 bg-[#d2d4d8]">
+      <section className="py-16 bg-[#e8eaed]">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-12">
@@ -152,7 +152,9 @@ export default function ServicesPage() {
                         </li>
                       ))}
                     </ul>
-                    <Button className="w-full bg-[#6aad81] hover:bg-[#6aad81]/90 text-white">Get Started</Button>
+                    <Link href="/contact-me">
+                      <Button className="w-full bg-[#6aad81] hover:bg-[#6aad81]/90 text-white">Get Started</Button>
+                    </Link>
                   </CardContent>
                 </Card>
               ))}
@@ -166,7 +168,7 @@ export default function ServicesPage() {
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-12">
-              <h2 className="text-3xl font-bold text-[#144d5e] mb-4">Status Services</h2>
+              <h2 className="text-3xl font-bold text-[#144d5e] mb-4">Immigration Pathways</h2>
               <p className="text-gray-700 max-w-2xl mx-auto">
                 Work, study, and reunite with family in Canada through our comprehensive status services
               </p>
@@ -174,7 +176,7 @@ export default function ServicesPage() {
 
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
               {statusServices.map((service, index) => (
-                <Card key={index} className="hover:bg-[#d2d4d8] transition-colors duration-300">
+                <Card key={index} className="hover:bg-[#e8eaed] transition-colors duration-300">
                   <CardHeader>
                     <CardTitle className="text-lg text-[#144d5e]">{service.title}</CardTitle>
                     <p className="text-gray-600 text-sm">{service.description}</p>
@@ -201,7 +203,7 @@ export default function ServicesPage() {
       </section>
 
       {/* Why Choose Us */}
-      <section className="py-16 bg-[#d2d4d8]">
+      <section className="py-16 bg-[#e8eaed]">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-3xl font-bold text-[#144d5e] mb-8">Why Choose Our Services?</h2>

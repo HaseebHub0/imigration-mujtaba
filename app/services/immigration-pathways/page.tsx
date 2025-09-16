@@ -5,8 +5,9 @@ import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 import { Textarea } from "@/components/ui/textarea"
 import { CheckCircle, FileText, Briefcase, GraduationCap, Heart, Building, Send } from "lucide-react"
+import Link from "next/link"
 
-export default function StatusServicesPage() {
+export default function ImmigrationPathwaysPage() {
   const services = [
     {
       icon: Briefcase,
@@ -87,7 +88,7 @@ export default function StatusServicesPage() {
         <div className="absolute inset-0 bg-[#6aad81]/80"></div>
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-4xl md:text-5xl font-bold mb-6 text-white">Status Services</h1>
+            <h1 className="text-4xl md:text-5xl font-bold mb-6 text-white">Immigration Pathways</h1>
             <p className="text-xl text-gray-200 mb-8">
               Professional assistance with work permits, study permits, and temporary status applications
             </p>
@@ -100,15 +101,15 @@ export default function StatusServicesPage() {
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-12">
-              <h2 className="text-3xl font-bold text-[#144d5e] mb-4">Our Status Services</h2>
+              <h2 className="text-3xl font-bold text-[#144d5e] mb-4">Our Services</h2>
               <p className="text-gray-700 max-w-2xl mx-auto">
-                Comprehensive support for temporary status applications in Canada
+                Comprehensive support for Immigration Pathways applications in Canada
               </p>
             </div>
 
             <div className="space-y-12">
               {services.map((service, index) => (
-                <Card key={index} className="hover:bg-[#d2d4d8] transition-colors duration-300">
+                <Card key={index} className="hover:bg-[#e8eaed] transition-colors duration-300">
                   <CardContent className="p-8">
                     <div className="grid lg:grid-cols-3 gap-8">
                       <div className="lg:col-span-1">
@@ -129,7 +130,9 @@ export default function StatusServicesPage() {
                             <div className="text-sm text-gray-600">Processing Time</div>
                           </div>
                         </div>
-                        <Button className="w-full bg-[#6aad81] hover:bg-[#6aad81]/90 text-white">Get Started</Button>
+                        <Link href="/contact-me">
+                          <Button className="w-full bg-[#6aad81] hover:bg-[#6aad81]/90 text-white">Get Started</Button>
+                        </Link>
                       </div>
 
                       <div className="lg:col-span-1">
@@ -168,7 +171,7 @@ export default function StatusServicesPage() {
       </section>
 
       {/* Process */}
-      <section className="py-16 bg-[#d2d4d8]">
+      <section className="py-16 bg-[#e8eaed]">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-12">
@@ -215,7 +218,7 @@ export default function StatusServicesPage() {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-12">
-              <h2 className="text-3xl font-bold text-[#144d5e] mb-4">Get Started with Status Services</h2>
+              <h2 className="text-3xl font-bold text-[#144d5e] mb-4">Get Started with Immigration Pathways</h2>
               <p className="text-gray-700 max-w-2xl mx-auto">
                 Ready to apply for a work permit, study permit, or other status? Send us a message and we'll help you get started.
               </p>
@@ -262,7 +265,7 @@ export default function StatusServicesPage() {
                   
                   <Button type="submit" className="w-full bg-[#6aad81] hover:bg-[#6aad81]/90 text-white">
                     <Send className="w-4 h-4 mr-2" />
-                    Get Started
+                    <Link href="/contact-me">Get Started</Link>
                   </Button>
                 </form>
               </CardContent>
@@ -271,27 +274,6 @@ export default function StatusServicesPage() {
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="bg-[#6aad81] text-white py-16">
-        <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl font-bold mb-4">Need Help with Your Status Application?</h2>
-          <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
-            Book a free consultation to discuss your specific needs and get expert guidance
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" className="bg-[#6aad81] hover:bg-[#6aad81]/90 text-white">
-              Book Free Consultation
-            </Button>
-            <Button
-              size="lg"
-              variant="outline"
-                              className="border-white text-white hover:bg-white hover:text-[#144d5e] bg-transparent"
-            >
-              Get Quote
-            </Button>
-          </div>
-        </div>
-      </section>
     </div>
   )
 }

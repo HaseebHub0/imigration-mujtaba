@@ -90,7 +90,7 @@ export default function HomePage() {
                             className="border-white/50 text-white hover:bg-white/20 hover:border-white px-6 py-4 text-sm sm:text-base h-12 sm:h-14 bg-white/10 backdrop-blur-sm hover:backdrop-blur-md transition-all duration-300 shadow-xl hover:shadow-2xl transform hover:scale-105"
                           >
                             <a href="/services/status-services" className="flex items-center justify-center">
-                              <span>Status Services</span>
+                              <span>Immigration Pathways</span>
                               <div className="ml-2 transform group-hover:translate-x-1 transition-transform duration-300">
                                 →
                               </div>
@@ -163,8 +163,8 @@ export default function HomePage() {
                         variant="outline"
                         className="border-white/50 text-white hover:bg-white/20 w-72 hover:border-white px-6 py-4 text-base xl:text-lg h-14 xl:h-16 bg-white/10 backdrop-blur-sm hover:backdrop-blur-md transition-all duration-300 shadow-xl hover:shadow-2xl transform hover:scale-105 group"
                       >
-                        <a href="/services/status-services" className="flex items-center justify-center">
-                          <span>Status Services</span>
+                        <a href="/services/immigration-pathways" className="flex items-center justify-center">
+                          <span>Immigration Pathways</span>
                           <div className="ml-2 transform group-hover:translate-x-1 transition-transform duration-300">
                             →
                           </div>
@@ -175,8 +175,8 @@ export default function HomePage() {
                         variant="outline"
                         className="border-white/50 text-white hover:bg-white/20 hover:border-white px-6 py-4 text-base xl:text-lg h-14 w-72 xl:h-16 bg-white/10 backdrop-blur-sm hover:backdrop-blur-md transition-all duration-300 shadow-xl hover:shadow-2xl transform hover:scale-105 group"
                       >
-                        <a href="/training" className="flex items-center justify-center">
-                          <span>RCIC Training</span>
+                        <a href="/mentoring" className="flex items-center justify-center">
+                          <span>RCIC Mentoring</span>
                           <div className="ml-2 transform group-hover:translate-x-1 transition-transform duration-300">
                             →
                           </div>
@@ -248,7 +248,7 @@ export default function HomePage() {
           <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
             {/* Expertise Card */}
             <div>
-              <Card className="  text-white bg-[#d2d4d8] text-[#144d5e] transition-all duration-300 group shadow-lg hover:shadow-2xl">
+              <Card className="  text-white bg-[#e8eaed] text-[#144d5e] transition-all duration-300 group shadow-lg hover:shadow-2xl">
                 <CardHeader className="text-center pb-4">
                   <div>
                     <Award className="h-12 w-12 text-primary group-hover:text-primary mx-auto mb-4" />
@@ -274,7 +274,7 @@ export default function HomePage() {
 
             {/* Success Card */}
             <div>
-              <Card className="  text-white bg-[#d2d4d8] text-[#144d5e] transition-all duration-300 group shadow-lg hover:shadow-2xl">
+              <Card className="  text-white bg-[#e8eaed] text-[#144d5e] transition-all duration-300 group shadow-lg hover:shadow-2xl">
                 <CardHeader className="text-center pb-4">
                   <div>
                     <TrendingUp className="h-12 w-12 text-primary group-hover:text-primary mx-auto mb-4" />
@@ -299,7 +299,7 @@ export default function HomePage() {
 
             {/* Trust Card */}
             <div>
-              <Card className="  text-white bg-[#d2d4d8] text-[#144d5e] transition-all duration-300 group shadow-lg hover:shadow-2xl">
+              <Card className="  text-white bg-[#e8eaed] text-[#144d5e] transition-all duration-300 group shadow-lg hover:shadow-2xl">
                 <CardHeader className="text-center pb-4">
                   <div>
                     <Heart className="h-12 w-12 text-primary group-hover:text-primary mx-auto mb-4" />
