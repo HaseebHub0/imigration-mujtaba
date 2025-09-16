@@ -54,7 +54,7 @@ export default function HomePage() {
                       <div className="relative p-6 sm:p-8">
                         <div className="text-center mb-6 sm:mb-8">
                           <h1 className="text-2xl sm:text-3xl md:text-4xl leading-tight font-bold text-white">
-                            Expert Immigration Guidance with Transparent Assessment
+                            Expert Immigration Guidance with Mujtaba Sarwar
                           </h1>
                         </div>
                         <div className="text-center mb-6 sm:mb-8">
@@ -316,7 +316,7 @@ export default function HomePage() {
                       variant="outline"
                       className="border-primary text-primary hover:bg-primary hover:text-white bg-transparent group-hover:border-primary group-hover:text-primary"
                     >
-                      <a href="/about">→ ABOUT US</a>
+                      <a href="/about-me">→ ABOUT Me</a>
                     </Button>
                   </div>
                 </CardContent>
