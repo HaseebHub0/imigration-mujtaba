@@ -51,7 +51,7 @@ const Header: React.FC = () => {
       textColor: "#ffffff",
       links: [
         { label: "Immigration Blog", ariaLabel: "Immigration Blog", href: "/blog" },
-        { label: "Immigration Tools", ariaLabel: "Immigration Tools", href: "/resources" },
+        { label: "Assessment Tools", ariaLabel: "Assessment Tools", href: "/assessment-tools" },
         
       ]
     },

@@ -68,8 +68,8 @@ export default function Footer() {
               <a href="/pnp-assessment" className="block hover:text-[#6aad81] transition-colors">
                 PNP Assessment Tool
               </a>
-              <a href="/resources" className="block hover:text-[#6aad81] transition-colors">
-                Resource Downloads
+              <a href="/assessment-tools" className="block hover:text-[#6aad81] transition-colors">
+                Assessment Tools
               </a>
             </div>
           </div>
