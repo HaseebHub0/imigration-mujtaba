@@ -88,7 +88,7 @@ export default function BlogPage() {
     <div className="min-h-screen">
       {/* Hero Section */}
       <section className="relative bg-cover bg-center bg-no-repeat py-20" style={{ backgroundImage: 'url("https://images.unsplash.com/photo-1481627834876-b7833e8f5570?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2028&q=80")' }}>
-        <div className="absolute inset-0 bg-[#66a380]/80"></div>
+        <div className="absolute inset-0 bg-[#6aad81]/80"></div>
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl font-bold mb-6 text-white">Immigration Insights</h1>
@@ -107,7 +107,7 @@ export default function BlogPage() {
               <h2 className="text-3xl font-bold text-[#144d5e] mb-4">Featured Article</h2>
             </div>
 
-            <Card className="hover:bg-[#f5f2ec] transition-colors duration-300 overflow-hidden">
+            <Card className="hover:bg-[#d2d4d8] transition-colors duration-300 overflow-hidden">
               <div className="grid lg:grid-cols-2 gap-0">
                 <div className="relative h-64 lg:h-auto">
                   <Image
@@ -119,7 +119,7 @@ export default function BlogPage() {
                 </div>
                 <div className="p-8">
                   <div className="flex items-center gap-4 mb-4">
-                    <Badge className="bg-[#66a380] text-white">{featuredPost.category}</Badge>
+                    <Badge className="bg-[#6aad81] text-white">{featuredPost.category}</Badge>
                     <div className="flex items-center gap-2 text-gray-600 text-sm">
                       <Calendar className="w-4 h-4" />
                       <span>{featuredPost.date}</span>
@@ -132,7 +132,7 @@ export default function BlogPage() {
                   <h3 className="text-2xl font-bold text-[#144d5e] mb-4">{featuredPost.title}</h3>
                   <p className="text-gray-700 mb-6 leading-relaxed">{featuredPost.excerpt}</p>
                   <Link href={`/blog/${featuredPost.slug}`}>
-                    <Button className="bg-[#66a380] hover:bg-[#66a380]/90 text-white">
+                    <Button className="bg-[#6aad81] hover:bg-[#6aad81]/90 text-white">
                       Read Full Article <ArrowRight className="w-4 h-4 ml-2" />
                     </Button>
                   </Link>
@@ -144,7 +144,7 @@ export default function BlogPage() {
       </section>
 
       {/* Categories Filter */}
-      <section className="py-8 bg-[#f5f2ec]">
+      <section className="py-8 bg-[#d2d4d8]">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <div className="flex flex-wrap justify-center gap-4">
@@ -154,8 +154,8 @@ export default function BlogPage() {
                   variant={category === "All" ? "default" : "outline"}
                   className={
                     category === "All"
-                      ? "bg-[#66a380] hover:bg-[#66a380]/90 text-white"
-                      : "border-[#66a380] text-[#66a380] hover:bg-[#66a380] hover:text-white"
+                      ? "bg-[#6aad81] hover:bg-[#6aad81]/90 text-white"
+                      : "border-[#6aad81] text-[#6aad81] hover:bg-[#6aad81] hover:text-white"
                   }
                 >
                   {category}
@@ -172,13 +172,13 @@ export default function BlogPage() {
           <div className="max-w-6xl mx-auto">
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
               {blogPosts.map((post, index) => (
-                <Card key={index} className="hover:bg-[#f5f2ec] transition-colors duration-300 overflow-hidden">
+                <Card key={index} className="hover:bg-[#d2d4d8] transition-colors duration-300 overflow-hidden">
                   <div className="relative h-48">
                     <Image src={post.image || "/placeholder.svg"} alt={post.title} fill className="object-cover" />
                   </div>
                   <CardHeader className="pb-2">
                     <div className="flex items-center justify-between mb-2">
-                      <Badge variant="outline" className="border-[#66a380] text-[#66a380] text-xs">
+                      <Badge variant="outline" className="border-[#6aad81] text-[#6aad81] text-xs">
                         {post.category}
                       </Badge>
                       <span className="text-xs text-gray-500">{post.readTime}</span>
@@ -193,7 +193,7 @@ export default function BlogPage() {
                         <span>{post.date}</span>
                       </div>
                       <Link href={`/blog/${post.slug}`}>
-                        <Button size="sm" variant="ghost" className="text-[#66a380] hover:text-[#66a380]/80 p-0">
+                        <Button size="sm" variant="ghost" className="text-[#6aad81] hover:text-[#6aad81]/80 p-0">
                           Read More <ArrowRight className="w-3 h-3 ml-1" />
                         </Button>
                       </Link>
@@ -205,14 +205,14 @@ export default function BlogPage() {
 
             {/* Load More Button */}
             <div className="text-center mt-12">
-              <Button className="bg-[#66a380] hover:bg-[#66a380]/90 text-white">Load More Articles</Button>
+              <Button className="bg-[#6aad81] hover:bg-[#6aad81]/90 text-white">Load More Articles</Button>
             </div>
           </div>
         </div>
       </section>
 
       {/* Newsletter Signup */}
-      <section className="py-16 bg-[#f5f2ec]">
+      <section className="py-16 bg-[#d2d4d8]">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-3xl font-bold text-[#144d5e] mb-4">Stay Updated</h2>
@@ -222,7 +222,7 @@ export default function BlogPage() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
               <Input placeholder="Enter your email address" className="flex-1" />
-              <Button className="bg-[#66a380] hover:bg-[#66a380]/90 text-white">Subscribe</Button>
+              <Button className="bg-[#6aad81] hover:bg-[#6aad81]/90 text-white">Subscribe</Button>
             </div>
             <p className="text-xs text-gray-600 mt-4">No spam, unsubscribe at any time. We respect your privacy.</p>
           </div>
@@ -279,7 +279,7 @@ export default function BlogPage() {
                     />
                   </div>
                   
-                  <Button type="submit" className="w-full bg-[#66a380] hover:bg-[#66a380]/90 text-white">
+                  <Button type="submit" className="w-full bg-[#6aad81] hover:bg-[#6aad81]/90 text-white">
                     <Send className="w-4 h-4 mr-2" />
                     Send Question
                   </Button>
@@ -291,7 +291,7 @@ export default function BlogPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="bg-[#66a380] text-white py-16">
+      <section className="bg-[#6aad81] text-white py-16">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold mb-4">Need Personalized Immigration Guidance?</h2>
           <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">

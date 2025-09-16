@@ -63,7 +63,7 @@ export default function PermanentResidencyPage() {
     <div className="min-h-screen">
       {/* Hero Section */}
       <section className="relative bg-cover bg-center bg-no-repeat py-20" style={{ backgroundImage: 'url("https://images.unsplash.com/photo-1560472354-b33ff0c44a43?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2026&q=80")' }}>
-        <div className="absolute inset-0 bg-[#66a380]/80"></div>
+        <div className="absolute inset-0 bg-[#6aad81]/80"></div>
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl font-bold mb-6 text-white">Permanent Residency Services</h1>
@@ -87,13 +87,13 @@ export default function PermanentResidencyPage() {
 
             <div className="grid lg:grid-cols-2 gap-8">
               {programs.map((program, index) => (
-                <Card key={index} className="hover:bg-[#f5f2ec] transition-colors duration-300">
+                <Card key={index} className="hover:bg-[#d2d4d8] transition-colors duration-300">
                   <CardHeader>
                     <CardTitle className="text-xl text-[#144d5e]">{program.title}</CardTitle>
                     <p className="text-gray-600">{program.description}</p>
                     <div className="flex justify-between items-center">
-                      <span className="text-2xl font-bold text-[#66a380]">{program.price}</span>
-                      <Badge variant="outline" className="border-[#66a380] text-[#66a380]">
+                      <span className="text-2xl font-bold text-[#6aad81]">{program.price}</span>
+                      <Badge variant="outline" className="border-[#6aad81] text-[#6aad81]">
                         {program.processingTime}
                       </Badge>
                     </div>
@@ -103,12 +103,12 @@ export default function PermanentResidencyPage() {
                     <ul className="space-y-2 mb-6">
                       {program.minRequirements.map((req, idx) => (
                         <li key={idx} className="flex items-start gap-2">
-                          <CheckCircle className="w-4 h-4 text-[#66a380] mt-0.5 flex-shrink-0" />
+                          <CheckCircle className="w-4 h-4 text-[#6aad81] mt-0.5 flex-shrink-0" />
                           <span className="text-gray-700 text-sm">{req}</span>
                         </li>
                       ))}
                     </ul>
-                    <Button className="w-full bg-[#66a380] hover:bg-[#66a380]/90 text-white">Get Assessment</Button>
+                    <Button className="w-full bg-[#6aad81] hover:bg-[#6aad81]/90 text-white">Get Assessment</Button>
                   </CardContent>
                 </Card>
               ))}
@@ -118,7 +118,7 @@ export default function PermanentResidencyPage() {
       </section>
 
       {/* Process Steps */}
-      <section className="py-16 bg-[#f5f2ec]">
+      <section className="py-16 bg-[#d2d4d8]">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-12">
@@ -128,28 +128,28 @@ export default function PermanentResidencyPage() {
 
             <div className="grid md:grid-cols-4 gap-8">
               <div className="text-center">
-                <div className="w-16 h-16 bg-[#66a380] text-white rounded-full flex items-center justify-center mx-auto mb-4 text-xl font-bold">
+                <div className="w-16 h-16 bg-[#6aad81] text-white rounded-full flex items-center justify-center mx-auto mb-4 text-xl font-bold">
                   1
                 </div>
                 <h3 className="text-lg font-semibold text-[#144d5e] mb-2">Assessment</h3>
                 <p className="text-gray-700 text-sm">Free eligibility assessment and CRS score calculation</p>
               </div>
               <div className="text-center">
-                <div className="w-16 h-16 bg-[#66a380] text-white rounded-full flex items-center justify-center mx-auto mb-4 text-xl font-bold">
+                <div className="w-16 h-16 bg-[#6aad81] text-white rounded-full flex items-center justify-center mx-auto mb-4 text-xl font-bold">
                   2
                 </div>
                 <h3 className="text-lg font-semibold text-[#144d5e] mb-2">Strategy</h3>
                 <p className="text-gray-700 text-sm">Develop personalized immigration strategy and timeline</p>
               </div>
               <div className="text-center">
-                <div className="w-16 h-16 bg-[#66a380] text-white rounded-full flex items-center justify-center mx-auto mb-4 text-xl font-bold">
+                <div className="w-16 h-16 bg-[#6aad81] text-white rounded-full flex items-center justify-center mx-auto mb-4 text-xl font-bold">
                   3
                 </div>
                 <h3 className="text-lg font-semibold text-[#144d5e] mb-2">Preparation</h3>
                 <p className="text-gray-700 text-sm">Document collection and application preparation</p>
               </div>
               <div className="text-center">
-                <div className="w-16 h-16 bg-[#66a380] text-white rounded-full flex items-center justify-center mx-auto mb-4 text-xl font-bold">
+                <div className="w-16 h-16 bg-[#6aad81] text-white rounded-full flex items-center justify-center mx-auto mb-4 text-xl font-bold">
                   4
                 </div>
                 <h3 className="text-lg font-semibold text-[#144d5e] mb-2">Success</h3>
@@ -169,25 +169,25 @@ export default function PermanentResidencyPage() {
             </div>
 
             <div className="grid md:grid-cols-3 gap-8">
-              <Card className="hover:bg-[#f5f2ec] transition-colors duration-300 text-center">
+              <Card className="hover:bg-[#d2d4d8] transition-colors duration-300 text-center">
                 <CardContent className="p-6">
-                  <TrendingUp className="w-12 h-12 text-[#66a380] mx-auto mb-4" />
+                  <TrendingUp className="w-12 h-12 text-[#6aad81] mx-auto mb-4" />
                   <h3 className="text-xl font-semibold text-[#144d5e] mb-3">CRS Optimization</h3>
                   <p className="text-gray-700">Strategic advice to maximize your Comprehensive Ranking System score</p>
                 </CardContent>
               </Card>
 
-              <Card className="hover:bg-[#f5f2ec] transition-colors duration-300 text-center">
+              <Card className="hover:bg-[#d2d4d8] transition-colors duration-300 text-center">
                 <CardContent className="p-6">
-                  <Users className="w-12 h-12 text-[#66a380] mx-auto mb-4" />
+                  <Users className="w-12 h-12 text-[#6aad81] mx-auto mb-4" />
                   <h3 className="text-xl font-semibold text-[#144d5e] mb-3">Family Support</h3>
                   <p className="text-gray-700">Include your spouse and dependent children in your PR application</p>
                 </CardContent>
               </Card>
 
-              <Card className="hover:bg-[#f5f2ec] transition-colors duration-300 text-center">
+              <Card className="hover:bg-[#d2d4d8] transition-colors duration-300 text-center">
                 <CardContent className="p-6">
-                  <Award className="w-12 h-12 text-[#66a380] mx-auto mb-4" />
+                  <Award className="w-12 h-12 text-[#6aad81] mx-auto mb-4" />
                   <h3 className="text-xl font-semibold text-[#144d5e] mb-3">Expert Guidance</h3>
                   <p className="text-gray-700">RCIC-regulated consultant with proven track record of success</p>
                 </CardContent>
@@ -198,7 +198,7 @@ export default function PermanentResidencyPage() {
       </section>
 
       {/* Contact Form Section */}
-      <section className="py-16 bg-[#f5f2ec]">
+      <section className="py-16 bg-[#d2d4d8]">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-12">
@@ -247,7 +247,7 @@ export default function PermanentResidencyPage() {
                     />
                   </div>
                   
-                  <Button type="submit" className="w-full bg-[#66a380] hover:bg-[#66a380]/90 text-white">
+                  <Button type="submit" className="w-full bg-[#6aad81] hover:bg-[#6aad81]/90 text-white">
                     <Send className="w-4 h-4 mr-2" />
                     Get Started
                   </Button>

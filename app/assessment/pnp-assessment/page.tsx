@@ -102,7 +102,7 @@ export default function PNPAssessmentPage() {
     <div className="min-h-screen bg-white">
       {/* Hero Section */}
       <section className="relative bg-cover bg-center bg-no-repeat py-20" style={{ backgroundImage: 'url("https://images.unsplash.com/photo-1560472354-b33ff0c44a43?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2026&q=80")' }}>
-        <div className="absolute inset-0 bg-[#66a380]/80"></div>
+        <div className="absolute inset-0 bg-[#6aad81]/80"></div>
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl font-bold mb-6 text-white">PNP Assessment Tool</h1>
@@ -262,7 +262,7 @@ export default function PNPAssessmentPage() {
 
                 <Button
                   onClick={assessPNP}
-                  className="w-full bg-[#66a380] hover:bg-[#66a380]/90 text-white text-lg py-6"
+                  className="w-full bg-[#6aad81] hover:bg-[#6aad81]/90 text-white text-lg py-6"
                 >
                   Assess PNP Eligibility
                 </Button>
@@ -278,10 +278,10 @@ export default function PNPAssessmentPage() {
                 {results.length > 0 ? (
                   <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
                     {results.map((result, index) => (
-                      <Card key={index} className="hover:bg-[#f5f2ec] transition-colors duration-300">
+                      <Card key={index} className="hover:bg-[#d2d4d8] transition-colors duration-300">
                         <CardHeader>
                           <div className="flex items-center gap-2 mb-2">
-                            <MapPin className="w-5 h-5 text-[#66a380]" />
+                            <MapPin className="w-5 h-5 text-[#6aad81]" />
                             <CardTitle className="text-lg text-[#144d5e]">{result.province}</CardTitle>
                           </div>
                           <Badge
@@ -305,7 +305,7 @@ export default function PNPAssessmentPage() {
                               </div>
                             ))}
                           </div>
-                          <Button size="sm" className="w-full bg-[#66a380] hover:bg-[#66a380]/90 text-white">
+                          <Button size="sm" className="w-full bg-[#6aad81] hover:bg-[#6aad81]/90 text-white">
                             Learn More
                           </Button>
                         </CardContent>
@@ -318,7 +318,7 @@ export default function PNPAssessmentPage() {
                       <div className="text-gray-600 mb-4">
                         Based on your current profile, you may not qualify for PNP programs at this time.
                       </div>
-                      <Button className="bg-[#66a380] hover:bg-[#66a380]/90 text-white">
+                      <Button className="bg-[#6aad81] hover:bg-[#6aad81]/90 text-white">
                         Book Consultation for Guidance
                       </Button>
                     </CardContent>
@@ -326,9 +326,9 @@ export default function PNPAssessmentPage() {
                 )}
 
                 <div className="mt-8 text-center">
-                  <Card className="bg-[#f5f2ec] border-[#66a380]">
+                  <Card className="bg-[#d2d4d8] border-[#6aad81]">
                     <CardContent className="p-6">
-                      <CheckCircle className="w-12 h-12 text-[#66a380] mx-auto mb-4" />
+                      <CheckCircle className="w-12 h-12 text-[#6aad81] mx-auto mb-4" />
                       <h3 className="text-xl font-semibold text-[#144d5e] mb-2">
                         Ready for the Next Step?
                       </h3>
@@ -336,7 +336,7 @@ export default function PNPAssessmentPage() {
                         Book a free consultation to discuss your PNP options and create a personalized immigration
                         strategy
                       </p>
-                      <Button className="bg-[#66a380] hover:bg-[#66a380]/90 text-white">Book Free Consultation</Button>
+                      <Button className="bg-[#6aad81] hover:bg-[#6aad81]/90 text-white">Book Free Consultation</Button>
                     </CardContent>
                   </Card>
                 </div>
@@ -347,7 +347,7 @@ export default function PNPAssessmentPage() {
       </section>
 
       {/* Contact Form Section */}
-      <section className="py-16 bg-[#f5f2ec]">
+      <section className="py-16 bg-[#d2d4d8]">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-12">
@@ -391,7 +391,7 @@ export default function PNPAssessmentPage() {
                     />
                   </div>
                   
-                  <Button type="submit" className="w-full bg-[#66a380] hover:bg-[#66a380]/90 text-white">
+                  <Button type="submit" className="w-full bg-[#6aad81] hover:bg-[#6aad81]/90 text-white">
                     <Send className="w-4 h-4 mr-2" />
                     Send Question
                   </Button>

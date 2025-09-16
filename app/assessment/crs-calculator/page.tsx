@@ -143,7 +143,7 @@ export default function CRSCalculatorPage() {
     <div className="min-h-screen bg-white">
       {/* Hero Section */}
       <section className="relative bg-cover bg-center bg-no-repeat py-20" style={{ backgroundImage: 'url("https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80")' }}>
-        <div className="absolute inset-0 bg-[#66a380]/80"></div>
+        <div className="absolute inset-0 bg-[#6aad81]/80"></div>
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl font-bold mb-6 text-white">CRS Score Calculator</h1>
@@ -353,15 +353,15 @@ export default function CRSCalculatorPage() {
 
                 <Button
                   onClick={calculateCRS}
-                  className="w-full bg-[#66a380] hover:bg-[#66a380]/90 text-white text-lg py-6"
+                  className="w-full bg-[#6aad81] hover:bg-[#6aad81]/90 text-white text-lg py-6"
                 >
                   Calculate My CRS Score
                 </Button>
 
                 {showResults && crsScore !== null && (
-                  <Card className="mt-8 border-2 border-[#66a380]">
+                  <Card className="mt-8 border-2 border-[#6aad81]">
                     <CardHeader className="text-center">
-                      <div className="text-6xl font-bold text-[#66a380] mb-4">{crsScore}</div>
+                      <div className="text-6xl font-bold text-[#6aad81] mb-4">{crsScore}</div>
                       <CardTitle className="text-2xl text-[#144d5e]">Your CRS Score</CardTitle>
                     </CardHeader>
                     <CardContent className="text-center">
@@ -375,7 +375,7 @@ export default function CRSCalculatorPage() {
                             <CheckCircle className="w-5 h-5" />
                             <span>You may qualify for Express Entry!</span>
                           </div>
-                          <Button className="bg-[#66a380] hover:bg-[#66a380]/90 text-white">
+                          <Button className="bg-[#6aad81] hover:bg-[#6aad81]/90 text-white">
                             Book Free Consultation
                           </Button>
                         </div>
@@ -385,7 +385,7 @@ export default function CRSCalculatorPage() {
                             <AlertCircle className="w-5 h-5" />
                             <span>Consider improving your profile</span>
                           </div>
-                          <Button className="bg-[#66a380] hover:bg-[#66a380]/90 text-white">
+                          <Button className="bg-[#6aad81] hover:bg-[#6aad81]/90 text-white">
                             Get Improvement Strategy
                           </Button>
                         </div>

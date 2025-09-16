@@ -65,7 +65,17 @@ export default function HomePage() {
                         <div className="flex flex-col gap-3 sm:gap-4 justify-center mb-6 sm:mb-8">
                           <Button
                             size="lg"
-                            className="bg-gradient-to-r from-[#66a380] to-[#4a8a6b] hover:from-[#4a8a6b] hover:to-[#66a380] text-white border-none px-6 py-4 text-sm sm:text-base h-12 sm:h-14 font-semibold transition-all duration-300 shadow-[0_4px_15px_rgba(102,163,128,0.3)] hover:shadow-[0_6px_20px_rgba(102,163,128,0.4)] hover:-translate-y-0.5 transform hover:scale-105"
+                            style={{
+                              background: 'linear-gradient(135deg, #6aad81 0%, #5a9d71 100%)',
+                              transition: 'all 0.3s ease'
+                            }}
+                            className="text-white border-none px-6 py-4 text-sm sm:text-base h-12 sm:h-14 font-semibold shadow-[0_4px_15px_rgba(106,173,129,0.3)] hover:shadow-[0_6px_20px_rgba(106,173,129,0.4)] hover:-translate-y-0.5 transform hover:scale-105"
+                            onMouseEnter={(e) => {
+                              e.currentTarget.style.background = 'linear-gradient(135deg, #5a9d71 0%, #6aad81 100%)';
+                            }}
+                            onMouseLeave={(e) => {
+                              e.currentTarget.style.background = 'linear-gradient(135deg, #6aad81 0%, #5a9d71 100%)';
+                            }}
                           >
                             <a href="/services/permanent-residency" className="flex items-center justify-center">
                               <span>Permanent Residency</span>
@@ -126,7 +136,7 @@ export default function HomePage() {
                   <div className="space-y-6">
                     <h1 className="text-5xl xl:text-6xl 2xl:text-7xl font-bold text-white leading-tight">
                       Expert Immigration Guidance with{" "}
-                      <span className="text-[#66a380] text-5xl">Transparent Assessment</span>
+                      <span className="text-5xl" style={{color: '#6aad81'}}>Transparent Assessment</span>
                     </h1>
                     <p className="text-xl xl:text-2xl text-gray-200 leading-relaxed max-w-2xl">
                       <span className="font-bold">Free 30 minute consultations only</span> for cases we can win.
@@ -199,19 +209,19 @@ export default function HomePage() {
                       {/* Main Card */}
                       <div className="bg-white/10 backdrop-blur-xl rounded-2xl border border-white/20 shadow-2xl p-8 transform rotate-3 hover:rotate-0 transition-transform duration-500">
                         <div className="text-center space-y-4">
-                          <div className="w-16 h-16 bg-[#66a380] rounded-full flex items-center justify-center mx-auto">
+                          <div className="w-16 h-16 rounded-full flex items-center justify-center mx-auto" style={{backgroundColor: '#6aad81'}}>
                             <Award className="w-8 h-8 text-white" />
                           </div>
                           <h3 className="text-xl font-bold text-white">RCIC Licensed</h3>
                           <p className="text-gray-200 text-sm">Regulated Canadian Immigration Consultant</p>
-                          <Badge className="bg-[#66a380] text-white">Start your journey with us</Badge>
+                          <Badge className="text-white" style={{backgroundColor: '#6aad81'}}>Start your journey with us</Badge>
                         </div>
                       </div>
 
                       {/* Floating Stats Card */}
                       <div className="absolute -top-4 -right-4 bg-white/15 backdrop-blur-xl rounded-xl border border-white/30 shadow-xl p-4 transform -rotate-6 hover:rotate-0 transition-transform duration-500">
                         <div className="text-center">
-                          <div className="text-2xl font-bold text-[#66a380]">80%+</div>
+                          <div className="text-2xl font-bold" style={{color: '#6aad81'}}>80%+</div>
                           <div className="text-xs text-gray-200">Success Rate</div>
                         </div>
                       </div>
@@ -219,7 +229,7 @@ export default function HomePage() {
                       {/* Floating Experience Card */}
                       <div className="absolute -bottom-4 -left-4 bg-white/15 backdrop-blur-xl rounded-xl border border-white/30 shadow-xl p-4 transform rotate-6 hover:rotate-0 transition-transform duration-500">
                         <div className="text-center">
-                          <div className="text-2xl font-bold text-[#66a380]">5+</div>
+                          <div className="text-2xl font-bold" style={{color: '#6aad81'}}>5+</div>
                           <div className="text-xs text-gray-200">Years Experience</div>
                         </div>
                       </div>
@@ -238,7 +248,7 @@ export default function HomePage() {
           <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
             {/* Expertise Card */}
             <div>
-              <Card className="  text-white bg-[#f5f2ec] text-[#144d5e] transition-all duration-300 group shadow-lg hover:shadow-2xl">
+              <Card className="  text-white bg-[#d2d4d8] text-[#144d5e] transition-all duration-300 group shadow-lg hover:shadow-2xl">
                 <CardHeader className="text-center pb-4">
                   <div>
                     <Award className="h-12 w-12 text-primary group-hover:text-primary mx-auto mb-4" />
@@ -264,7 +274,7 @@ export default function HomePage() {
 
             {/* Success Card */}
             <div>
-              <Card className="  text-white bg-[#f5f2ec] text-[#144d5e] transition-all duration-300 group shadow-lg hover:shadow-2xl">
+              <Card className="  text-white bg-[#d2d4d8] text-[#144d5e] transition-all duration-300 group shadow-lg hover:shadow-2xl">
                 <CardHeader className="text-center pb-4">
                   <div>
                     <TrendingUp className="h-12 w-12 text-primary group-hover:text-primary mx-auto mb-4" />
@@ -289,7 +299,7 @@ export default function HomePage() {
 
             {/* Trust Card */}
             <div>
-              <Card className="  text-white bg-[#f5f2ec] text-[#144d5e] transition-all duration-300 group shadow-lg hover:shadow-2xl">
+              <Card className="  text-white bg-[#d2d4d8] text-[#144d5e] transition-all duration-300 group shadow-lg hover:shadow-2xl">
                 <CardHeader className="text-center pb-4">
                   <div>
                     <Heart className="h-12 w-12 text-primary group-hover:text-primary mx-auto mb-4" />

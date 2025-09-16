@@ -48,7 +48,7 @@ export default function FreeConsultationPage() {
                 Thank you for your interest in our immigration services. We'll review your information and get back to
                 you within 24 hours to confirm your free consultation appointment.
               </p>
-              <div className="bg-[#f5f2ec] p-4 rounded-lg mb-6">
+              <div className="bg-[#d2d4d8] p-4 rounded-lg mb-6">
                 <p className="text-sm text-gray-700">
                   <strong>Next Steps:</strong>
                   <br />
@@ -264,7 +264,7 @@ export default function FreeConsultationPage() {
                   </CardContent>
                 </Card>
 
-                <div className="bg-[#f5f2ec] p-6 rounded-lg mb-6">
+                <div className="bg-[#d2d4d8] p-6 rounded-lg mb-6">
                   <h3 className="text-lg font-semibold text-[#17203d] mb-2">Important Note</h3>
                   <p className="text-sm text-gray-700">
                     Free consultations are offered only for cases where we believe we can successfully help you achieve

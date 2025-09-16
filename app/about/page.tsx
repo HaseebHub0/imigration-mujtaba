@@ -63,7 +63,7 @@ export default function AboutPage() {
                   With free 30-minute consultations, attentive service, and proven guidance, we help you move forward with confidence.
 
                 </p>
-                <div className="flex items-center gap-2 text-[#66a380] mb-4">
+                <div className="flex items-center gap-2 text-[#6aad81] mb-4">
                   <MapPin className="w-5 h-5" />
                   <span className="font-medium">Mississauga, Ontario, Canada</span>
                 </div>
@@ -72,9 +72,9 @@ export default function AboutPage() {
 
             {/* Credentials & Expertise */}
             <div className="grid md:grid-cols-3 gap-8 mb-16">
-              <Card className="hover:bg-[#f5f2ec] transition-colors duration-300">
+              <Card className="hover:bg-[#d2d4d8] transition-colors duration-300">
                 <CardContent className="p-6 text-center">
-                  <Award className="w-12 h-12 text-[#66a380] mx-auto mb-4" />
+                  <Award className="w-12 h-12 text-[#6aad81] mx-auto mb-4" />
                   <h3 className="text-xl font-semibold text-[#144d5e] mb-3">Professional Credentials</h3>
                   <ul className="text-gray-700 space-y-2">
                     <li>RCIC License #R712505</li>
@@ -84,9 +84,9 @@ export default function AboutPage() {
                 </CardContent>
               </Card>
 
-              <Card className="hover:bg-[#f5f2ec] transition-colors duration-300">
+              <Card className="hover:bg-[#d2d4d8] transition-colors duration-300">
                 <CardContent className="p-6 text-center">
-                  <Users className="w-12 h-12 text-[#66a380] mx-auto mb-4" />
+                  <Users className="w-12 h-12 text-[#6aad81] mx-auto mb-4" />
                   <h3 className="text-xl font-semibold text-[#144d5e] mb-3">Community Involvement</h3>
                   <ul className="text-gray-700 space-y-2">
                     <li>RCIC Mentoring Program</li>
@@ -96,9 +96,9 @@ export default function AboutPage() {
                 </CardContent>
               </Card>
 
-              <Card className="hover:bg-[#f5f2ec] transition-colors duration-300">
+              <Card className="hover:bg-[#d2d4d8] transition-colors duration-300">
                 <CardContent className="p-6 text-center">
-                  <BookOpen className="w-12 h-12 text-[#66a380] mx-auto mb-4" />
+                  <BookOpen className="w-12 h-12 text-[#6aad81] mx-auto mb-4" />
                   <h3 className="text-xl font-semibold text-[#144d5e] mb-3">Educational Content</h3>
                   <ul className="text-gray-700 space-y-2">
                     <li>Immigration Blog Author</li>
@@ -110,9 +110,9 @@ export default function AboutPage() {
             </div>
 
             {/* YouTube Channel */}
-            <div className="bg-[#f5f2ec] rounded-lg p-8 mb-16">
+            <div className="bg-[#d2d4d8] rounded-lg p-8 mb-16">
               <div className="text-center">
-                <Youtube className="w-16 h-16 text-[#66a380] mx-auto mb-4" />
+                <Youtube className="w-16 h-16 text-[#6aad81] mx-auto mb-4" />
                 <h3 className="text-2xl font-bold text-[#144d5e] mb-4">
                   Immigration Insights with Mujtaba
                 </h3>
@@ -120,22 +120,22 @@ export default function AboutPage() {
                   Stay informed with the latest immigration updates, policy changes, and expert insights through my
                   educational YouTube channel.
                 </p>
-                <Button className="bg-[#66a380] hover:bg-[#66a380]/90 text-white">Visit YouTube Channel</Button>
+                <Button className="bg-[#6aad81] hover:bg-[#6aad81]/90 text-white">Visit YouTube Channel</Button>
               </div>
             </div>
 
             {/* Success Metrics */}
             <div className="grid md:grid-cols-3 gap-8 text-center">
               <div>
-                <div className="text-4xl font-bold text-[#66a380] mb-2">80%+</div>
+                <div className="text-4xl font-bold text-[#6aad81] mb-2">80%+</div>
                 <p className="text-gray-700">Success Rate</p>
               </div>
               <div>
-                <div className="text-4xl font-bold text-[#66a380] mb-2">500+</div>
+                <div className="text-4xl font-bold text-[#6aad81] mb-2">500+</div>
                 <p className="text-gray-700">Families Helped</p>
               </div>
               <div>
-                <div className="text-4xl font-bold text-[#66a380] mb-2">5+</div>
+                <div className="text-4xl font-bold text-[#6aad81] mb-2">5+</div>
                 <p className="text-gray-700">Years Experience</p>
               </div>
             </div>
@@ -144,7 +144,7 @@ export default function AboutPage() {
       </section>
 
       {/* Contact Form Section */}
-      <section className="py-16 bg-[#f5f2ec]">
+      <section className="py-16 bg-[#d2d4d8]">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-12">
@@ -193,7 +193,7 @@ export default function AboutPage() {
                     />
                   </div>
                   
-                  <Button type="submit" className="w-full bg-[#66a380] hover:bg-[#66a380]/90 text-white">
+                  <Button type="submit" className="w-full bg-[#6aad81] hover:bg-[#6aad81]/90 text-white">
                     <Send className="w-4 h-4 mr-2" />
                     Send Message
                   </Button>
@@ -205,13 +205,13 @@ export default function AboutPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="bg-[#66a380] text-white py-16">
+      <section className="bg-[#6aad81] text-white py-16">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold mb-4">Ready to Start Your Immigration Journey?</h2>
           <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
             Book your free 30-minute consultation and take the first step toward your Canadian dream.
           </p>
-          <Button size="lg" className="bg-[#66a380] hover:bg-[#66a380]/90 text-white">
+          <Button size="lg" className="bg-[#6aad81] hover:bg-[#6aad81]/90 text-white">
             Book Free Consultation
           </Button>
         </div>

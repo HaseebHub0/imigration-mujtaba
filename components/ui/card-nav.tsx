@@ -194,11 +194,15 @@ const CardNav: React.FC<CardNavProps> = ({
 
           <div className="logo-container">
             {logoText ? (
-              <div className="logo-text" style={{ color: menuColor || "#000", fontSize: "1.5rem", fontWeight: "bold" }}>
-                {logoText}
-              </div>
+              <Link href="/">
+                <div className="logo-text" style={{ color: menuColor || "#000", fontSize: "1.5rem", fontWeight: "bold", cursor: "pointer" }}>
+                  {logoText}
+                </div>
+              </Link>
             ) : (
-              <img src={logo} alt={logoAlt} className="logo" />
+              <Link href="/">
+                <img src={logo} alt={logoAlt} className="logo" style={{ cursor: "pointer" }} />
+              </Link>
             )}
           </div>
 
@@ -207,7 +211,7 @@ const CardNav: React.FC<CardNavProps> = ({
             className="card-nav-cta-button"
             style={{ backgroundColor: buttonBgColor, color: buttonTextColor }}
           >
-            Contact Us
+            Contact Me
           </Link>
         </div>
 

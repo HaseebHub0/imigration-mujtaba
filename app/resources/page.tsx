@@ -122,7 +122,7 @@ export default function ResourcesPage() {
     <div className="min-h-screen">
       {/* Hero Section */}
       <section className="relative bg-cover bg-center bg-no-repeat py-20" style={{ backgroundImage: 'url("https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2071&q=80")' }}>
-        <div className="absolute inset-0 bg-[#66a380]/80"></div>
+        <div className="absolute inset-0 bg-[#6aad81]/80"></div>
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl font-bold mb-6 text-white">Immigration Resources</h1>
@@ -146,18 +146,18 @@ export default function ResourcesPage() {
 
             <div className="grid md:grid-cols-3 gap-8">
               {tools.map((tool, index) => (
-                <Card key={index} className="hover:bg-[#f5f2ec] transition-colors duration-300 text-center">
+                <Card key={index} className="hover:bg-[#d2d4d8] transition-colors duration-300 text-center">
                   <CardHeader>
-                    <tool.icon className="w-12 h-12 text-[#66a380] mx-auto mb-4" />
+                    <tool.icon className="w-12 h-12 text-[#6aad81] mx-auto mb-4" />
                     <CardTitle className="text-xl text-[#144d5e]">{tool.title}</CardTitle>
-                    <Badge variant="outline" className="border-[#66a380] text-[#66a380] w-fit mx-auto">
+                    <Badge variant="outline" className="border-[#6aad81] text-[#6aad81] w-fit mx-auto">
                       {tool.type}
                     </Badge>
                   </CardHeader>
                   <CardContent>
                     <p className="text-gray-700 mb-6">{tool.description}</p>
                     <Link href={tool.link}>
-                      <Button className="bg-[#66a380] hover:bg-[#66a380]/90 text-white">Use Tool</Button>
+                      <Button className="bg-[#6aad81] hover:bg-[#6aad81]/90 text-white">Use Tool</Button>
                     </Link>
                   </CardContent>
                 </Card>
@@ -168,7 +168,7 @@ export default function ResourcesPage() {
       </section>
 
       {/* Downloadable Resources */}
-      <section className="py-16 bg-[#f5f2ec]">
+      <section className="py-16 bg-[#d2d4d8]">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-12">
@@ -183,7 +183,7 @@ export default function ResourcesPage() {
                 <Card key={index} className="hover:bg-white transition-colors duration-300">
                   <CardContent className="p-6">
                     <div className="flex items-start gap-4">
-                      <div className="w-12 h-12 bg-[#66a380] text-white rounded-lg flex items-center justify-center flex-shrink-0">
+                      <div className="w-12 h-12 bg-[#6aad81] text-white rounded-lg flex items-center justify-center flex-shrink-0">
                         <resource.icon className="w-6 h-6" />
                       </div>
                       <div className="flex-1">
@@ -194,7 +194,7 @@ export default function ResourcesPage() {
                           <span>{resource.size}</span>
                           <span>{resource.downloads} downloads</span>
                         </div>
-                        <Button size="sm" className="bg-[#66a380] hover:bg-[#66a380]/90 text-white">
+                        <Button size="sm" className="bg-[#6aad81] hover:bg-[#6aad81]/90 text-white">
                           <Download className="w-4 h-4 mr-2" />
                           Download
                         </Button>
@@ -221,7 +221,7 @@ export default function ResourcesPage() {
 
             <div className="grid md:grid-cols-3 gap-8">
               {videoResources.map((video, index) => (
-                <Card key={index} className="hover:bg-[#f5f2ec] transition-colors duration-300 overflow-hidden">
+                <Card key={index} className="hover:bg-[#d2d4d8] transition-colors duration-300 overflow-hidden">
                   <div className="relative">
                     <img
                       src={video.thumbnail || "/placeholder.svg"}
@@ -242,7 +242,7 @@ export default function ResourcesPage() {
                     <p className="text-gray-700 text-sm mb-3 line-clamp-2">{video.description}</p>
                     <div className="flex items-center justify-between text-xs text-gray-600">
                       <span>{video.views} views</span>
-                      <Button size="sm" variant="ghost" className="text-[#66a380] hover:text-[#66a380]/80 p-0">
+                      <Button size="sm" variant="ghost" className="text-[#6aad81] hover:text-[#6aad81]/80 p-0">
                         Watch Now
                       </Button>
                     </div>
@@ -252,7 +252,7 @@ export default function ResourcesPage() {
             </div>
 
             <div className="text-center mt-8">
-              <Button className="bg-[#66a380] hover:bg-[#66a380]/90 text-white">
+              <Button className="bg-[#6aad81] hover:bg-[#6aad81]/90 text-white">
                 <Video className="w-4 h-4 mr-2" />
                 Visit YouTube Channel
               </Button>
@@ -262,7 +262,7 @@ export default function ResourcesPage() {
       </section>
 
       {/* External Resources */}
-      <section className="py-16 bg-[#f5f2ec]">
+      <section className="py-16 bg-[#d2d4d8]">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-12">
@@ -280,11 +280,11 @@ export default function ResourcesPage() {
                       <div className="flex-1">
                         <h3 className="text-lg font-semibold text-[#144d5e] mb-2">{resource.title}</h3>
                         <p className="text-gray-700 text-sm mb-3">{resource.description}</p>
-                        <Badge variant="outline" className="border-[#66a380] text-[#66a380] text-xs">
+                        <Badge variant="outline" className="border-[#6aad81] text-[#6aad81] text-xs">
                           {resource.type}
                         </Badge>
                       </div>
-                      <Button size="sm" variant="ghost" className="text-[#66a380] hover:text-[#66a380]/80">
+                      <Button size="sm" variant="ghost" className="text-[#6aad81] hover:text-[#6aad81]/80">
                         <ExternalLink className="w-4 h-4" />
                       </Button>
                     </div>
@@ -346,7 +346,7 @@ export default function ResourcesPage() {
                     />
                   </div>
                   
-                  <Button type="submit" className="w-full bg-[#66a380] hover:bg-[#66a380]/90 text-white">
+                  <Button type="submit" className="w-full bg-[#6aad81] hover:bg-[#6aad81]/90 text-white">
                     <Send className="w-4 h-4 mr-2" />
                     Send Question
                   </Button>

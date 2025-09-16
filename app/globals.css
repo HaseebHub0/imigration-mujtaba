@@ -7,39 +7,39 @@
 :root {
   /* Updated color scheme to match user requirements */
   --background: oklch(1 0 0); /* White background */
-  --background-alt: #f5f2ec; /* Warm off-white for alternating sections */
-  --foreground: #144d5e; /* Dark teal text color - updated to #144d5e */
+  --background-alt: #d2d4d8; /* Light Grey - Neutral/background color */
+  --foreground: #144d5e; /* Midnight Green */
   --card: oklch(1 0 0); /* White cards */
   --card-foreground: #144d5e;
   --popover: oklch(1 0 0);
   --popover-foreground: #144d5e;
-  --primary: #66a380; /* Green primary color for buttons and cards */
+  --primary: #6aad81; /* Shiny Shamrock - Secondary/accent color */
   --primary-foreground: oklch(1 0 0);
-  --secondary: #144d5e; /* Teal secondary */
+  --secondary: #144d5e; /* Midnight Green */
   --secondary-foreground: #ffffff;
-  --muted: #f5f2ec;
+  --muted: #d2d4d8; /* Light Grey - Neutral/background color */
   --muted-foreground: #144d5e;
-  --accent: #66a380; /* Green accent */
+  --accent: #6aad81; /* Shiny Shamrock - Secondary/accent color */
   --accent-foreground: oklch(1 0 0);
   --destructive: oklch(0.55 0.2 25);
   --destructive-foreground: oklch(1 0 0);
   --border: oklch(0.9 0 0);
   --input: oklch(1 0 0);
-  --ring: #66a380; /* Updated to green */
-  --chart-1: #66a380; /* Updated to green */
+  --ring: #6aad81; /* Shiny Shamrock - Secondary/accent color */
+  --chart-1: #6aad81; /* Shiny Shamrock - Secondary/accent color */
   --chart-2: #144d5e; /* Updated to teal */
-  --chart-3: #f5f2ec;
+  --chart-3: #d2d4d8; /* Light Grey - Neutral/background color */
   --chart-4: oklch(0.55 0.2 25);
   --chart-5: oklch(0.45 0 0);
   --radius: 0.5rem;
   --sidebar: oklch(0.98 0 0);
   --sidebar-foreground: #144d5e;
-  --sidebar-primary: #f5a101; /* Updated to orange */
+  --sidebar-primary: #6aad81; /* Shiny Shamrock - Secondary/accent color */
   --sidebar-primary-foreground: oklch(1 0 0);
   --sidebar-accent: #144d5e; /* Updated to #144d5e */
   --sidebar-accent-foreground: oklch(1 0 0);
   --sidebar-border: oklch(0.9 0 0);
-  --sidebar-ring: #f5a101; /* Updated to orange */
+  --sidebar-ring: #6aad81; /* Shiny Shamrock - Secondary/accent color */
   
   /* Font variables for the new font stack */
   --font-helvetica: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -50,38 +50,38 @@
 }
 
 .dark {
-  --background: oklch(0.1 0 0);
+  --background: #1b1b1b; /* Eerie Black */
   --foreground: oklch(0.95 0 0);
   --card: oklch(0.15 0 0);
   --card-foreground: oklch(0.95 0 0);
   --popover: oklch(0.1 0 0);
   --popover-foreground: oklch(0.95 0 0);
-  --primary: #66a380; /* Updated to green */
+  --primary: #6aad81; /* Shiny Shamrock - Secondary/accent color */
   --primary-foreground: oklch(0.1 0 0);
   --secondary: #144d5e; /* Updated to teal */
   --secondary-foreground: #ffffff;
   --muted: oklch(0.2 0 0);
   --muted-foreground: oklch(0.6 0 0);
-  --accent: #66a380; /* Updated to green */
+  --accent: #6aad81; /* Shiny Shamrock - Secondary/accent color */
   --accent-foreground: oklch(0.1 0 0);
   --destructive: oklch(0.5 0.2 25);
   --destructive-foreground: oklch(0.95 0 0);
   --border: oklch(0.2 0 0);
   --input: oklch(0.15 0 0);
-  --ring: #66a380; /* Updated to green */
-  --chart-1: #66a380; /* Updated to green */
+  --ring: #6aad81; /* Shiny Shamrock - Secondary/accent color */
+  --chart-1: #6aad81; /* Shiny Shamrock - Secondary/accent color */
   --chart-2: #144d5e; /* Updated to teal */
   --chart-3: oklch(0.7 0.1 85);
   --chart-4: oklch(0.5 0.2 25);
   --chart-5: oklch(0.6 0 0);
   --sidebar: oklch(0.1 0 0);
   --sidebar-foreground: oklch(0.95 0 0);
-  --sidebar-primary: #66a380; /* Updated to green */
+  --sidebar-primary: #6aad81; /* Shiny Shamrock - Secondary/accent color */
   --sidebar-primary-foreground: oklch(0.1 0 0);
   --sidebar-accent: #144d5e; /* Updated to teal */
   --sidebar-accent-foreground: #ffffff;
   --sidebar-border: oklch(0.2 0 0);
-  --sidebar-ring: #66a380; /* Updated to green */
+  --sidebar-ring: #6aad81; /* Shiny Shamrock - Secondary/accent color */
 }
 
 @theme inline {
@@ -166,39 +166,94 @@
   }
 }
 
-/* Updated glassmorphism utilities for new color scheme */
+/* Centralized Brand Color Utilities */
 @layer utilities {
+  /* Primary Brand Colors */
+  .bg-brand-primary { background-color: #144d5e; } /* Midnight Green */
+  .text-brand-primary { color: #144d5e; }
+  .border-brand-primary { border-color: #144d5e; }
+  
+  .bg-brand-secondary { background-color: #6aad81; } /* Shiny Shamrock */
+  .bg-brand-secondary\/80 { background-color: rgba(106, 173, 129, 0.8); }
+  .text-brand-secondary { color: #6aad81; }
+  .border-brand-secondary { border-color: #6aad81; }
+  
+  /* Neutral Colors */
+  .bg-brand-neutral { background-color: #d2d4d8; } /* Light Grey */
+  .text-brand-neutral { color: #d2d4d8; }
+  .border-brand-neutral { border-color: #d2d4d8; }
+  
+  .bg-brand-dark { background-color: #1b1b1b; } /* Eerie Black */
+  .text-brand-dark { color: #1b1b1b; }
+  .border-brand-dark { border-color: #1b1b1b; }
+  
+  /* Hover States */
+  .hover\:bg-brand-primary:hover { background-color: #144d5e; }
+  .hover\:bg-brand-secondary:hover { background-color: #6aad81; }
+  .hover\:bg-brand-secondary-dark:hover { background-color: #5a9d71; }
+  
+  /* Gradient Utilities */
+  .bg-brand-gradient { 
+    background: linear-gradient(135deg, #6aad81 0%, #5a9d71 100%); 
+  }
+  .hover\:bg-brand-gradient-reverse:hover { 
+    background: linear-gradient(135deg, #5a9d71 0%, #6aad81 100%); 
+  }
+  
+  /* Button Utilities */
+  .btn-brand-primary {
+    background-color: #6aad81;
+    color: white;
+    border: none;
+    transition: all 0.3s ease;
+  }
+  .btn-brand-primary:hover {
+    background-color: #5a9d71;
+    transform: translateY(-2px);
+  }
+  
+  /* Card Utilities */
+  .card-brand-hover:hover {
+    background-color: #d2d4d8;
+    transition: colors 0.3s ease;
+  }
+  
+  /* Icon Utilities */
+  .icon-brand-primary { color: #6aad81; }
+  .icon-brand-secondary { color: #144d5e; }
+
+/* Updated glassmorphism utilities for new color scheme */
   .glass {
-    background: rgba(102, 163, 128, 0.1); /* Updated to green */
+    background: rgba(106, 173, 129, 0.1); /* Shiny Shamrock with transparency */
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
-    border: 1px solid rgba(102, 163, 128, 0.2); /* Updated to green */
+    border: 1px solid rgba(106, 173, 129, 0.2); /* Shiny Shamrock with transparency */
   }
 
   .glass-card {
     background: rgba(255, 255, 255, 0.8);
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
-    border: 1px solid rgba(102, 163, 128, 0.1); /* Updated to green */
-    box-shadow: 0 8px 32px rgba(102, 163, 128, 0.1); /* Updated to green */
+    border: 1px solid rgba(106, 173, 129, 0.1); /* Shiny Shamrock with transparency */
+    box-shadow: 0 8px 32px rgba(106, 173, 129, 0.1); /* Shiny Shamrock with transparency */
   }
 
   .glass-nav {
     background: rgba(255, 255, 255, 0.95);
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
-    border-bottom: 1px solid rgba(102, 163, 128, 0.1); /* Updated to green */
+    border-bottom: 1px solid rgba(106, 173, 129, 0.1); /* Shiny Shamrock with transparency */
   }
 
   .glass-button {
-    background: rgba(102, 163, 128, 0.1); /* Updated to green */
+    background: rgba(106, 173, 129, 0.1); /* Shiny Shamrock with transparency */
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
-    border: 1px solid rgba(102, 163, 128, 0.3); /* Updated to green */
+    border: 1px solid rgba(106, 173, 129, 0.3); /* Shiny Shamrock with transparency */
   }
 
   .bg-alt {
-    background-color: #f5f2ec;
+    background-color: #d2d4d8; /* Light Grey - Neutral/background color */
   }
   
   /* Kerdo rounded button style */
@@ -225,9 +280,9 @@
   height: 60px;
   padding: 0;
   background-color: white;
-  border: 1px solid rgba(102, 163, 128, 0.2);
+  border: 1px solid rgba(106, 173, 129, 0.2);
   border-radius: 0.75rem;
-  box-shadow: 0 8px 32px rgba(102, 163, 128, 0.15);
+  box-shadow: 0 8px 32px rgba(106, 173, 129, 0.15);
   position: relative;
   overflow: hidden;
   will-change: height;
@@ -261,7 +316,7 @@
 }
 
 .hamburger-menu:hover {
-  background-color: rgba(102, 163, 128, 0.1);
+  background-color: rgba(106, 173, 129, 0.1);
 }
 
 .hamburger-menu:hover .hamburger-line {
@@ -271,7 +326,7 @@
 .hamburger-line {
   width: 30px;
   height: 2px;
-  background-color: #66a380;
+  background-color: #6aad81; /* Shiny Shamrock */
   transition: transform 0.25s ease, opacity 0.2s ease, margin 0.3s ease;
   transform-origin: 50% 50%;
 }
@@ -294,26 +349,33 @@
 }
 
 .logo {
-  height: 28px;
+  height: 48px;
+  max-height: 48px;
+  width: auto;
 }
 
 .card-nav-cta-button {
-  background: linear-gradient(135deg, #66a380 0%, #4a8a6b 100%);
+  background: linear-gradient(135deg, #6aad81 0%, #5a9d71 100%);
   color: white;
   border: none;
   border-radius: calc(0.75rem - 0.35rem);
   padding: 0 1.5rem;
-  height: 100%;
+  height: calc(100% - 12px);
+  margin: 6px;
   font-weight: 600;
   cursor: pointer;
   transition: all 0.3s ease;
-  box-shadow: 0 4px 15px rgba(102, 163, 128, 0.3);
+  box-shadow: 0 4px 15px rgba(106, 173, 129, 0.3);
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .card-nav-cta-button:hover {
-  background: linear-gradient(135deg, #4a8a6b 0%, #66a380 100%);
+  background: linear-gradient(135deg, #5a9d71 0%, #6aad81 100%);
   transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(102, 163, 128, 0.4);
+  box-shadow: 0 6px 20px rgba(106, 173, 129, 0.4);
 }
 
 .card-nav-content {

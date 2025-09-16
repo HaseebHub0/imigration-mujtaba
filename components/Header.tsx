@@ -8,7 +8,7 @@ const Header: React.FC = () => {
   const navigationItems = [
     {
       label: "Home",
-      bgColor: "#66a380",
+      bgColor: "#6aad81",
       textColor: "#ffffff",
       links: [
         { label: "Main Page", ariaLabel: "Go to Home Page", href: "/" },
@@ -20,18 +20,18 @@ const Header: React.FC = () => {
               bgColor: "#144d5e",
         textColor: "#ffffff",
       links: [
-        { label: "About Us", ariaLabel: "About Company", href: "/about" },
+        { label: "About Me", ariaLabel: "About Me", href: "/about" },
         
       ]
     },
     {
       label: "Services", 
-      bgColor: "#66a380",
+      bgColor: "#6aad81",
       textColor: "#ffffff",
       links: [
         { label: "Permanent Residency", ariaLabel: "Permanent Residency Services", href: "/services/permanent-residency" },
         { label: "Status Services", ariaLabel: "Status Services", href: "/services/status-services" },
-        { label: "All Services", ariaLabel: "View All Services", href: "/services" }
+       
       ]
     },
     {
@@ -41,17 +41,17 @@ const Header: React.FC = () => {
       links: [
         { label: "CRS Calculator", ariaLabel: "CRS Score Calculator", href: "/assessment/crs-calculator" },
         { label: "PNP Assessment", ariaLabel: "PNP Assessment Tool", href: "/assessment/pnp-assessment" },
-        { label: "All Tools", ariaLabel: "View All Assessment Tools", href: "/assessment" }
+        
       ]
     },
     {
       label: "Resources",
-      bgColor: "#66a380",
+      bgColor: "#6aad81",
       textColor: "#ffffff",
       links: [
         { label: "Immigration Blog", ariaLabel: "Immigration Blog", href: "/blog" },
         { label: "Immigration Tools", ariaLabel: "Immigration Tools", href: "/resources" },
-        { label: "Free Downloads", ariaLabel: "Free Downloads", href: "/resources" }
+        
       ]
     },
     {
@@ -61,20 +61,20 @@ const Header: React.FC = () => {
       links: [
         { label: "Free Assessment", ariaLabel: "Schedule Free Assessment", href: "/contact/free-consultation" },
         { label: "Detailed Consultation", ariaLabel: "Schedule Detailed Consultation", href: "/contact/paid-consultation" },
-        { label: "All Options", ariaLabel: "View All Contact Options", href: "/contact" }
+        
       ]
     }
   ]
 
   return (
     <CardNav
-      logo=""
-      logoText="Mujtaba Sarwar"
+      logo="/logo.png"
+      logoText=""
       logoAlt="Mujtaba Sarwar Immigration Consulting"
       items={navigationItems}
       baseColor="#ffffff"
-      menuColor="#66a380"
-      buttonBgColor="#66a380"
+      menuColor="#6aad81"
+      buttonBgColor="#6aad81"
       buttonTextColor="#ffffff"
       ease="power3.out"
     />

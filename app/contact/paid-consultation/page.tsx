@@ -50,7 +50,7 @@ export default function PaidConsultationPage() {
                 Your paid consultation has been booked successfully. You'll receive a confirmation email with meeting
                 details and preparation instructions within the next few minutes.
               </p>
-              <div className="bg-[#f5f2ec] p-4 rounded-lg mb-6">
+              <div className="bg-[#d2d4d8] p-4 rounded-lg mb-6">
                 <p className="text-sm text-gray-700">
                   <strong>What's Next:</strong>
                   <br />
@@ -332,7 +332,7 @@ export default function PaidConsultationPage() {
                       </div>
                     </div>
 
-                    <div className="bg-[#f5f2ec] p-4 rounded-lg">
+                    <div className="bg-[#d2d4d8] p-4 rounded-lg">
                       <p className="text-xs text-gray-700">
                         <strong>Satisfaction Guarantee:</strong> If you're not completely satisfied with your
                         consultation, we'll provide a full refund.
