@@ -55,6 +55,16 @@ const Header: React.FC = () => {
       ]
     },
     {
+      label: "Mentoring", 
+      bgColor: "#6aad81",
+      textColor: "#ffffff",
+      links: [
+        { label: "RCIC Mentoring", ariaLabel: "RCIC Mentoring & Coaching", href: "/mentoring" },
+        { label: "Private Practice Setup", ariaLabel: "Private Practice Coaching", href: "/mentoring" },
+        
+        ]
+      },
+    {
       label: "Contact",
       bgColor: "#144d5e",
       textColor: "#ffffff",
