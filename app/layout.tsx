@@ -23,6 +23,18 @@ export const metadata: Metadata = {
   title: "Mujtaba Sarwar - Canadian Immigration Consulting",
   description: "Expert Immigration Guidance with Transparent Assessment - RCIC License #R712505",
   generator: "v0.app",
+  icons: {
+    icon: [
+      { url: "/favicon.ico", sizes: "any" },
+      { url: "/logo2.png", sizes: "32x32", type: "image/png" },
+      { url: "/logo2.png", sizes: "16x16", type: "image/png" }
+    ],
+    apple: [
+      { url: "/logo2.png", sizes: "180x180", type: "image/png" }
+    ],
+    shortcut: "/favicon.ico"
+  },
+  manifest: "/manifest.json",
 }
 
 export default function RootLayout({
