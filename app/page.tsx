@@ -7,6 +7,7 @@ import { Badge } from "@/components/ui/badge"
 import { Separator } from "@/components/ui/separator"
 import { MapPin, Phone, Mail, Award, TrendingUp, Heart } from "lucide-react"
 import { AutoPlayCarousel } from "@/components/AutoPlayCarousel"
+import Link from "next/link"
 
 // import { motion } from "framer-motion"
 
@@ -63,51 +64,51 @@ export default function HomePage() {
                           </p>
                         </div>
                         <div className="flex flex-col gap-3 sm:gap-4 justify-center mb-6 sm:mb-8">
-                          <Button
-                            size="lg"
-                            style={{
-                              background: 'linear-gradient(135deg, #6aad81 0%, #5a9d71 100%)',
-                              transition: 'all 0.3s ease'
-                            }}
-                            className="text-white border-none px-6 py-4 text-sm sm:text-base h-12 sm:h-14 font-semibold shadow-[0_4px_15px_rgba(106,173,129,0.3)] hover:shadow-[0_6px_20px_rgba(106,173,129,0.4)] hover:-translate-y-0.5 transform hover:scale-105"
-                            onMouseEnter={(e) => {
-                              e.currentTarget.style.background = 'linear-gradient(135deg, #5a9d71 0%, #6aad81 100%)';
-                            }}
-                            onMouseLeave={(e) => {
-                              e.currentTarget.style.background = 'linear-gradient(135deg, #6aad81 0%, #5a9d71 100%)';
-                            }}
-                          >
-                            <a href="/services/permanent-residency" className="flex items-center justify-center">
+                          <Link href="/services/permanent-residency">
+                            <Button
+                              size="lg"
+                              style={{
+                                background: 'linear-gradient(135deg, #6aad81 0%, #5a9d71 100%)',
+                                transition: 'all 0.3s ease'
+                              }}
+                              className="w-full text-white border-none px-6 py-4 text-sm sm:text-base h-12 sm:h-14 font-semibold shadow-[0_4px_15px_rgba(106,173,129,0.3)] hover:shadow-[0_6px_20px_rgba(106,173,129,0.4)] hover:-translate-y-0.5 transform hover:scale-105"
+                              onMouseEnter={(e) => {
+                                e.currentTarget.style.background = 'linear-gradient(135deg, #5a9d71 0%, #6aad81 100%)';
+                              }}
+                              onMouseLeave={(e) => {
+                                e.currentTarget.style.background = 'linear-gradient(135deg, #6aad81 0%, #5a9d71 100%)';
+                              }}
+                            >
                               <span>Permanent Residency</span>
                               <div className="ml-2 transform group-hover:translate-x-1 transition-transform duration-300">
                                 →
                               </div>
-                            </a>
-                          </Button>
-                          <Button
-                            size="lg"
-                            variant="outline"
-                            className="border-white/50 text-white hover:bg-white/20 hover:border-white px-6 py-4 text-sm sm:text-base h-12 sm:h-14 bg-white/10 backdrop-blur-sm hover:backdrop-blur-md transition-all duration-300 shadow-xl hover:shadow-2xl transform hover:scale-105"
-                          >
-                            <a href="/services/status-services" className="flex items-center justify-center">
+                            </Button>
+                          </Link>
+                          <Link href="/services/immigration-pathways">
+                            <Button
+                              size="lg"
+                              variant="outline"
+                              className="w-full border-white/50 text-white hover:bg-white/20 hover:border-white px-6 py-4 text-sm sm:text-base h-12 sm:h-14 bg-white/10 backdrop-blur-sm hover:backdrop-blur-md transition-all duration-300 shadow-xl hover:shadow-2xl transform hover:scale-105"
+                            >
                               <span>Immigration Pathways</span>
                               <div className="ml-2 transform group-hover:translate-x-1 transition-transform duration-300">
                                 →
                               </div>
-                            </a>
-                          </Button>
-                          <Button
-                            size="lg"
-                            variant="outline"
-                            className="border-white/50 text-white hover:bg-white/20 hover:border-white px-6 py-4 text-sm sm:text-base h-12 sm:h-14 bg-white/10 backdrop-blur-sm hover:backdrop-blur-md transition-all duration-300 shadow-xl hover:shadow-2xl transform hover:scale-105"
-                          >
-                            <a href="/training" className="flex items-center justify-center">
+                            </Button>
+                          </Link>
+                          <Link href="/mentoring">
+                            <Button
+                              size="lg"
+                              variant="outline"
+                              className="w-full border-white/50 text-white hover:bg-white/20 hover:border-white px-6 py-4 text-sm sm:text-base h-12 sm:h-14 bg-white/10 backdrop-blur-sm hover:backdrop-blur-md transition-all duration-300 shadow-xl hover:shadow-2xl transform hover:scale-105"
+                            >
                               <span>RCIC Consultant Training</span>
                               <div className="ml-2 transform group-hover:translate-x-1 transition-transform duration-300">
                                 →
                               </div>
-                            </a>
-                          </Button>
+                            </Button>
+                          </Link>
                         </div>
                         <div className="flex flex-wrap justify-center items-center gap-4 text-xs text-gray-200">
                           <div className="flex items-center gap-2 group">
@@ -144,44 +145,44 @@ export default function HomePage() {
                   </div>
 
                   <div className="space-y-4">
-                    <Button
-                      size="lg"
-                      variant="outline"
-                      className="border-white/50 text-white hover:bg-white/20 hover:border-white px-6 py-4 text-base xl:text-lg h-14 w-150 xl:h-16 bg-white/10 backdrop-blur-sm hover:backdrop-blur-md transition-all duration-300 shadow-xl hover:shadow-2xl transform hover:scale-105 group"
-                    >
-                      <a href="/services/permanent-residency" className="flex items-center justify-center">
+                    <Link href="/services/permanent-residency">
+                      <Button
+                        size="lg"
+                        variant="outline"
+                        className="border-white/50 text-white hover:bg-white/20 hover:border-white px-6 py-4 text-base xl:text-lg h-14 w-150 xl:h-16 bg-white/10 backdrop-blur-sm hover:backdrop-blur-md transition-all duration-300 shadow-xl hover:shadow-2xl transform hover:scale-105 group"
+                      >
                         <span>Permanent Residency</span>
                         <div className="ml-2 transform group-hover:translate-x-1 transition-transform duration-300">
                           →
                         </div>
-                      </a>
-                    </Button>
+                      </Button>
+                    </Link>
 
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                      <Button
-                        size="lg"
-                        variant="outline"
-                        className="border-white/50 text-white hover:bg-white/20 w-72 hover:border-white px-6 py-4 text-base xl:text-lg h-14 xl:h-16 bg-white/10 backdrop-blur-sm hover:backdrop-blur-md transition-all duration-300 shadow-xl hover:shadow-2xl transform hover:scale-105 group"
-                      >
-                        <a href="/services/immigration-pathways" className="flex items-center justify-center">
+                      <Link href="/services/immigration-pathways">
+                        <Button
+                          size="lg"
+                          variant="outline"
+                          className="border-white/50 text-white hover:bg-white/20 w-72 hover:border-white px-6 py-4 text-base xl:text-lg h-14 xl:h-16 bg-white/10 backdrop-blur-sm hover:backdrop-blur-md transition-all duration-300 shadow-xl hover:shadow-2xl transform hover:scale-105 group"
+                        >
                           <span>Immigration Pathways</span>
                           <div className="ml-2 transform group-hover:translate-x-1 transition-transform duration-300">
                             →
                           </div>
-                        </a>
-                      </Button>
-                      <Button
-                        size="lg"
-                        variant="outline"
-                        className="border-white/50 text-white hover:bg-white/20 hover:border-white px-6 py-4 text-base xl:text-lg h-14 w-72 xl:h-16 bg-white/10 backdrop-blur-sm hover:backdrop-blur-md transition-all duration-300 shadow-xl hover:shadow-2xl transform hover:scale-105 group"
-                      >
-                        <a href="/mentoring" className="flex items-center justify-center">
+                        </Button>
+                      </Link>
+                      <Link href="/mentoring">
+                        <Button
+                          size="lg"
+                          variant="outline"
+                          className="border-white/50 text-white hover:bg-white/20 hover:border-white px-6 py-4 text-base xl:text-lg h-14 w-72 xl:h-16 bg-white/10 backdrop-blur-sm hover:backdrop-blur-md transition-all duration-300 shadow-xl hover:shadow-2xl transform hover:scale-105 group"
+                        >
                           <span>RCIC Mentoring</span>
                           <div className="ml-2 transform group-hover:translate-x-1 transition-transform duration-300">
                             →
                           </div>
-                        </a>
-                      </Button>
+                        </Button>
+                      </Link>
                     </div>
                   </div>
 
