@@ -59,7 +59,7 @@ export default function HomePage() {
                         </div>
                         <div className="text-center mb-6 sm:mb-8">
                           <p className="text-sm sm:text-base md:text-lg text-gray-200 leading-relaxed max-w-lg mx-auto px-2">
-                            <span className="font-bold">Free 30 minute consultations only</span> for cases we can win.
+                            <span className="font-bold">Free 30-minute consultations for qualifying cases.</span>
                           </p>
                         </div>
                         <div className="flex flex-col gap-3 sm:gap-4 justify-center mb-6 sm:mb-8">
