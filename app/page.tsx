@@ -136,10 +136,10 @@ export default function HomePage() {
                   <div className="space-y-6">
                     <h1 className="text-5xl xl:text-6xl 2xl:text-7xl font-bold text-white leading-tight">
                       Expert Immigration Guidance with{" "}
-                      <span className="text-5xl" style={{color: '#6aad81'}}>Transparent Assessment</span>
+                      <span className="text-5xl" style={{color: '#6aad81'}}>Mujtaba Sarwar</span>
                     </h1>
                     <p className="text-xl xl:text-2xl text-gray-200 leading-relaxed max-w-2xl">
-                      <span className="font-bold">Free 30 minute consultations only</span> for cases we can win.
+                      <span className="font-bold">Free 30-minute consultations for qualifying cases.</span>
                     </p>
                   </div>
 
