@@ -27,7 +27,7 @@ export default function MentoringPage() {
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               <div>
             <h2 className="text-3xl font-bold mb-4" style={{color: '#144d5e'}}>
-              Build the Practice You Imagined — With Guidance That Works
+              Build the Practice You Imagined With Guidance That Works
             </h2>
                 <div className="w-16 h-1 bg-[#6aad81] mb-6"></div>
                 <p className="text-gray-700 leading-relaxed mb-8">
@@ -109,15 +109,15 @@ export default function MentoringPage() {
                 </CardContent>
               </Card>
 
-              <Card className="hover:bg-white transition-colors duration-300 border-2 border-red-300 bg-red-50">
+              <Card className="hover:bg-white transition-colors duration-300 border-2 border-[#6aad81]">
                 <CardHeader className="text-center pb-4">
-                   <div className="w-16 h-16 bg-red-100 text-red-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                   <div className="w-16 h-16 text-[#6aad81] mx-auto mb-4">
                      <span className="text-2xl font-bold">✗</span>
                    </div>
-                   <CardTitle className="text-2xl text-red-600">Not For:</CardTitle>
+                   <CardTitle className="text-2xl text-[#144d5e]">Not For:</CardTitle>
                 </CardHeader>
                 <CardContent className="text-center">
-                  <p className="text-red-700">
+                  <p className="text-[#144d5e]">
                     Those looking for shortcuts or mass coaching. This is selective, 1-on-1, quality-first guidance.
                   </p>
                 </CardContent>

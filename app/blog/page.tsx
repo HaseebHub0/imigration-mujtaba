@@ -16,7 +16,7 @@ export default function BlogPage() {
     category: "Immigration Updates",
     date: "December 15, 2024",
     readTime: "5 min read",
-    image: "/placeholder-osc5w.png",
+    image: "https://www.ackahlaw.com/assets/Uploads/img/news/_1100x480_crop_center-center_70_none/7765/11-Ways-to-Increase-Your-Express-Entry-CRS-Score-Canada-Immigration-Lawyer-Evelyn-Ackah.jpg",
     slug: "express-entry-draw-271-analysis",
   }
 

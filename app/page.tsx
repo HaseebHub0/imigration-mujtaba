@@ -405,11 +405,11 @@ export default function HomePage() {
               <p className="text-lg text-foreground leading-relaxed">
                 Navigating Canada’s immigration system can feel complex and overwhelming but the right guidance makes all the difference. As a Regulated Canadian Immigration Consultant (RCIC), I provide honest assessments, transparent advice, and personalized strategies tailored to your unique situation.
               </p>
-              <p className="text-foreground leading-relaxed">
-                At Mujtaba Sarwar Canadian Immigration Consulting, we focus on quality over quantity. I only accept cases with a strong likelihood of success, ensuring every client receives the attention and expertise their application deserves. Whether you’re pursuing Express Entry, Provincial Nominee Programs, study or work permits, LMIA, or family sponsorship, my role is to help you present your application as a clear, compelling story — not just a set of forms.
+              <p className="text-lg text-foreground leading-relaxed">
+                At Mujtaba Sarwar Canadian Immigration Consulting, we focus on quality over quantity. I only accept cases with a strong likelihood of success, ensuring every client receives the attention and expertise their application deserves. Whether you’re pursuing Express Entry, Provincial Nominee Programs, study or work permits, LMIA, or family sponsorship, my role is to help you present your application as a clear, compelling story not just a set of forms.
               </p>
-              <p className="text-foreground leading-relaxed">
-                Start with a free 30-minute consultation to understand your eligibility and next steps. If your case is a fit, you’ll know exactly how we’ll proceed and what it will cost. Your Canadian journey deserves expert, caring advocacy.
+              <p className="text-lg text-foreground leading-relaxed">
+                <span className="font-bold">Start with a free 30-minute consultation</span> to understand your eligibility and next steps. If your case is a fit, you’ll know exactly how we’ll proceed and what it will cost. Your Canadian journey deserves expert, caring advocacy.
 
               </p>
             </div>
