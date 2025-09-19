@@ -13,7 +13,7 @@
 
 ### 3. **Build Settings**
 - **Build command**: `npm run build` (already configured)
-- **Publish directory**: `.next` (already configured)
+- **Publish directory**: `out` (already configured)
 - **Node version**: 18 (already configured)
 
 ### 4. **Deploy**
@@ -29,7 +29,7 @@ npm run build
 
 ### Publish Directory
 ```
-.next
+out
 ```
 
 ### Environment Variables (if needed)
