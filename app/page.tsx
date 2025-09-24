@@ -137,7 +137,7 @@ export default function HomePage() {
                   <div className="space-y-6">
                     <h1 className="text-5xl xl:text-6xl 2xl:text-7xl font-bold text-white leading-tight">
                       Expert Immigration Guidance with{" "}
-                      <span className="text-5xl" style={{color: '#6aad81'}}>Mujtaba Sarwar</span>
+                      <span className="amerika text-9xl" style={{color: '#6aad81'}}>Mujtaba Sarwar</span>
                     </h1>
                     <p className="text-xl xl:text-2xl text-gray-200 leading-relaxed max-w-2xl">
                       <span className="font-bold">Free 30-minute consultations for qualifying cases.</span>
@@ -163,7 +163,7 @@ export default function HomePage() {
                         <Button
                           size="lg"
                           variant="outline"
-                          className="border-white/50 text-white hover:bg-white/20 w-72 hover:border-white px-6 py-4 text-base xl:text-lg h-14 xl:h-16 bg-white/10 backdrop-blur-sm hover:backdrop-blur-md transition-all duration-300 shadow-xl hover:shadow-2xl transform hover:scale-105 group"
+                          className="border-white/50 mt-4 text-white hover:bg-white/20 w-72 hover:border-white px-6 py-4 text-base xl:text-lg h-14 xl:h-16 bg-white/10 backdrop-blur-sm hover:backdrop-blur-md transition-all duration-300 shadow-xl hover:shadow-2xl transform hover:scale-105 group"
                         >
                           <span>Immigration Pathways</span>
                           <div className="ml-2 transform group-hover:translate-x-1 transition-transform duration-300">
@@ -175,7 +175,7 @@ export default function HomePage() {
                         <Button
                           size="lg"
                           variant="outline"
-                          className="border-white/50 text-white hover:bg-white/20 hover:border-white px-6 py-4 text-base xl:text-lg h-14 w-72 xl:h-16 bg-white/10 backdrop-blur-sm hover:backdrop-blur-md transition-all duration-300 shadow-xl hover:shadow-2xl transform hover:scale-105 group"
+                          className="border-white/50 mt-4 text-white hover:bg-white/20 hover:border-white px-6 py-4 text-base xl:text-lg h-14 w-72 xl:h-16 bg-white/10 backdrop-blur-sm hover:backdrop-blur-md transition-all duration-300 shadow-xl hover:shadow-2xl transform hover:scale-105 group"
                         >
                           <span>RCIC Mentoring</span>
                           <div className="ml-2 transform group-hover:translate-x-1 transition-transform duration-300">

@@ -47,6 +47,7 @@
   --font-times: "Times New Roman", Times, serif;
   --font-calibri: Calibri, "Segoe UI", sans-serif;
   --font-verdana: Verdana, Geneva, sans-serif;
+  --font-roboto: Amerika Signature Regular;
 }
 
 .dark {
@@ -132,6 +133,16 @@
   body {
     @apply bg-background text-foreground;
     font-family: var(--font-helvetica), "Helvetica Neue", Helvetica, Arial, sans-serif;
+  }
+  @font-face {
+    font-family: "AmerikaSignature";
+    src: url("/fonts/AmerikaSignatureDemo-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  .amerika {
+    font-family: "AmerikaSignature", cursive;
   }
   
   /* Font family utilities */
@@ -349,8 +360,8 @@
 }
 
 .logo {
-  height: 48px;
-  max-height: 48px;
+  height: 60px;
+  max-height: 60px;
   width: auto;
 }
 
